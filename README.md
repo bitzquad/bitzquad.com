@@ -20,10 +20,10 @@
 ### Develop
 
 1. Check if your git branch is `main` and sync
-2. Change your branch into `dev`
+2. Change your branch into `dev` and sync
 3. Code
 4. Run `npm run dev` for development
-5. Run `npm run build` to generate static HTMLs. This is optional. Just for the developer. Actual static HTMLs will be generated on cloudflare builder.
+5. (optional) Run `npm run build` to generate static HTMLs. Just for the developer. Actual static HTMLs will be generated on cloudflare builder.
 6. Commit changes and sync
 7. Your changes will be live on a tempory URL on cloudflare. Ask a Bitblazer if you want that URL.
 8. Change your git branch to `main`
