@@ -1,7 +1,5 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Countdown from '../components/Countdown';
-import Footer from '../components/Footer';
 import Header from '../components/Header';
 import Layout from '../components/layout';
 import Social from '../components/Social';
@@ -11,8 +9,30 @@ export default function Home() {
     <Layout>
       <div className="w-screen">
         <Head>
-          <title>Bitzquad</title>
+          {/* Primary Meta Tags  */}
+          <title>Bitzquad | Software and IT Solutions</title>
           <link rel="icon" href="/favicon.ico" />
+          <meta name="title" content="Bitzquad | Software and IT Solutions" />
+          <meta name="description" content="Bitzquad creates next generation future-proof digital solutions for you." />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="keywords" content="bitzquad, bitsquad, software, solutions, website" />
+          <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+          <meta name="language" content="English" />
+          <meta name="author" content="Bitzquad" />
+
+          {/* Open Graph / Facebook Meta  */}
+          <meta property="og:type" content="website" />
+          <meta property="og:url" content="https://bitzquad.com/" />
+          <meta property="og:title" content="Bitzquad | Software and IT Solutions" />
+          <meta property="og:description" content="Bitzquad creates next generation future-proof digital solutions for you." />
+          <meta property="og:image" content="https://cdn.discordapp.com/attachments/920056089670729728/920056217764761681/logo.png" />
+
+          {/* Twitter Meta tags  */}
+          <meta property="twitter:card" content="summary_large_image" />
+          <meta property="twitter:url" content="https://bitzquad.com/" />
+          <meta property="twitter:title" content="Bitzquad | Software and IT Solutions" />
+          <meta property="twitter:description" content="Bitzquad creates next generation future-proof digital solutions for you." />
+          <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/920056089670729728/920056217764761681/logo.png" />
         </Head>
 
         <main className="main">
