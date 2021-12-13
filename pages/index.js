@@ -1,13 +1,11 @@
-import Head from 'next/head'
-import Body from 'next/body'
-import Link from 'next/link'
-
+import Head from "next/head";
+import Link from "next/link";
 
 export default function Home() {
   return (
     <div className="container">
       <Head>
-      <meta charset="utf-8" />
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta
           name="viewport"
@@ -59,11 +57,16 @@ export default function Home() {
       </Head>
 
       <main>
-        <img src="/images/bitz.png" height="100rem" width="100rem" alt="Bitzqaud" />
+        <img
+          src="/images/bitz.png"
+          height="100rem"
+          width="100rem"
+          alt="Bitzqaud"
+        />
         <div className="text"></div>
 
         <h1 className="text-blue-500">
-          Sample{' '}
+          Sample{" "}
           <Link href="/posts/first-post">
             <a>Link to a page</a>
           </Link>
@@ -74,24 +77,26 @@ export default function Home() {
         </p>
         <br />
         <p>
-          Add new pages to <font className="code">/pages</font> as <font className="code">.js</font> files and they'll automatically appear in our website.
+          Add new pages to <font className="code">/pages</font> as{" "}
+          <font className="code">.js</font> files and they'll automatically
+          appear in our website.
           <br />
-          For example, you can create a <font className="code" >pages/post/bitz.js</font> and it will generate <font className="code" >bitzquad.com/post/bitz.html</font>
+          For example, you can create a{" "}
+          <font className="code">pages/post/bitz.js</font> and it will generate{" "}
+          <font className="code">bitzquad.com/post/bitz.html</font>
         </p>
-
-
       </main>
 
       <style jsx>{`
-      .code {
-        font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, Courier, monospace;
-        color: #444;
-        background-color: #f6f8fa;
-        padding: 0.2em 0.4em;
-        border-radius: 3px;
-      }
-    `}</style>
-
+        .code {
+          font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo,
+            Courier, monospace;
+          color: #444;
+          background-color: #f6f8fa;
+          padding: 0.2em 0.4em;
+          border-radius: 3px;
+        }
+      `}</style>
     </div>
-  )
+  );
 }
