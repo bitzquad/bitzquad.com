@@ -101,7 +101,7 @@ Repeatly commit into the same branch and sync until your feature is stable.
 
 ![C13](Readme/C13.png)
 
-14. To update the production server, commits should be pulled into `live` branch. But, this should be done by the developer in charge of the production server. You can create a pull request from `main` to `live` and inform the developer via discord. **But DO NOT merge/checkout the pull request by yourself.**
+14. To update the production server, commits should be pulled into `live` branch. But, this should be done by the developer in charge of the production server. You can create a pull request from `main` to `live` and inform the developer via discord. **But DO NOT merge/checkout the pull request by yourself.** The developer in charge will review the changes, rebase `main` to `live` and then rebase `live` to `main` for synchronizing the branches.
 
 #### Alternative case :
 
