@@ -26,10 +26,7 @@
 5. (optional) Run `npm run build` to generate static HTMLs. Just for the developer. Actual static HTMLs will be generated on cloudflare builder.
 6. Commit changes and sync
 7. Your changes will be live on a tempory URL on cloudflare. Ask a Bitblazer if you want that URL.
-8. Change your git branch to `main`
-9. Merge branch `dev` into `main`. Use git fast forwarding when available.
-10. Git sync
-11. Your changes will be live on bitzquad.com within 10 minutes.
+8. Your changes will be live on bitzquad.com within 10 minutes.
 
 ### How it works
 
