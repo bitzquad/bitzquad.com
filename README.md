@@ -39,9 +39,9 @@ Breaking these rules could lead into git commit reverts or bans 😮‍💨
 
 ### Contribute
 
-We are following 'Scrum' git version control concepts for all our projects. Everyone must sync `main` branch but never commit directly. For every feature, one should create a branch from `main` and then pull commits from that branch to `main`. Use more sub branches like `dev` for complex features. All changes to `live` branch will update the production server or services.
+We are following 'Scrum' git version control concepts for all our projects. Everyone must sync `main` and `dev` branches but never commit directly. For every feature, one should create a branch from `dev` and then pull commits from that branch to `dev`. Use more sub branches like `dev` for complex features. All changes to `live` branch will update the production server or services.
 
-1. Make sure your branch is `main` and sync with remote.
+1. Make sure your branch is `dev` and sync with remote.
 
 ![C1](Readme/C1.png)
 
@@ -73,7 +73,7 @@ Repeatly commit into the same branch and sync until your feature is stable.
 
 ![C6](Readme/C6.png)
 
-7. Make sure you are pulling 'from' your branch and pulling 'into' `main` or immediate upstream branch. Write a pull request title and description.
+7. Make sure you are pulling 'from' your branch and pulling 'into' `dev` or immediate upstream branch. Write a pull request title and description.
 
 ![C7](Readme/C7.png)
 
@@ -97,11 +97,13 @@ Repeatly commit into the same branch and sync until your feature is stable.
 
 ![C12](Readme/C12.png)
 
-13. Make sure your current branch is `main` and sync. Start over from step 1 for your next feature.
+13. Switch to branch `main` and sync. Then switch to branch `dev` and sync. Start over from step 1 for your next feature.
 
 ![C13](Readme/C13.png)
 
-14. To update the production server, commits should be pulled into `live` branch. But, this should be done by the developer in charge of the production server. You can create a pull request from `main` to `live` and inform the developer via discord. **But DO NOT merge/checkout the pull request by yourself.** The developer in charge will review the changes, rebase `main` to `live` and then rebase `live` to `main` for synchronizing the branches.
+14. When the feature is stable, you can pull commits into `main`. Doing so, you should delete `dev` branch and recreate it. Inform other developers before doing this.
+
+15. To update the production server, commits should be pulled into `live` branch. But, this should be done by the developer in charge of the production server. You can create a pull request from `main` to `live` and inform the developer via discord. **But DO NOT merge/checkout the pull request by yourself.** The developer in charge will review the changes, rebase `main` to `live` and then rebase `live` to `main` for synchronizing the branches.
 
 #### Alternative case :
 
