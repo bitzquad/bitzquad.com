@@ -1,5 +1,10 @@
-import styles from './layout.module.css'
+import styles from '../styles/layout.module.css';
+import Header from './Header';
 
 export default function Layout({ children }) {
-    return <div className={styles.container}>{children}</div>
+  return (
+    <div>
+      <div>{children}</div>
+    </div>
+  );
 }

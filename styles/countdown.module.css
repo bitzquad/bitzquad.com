@@ -1,0 +1,15 @@
+.wrapper {
+  @apply flex flex-row justify-between h-full px-2;
+}
+
+.timeLeftContainer {
+  @apply bg-gray-900 bg-opacity-90 w-28 h-28 border-4 mx-2 my-4 border-gray-300 border-opacity-50 rounded-xl flex flex-col justify-center items-center;
+}
+
+.timeLeft {
+  @apply text-4xl font-bold text-purple-600;
+}
+
+.timeLeftTitle {
+  @apply text-gray-300 font-semibold;
+}
