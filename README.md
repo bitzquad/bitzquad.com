@@ -22,6 +22,7 @@
 1. Check if your git branch is `main` and sync
 2. Create a new branch with a proper name - the topic you are developing or may be your name.
 
+
 ### How it works
 
 We are using Next.JS static site generation.
