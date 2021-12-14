@@ -13,9 +13,15 @@ export default function Home() {
           <title>Bitzquad | Software and IT Solutions</title>
           <link rel="icon" href="/favicon.ico" />
           <meta name="title" content="Bitzquad | Software and IT Solutions" />
-          <meta name="description" content="Bitzquad creates next generation future-proof digital solutions for you." />
+          <meta
+            name="description"
+            content="Bitzquad creates next generation future-proof digital solutions for you."
+          />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="keywords" content="bitzquad, bitsquad, software, solutions, website" />
+          <meta
+            name="keywords"
+            content="bitzquad, bitsquad, software, solutions, website"
+          />
           <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
           <meta name="language" content="English" />
           <meta name="author" content="Bitzquad" />
@@ -23,16 +29,34 @@ export default function Home() {
           {/* Open Graph / Facebook Meta  */}
           <meta property="og:type" content="website" />
           <meta property="og:url" content="https://bitzquad.com/" />
-          <meta property="og:title" content="Bitzquad | Software and IT Solutions" />
-          <meta property="og:description" content="Bitzquad creates next generation future-proof digital solutions for you." />
-          <meta property="og:image" content="https://cdn.discordapp.com/attachments/920056089670729728/920056217764761681/logo.png" />
+          <meta
+            property="og:title"
+            content="Bitzquad | Software and IT Solutions"
+          />
+          <meta
+            property="og:description"
+            content="Bitzquad creates next generation future-proof digital solutions for you."
+          />
+          <meta
+            property="og:image"
+            content="https://cdn.discordapp.com/attachments/920056089670729728/920056217764761681/logo.png"
+          />
 
           {/* Twitter Meta tags  */}
           <meta property="twitter:card" content="summary_large_image" />
           <meta property="twitter:url" content="https://bitzquad.com/" />
-          <meta property="twitter:title" content="Bitzquad | Software and IT Solutions" />
-          <meta property="twitter:description" content="Bitzquad creates next generation future-proof digital solutions for you." />
-          <meta property="twitter:image" content="https://cdn.discordapp.com/attachments/920056089670729728/920056217764761681/logo.png" />
+          <meta
+            property="twitter:title"
+            content="Bitzquad | Software and IT Solutions"
+          />
+          <meta
+            property="twitter:description"
+            content="Bitzquad creates next generation future-proof digital solutions for you."
+          />
+          <meta
+            property="twitter:image"
+            content="https://cdn.discordapp.com/attachments/920056089670729728/920056217764761681/logo.png"
+          />
         </Head>
 
         <main className="main">
@@ -43,8 +67,8 @@ export default function Home() {
           </div>
           <div className="col-right">
             <Header />
-            <div className="w-3/4 mt-20 ml-10">
-              <h3 className="text-gray-100 font-semibold text-5xl ">
+            <div className="w-3/4 my-10 md:mt-20 ml-5 md:ml-10">
+              <h3 className="text-gray-100 font-semibold text-4xl md:text-5xl">
                 COMMING SOON
               </h3>
               <p className="text-gray-300 font-light mt-2">
@@ -83,6 +107,9 @@ export default function Home() {
                   url="https://github.com/bitzquad"
                 />
               </div>
+            </div>
+            <div className="w-full md:hidden mt-4">
+              <Countdown />
             </div>
           </div>
         </main>
