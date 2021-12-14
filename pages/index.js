@@ -61,17 +61,17 @@ export default function Home() {
 
         <main className="main">
           <div className="col-left">
-            <div className=" bg-gray-900 bg-opacity-40 rounded-lg shadow-xl ">
+            <div className=" bg-gray-900 bg-opacity-40 rounded-lg shadow-xl xl:rounded-2xl ">
               <Countdown />
             </div>
           </div>
           <div className="col-right">
             <Header />
             <div className="w-3/4 my-10 md:mt-20 ml-5 md:ml-10">
-              <h3 className="text-gray-100 font-semibold text-4xl md:text-5xl">
+              <h3 className="text-gray-100 font-semibold text-4xl md:text-5xl 2xl:text-7xl">
                 COMMING SOON
               </h3>
-              <p className="text-gray-300 font-light mt-2">
+              <p className="text-gray-300 font-light mt-2 2xl:text-2xl">
                 Our website is currently undergoing scheduled maintenance. We
                 Should be back shortly. Thank you for your patience.
               </p>
@@ -108,7 +108,7 @@ export default function Home() {
                 />
               </div>
             </div>
-            <div className="w-full md:hidden mt-4">
+            <div className=" w-[275px] mx-auto md:hidden mt-10">
               <Countdown />
             </div>
           </div>

@@ -32,7 +32,7 @@ body {
 }
 
 .col-right {
-  @apply bg-gray-900 absolute bg-opacity-30  md:w-1/2 top-0 bottom-0 md:right-0  flex-col items-center;
+  @apply bg-gray-900 absolute bg-opacity-30  md:w-1/2 top-0 bottom-0 md:right-0   flex-col items-center justify-center;
 }
 
 .socialContainer {

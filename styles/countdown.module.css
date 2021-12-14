@@ -1,15 +1,16 @@
 .wrapper {
-  @apply flex flex-row justify-center h-full px-2;
+  @apply grid grid-cols-2  justify-items-center h-full p-2;
 }
 
 .timeLeftContainer {
-  @apply bg-gray-900 bg-opacity-90 w-20 h-20 lg:w-28 lg:h-28  border-4 mx-2 lg:mx-2 md:my-4 border-gray-300 border-opacity-50 rounded-xl flex flex-col justify-center items-center;
+  @apply bg-gray-900 bg-opacity-90 w-28 h-28    border-4 m-2  border-gray-300 border-opacity-50 rounded-xl  flex flex-col justify-center items-center 
+  2xl:w-48 2xl:h-48 2xl:rounded-3xl;
 }
 
 .timeLeft {
-  @apply text-4xl font-bold text-purple-600;
+  @apply text-4xl 2xl:text-6xl font-bold text-purple-600;
 }
 
 .timeLeftTitle {
-  @apply text-gray-300 font-semibold;
+  @apply text-gray-300 2xl:text-3xl 2xl:mt-1 font-semibold;
 }
