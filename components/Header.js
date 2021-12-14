@@ -10,7 +10,7 @@ const Header = () => {
             <a className="nav-link">Projects</a>
           </Link>
           <Link href="">
-            <a className="nav-link">Conact</a>
+            <a className="nav-link">Contact</a>
           </Link>
         </div>
       </nav>
