@@ -1,4 +1,0 @@
-.socialContainer {
-  @apply w-10 h-10 mr-2 border border-gray-300 flex justify-center items-center  rounded transition-all duration-150 
-  hover:scale-50 hover:bg-purple-700;
-}
