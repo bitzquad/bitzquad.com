@@ -6,7 +6,7 @@
 
 ## Setup Project
 
-1. Request collaboration access for https://github.com/bitzquad/bitzquad.com-dev
+1. Request collaboration access for https://github.com/bitzquad/bitzquad.com
 2. `git clone https://github.com/bitzquad/bitzquad.com-dev`
 3. Go inside that folder and open it with VSCode
 4. Open the terminal (CTRL + J )
@@ -129,4 +129,9 @@ You should open the browser, go to https://github.com/bitzquad/bitzquad.com and 
 Resolve the code conflicts very carefully. If you have any doubts, do not resolve the conflicts. Contact the developer who wrote the conflicting commits for support.
 
 ![D10](https://user-images.githubusercontent.com/35098511/146059931-7a9387d8-0a90-4e57-bbb8-d6bd45c37303.png)
+
+
+## Deploy
+
+To deploy the website in the live server, open https://github.com/bitzquad-dev/bitzquad.com and click `Fetch Upstream`. Only the developers in charge of the website can do this.
 
