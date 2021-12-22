@@ -1,8 +1,14 @@
+<script lang="ts">
+  export let slogun = "";
+</script>
+
 <div class="px-16">
-  <h2 class="text-gray-400 text-6xl lg:text-7xl py-10 font-extrabold text-shadow ">
+  <h2
+    class="text-gray-400 text-6xl lg:text-7xl py-10 font-extrabold text-shadow "
+  >
     Bitzquad
   </h2>
-  <h3 class="text-gray-100 text-4xl ">Solutions beyond Software Engineering</h3>
+  <h3 class="text-gray-100 text-4xl ">{slogun}</h3>
 </div>
 
 <style>

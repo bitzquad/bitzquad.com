@@ -4,4 +4,4 @@
 
 <!-- Only the homepage will be like this -->
 
-<HomePage lang="en" />
+<HomePage lang="si" />
