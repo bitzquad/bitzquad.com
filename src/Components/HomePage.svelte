@@ -28,7 +28,7 @@
   >
     <Header />
     <div class="md:hidden mt-10">
-      <HomePageBanner />
+      <HomePageBanner slogun={Txt.Slogun[lang]} />
     </div>
     <div class="home-card">
       <h3 class="home-card-title">Gearing up</h3>
