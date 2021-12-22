@@ -1,5 +1,5 @@
 <script lang="ts">
-  export let slogun = "";
+  export let slogun: string;
 </script>
 
 <div class="px-16">
