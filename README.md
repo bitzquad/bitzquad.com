@@ -16,19 +16,27 @@
 
 ## Run
 
-1. Run `npm run dev`
-2. Open the output url in browser. It will hot reload.
+- Previewing the site as closer to the production server
+  1. Run `npm run static`
+  2. Open the output url in browser
+  3. You should restart `npm run static` every time you make changes to the code
+- Previewing the site with hot reloading
+  1. Run `npm run dev`
+  2. Open the output url in browser
+  3. The server will apply changes automatically and restart every time you make changes to the code
+  - You'll see a little flicker on page load due to delayed CSS loading
 
 # How it works
 
 We are using Svelte kit static site generation.
-
-Example : Creating file `src/routes/posts/mypost.svelte` will generate `bitzquad.com/post/mypost`
-
-They'll be statically generated HTML files which are SEO/Cache friendly.
+All the pages will be statically generated HTML files which are SEO/Cache friendly.
 Please read and understand about Svelte and Svlete kit BEFORE doing any development in this repo.
 
-Limitations : Client side svelte - OK ; Build-time static pages - OK ; Server Side Rendering - NOT OK
+Limitations :
+
+- Client Side Svelte - OK
+- Server Side Generation (SSG) - OK
+- Server Side Rendering (SSR) - NOT OK
 
 ## What's configured
 
