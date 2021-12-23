@@ -180,14 +180,11 @@ For example, if we define languages `en`,`si` and `fr`, the page `./src/routes/[
 
 Here the first path "example.com/pets/cats" is a mirror for the default language path "example.com/en/pets/cats"
 
-Boilplate for a multilingual page. A copy is stored in `src/routes/[pages]/SimplePage.svelte`
+Boilplate for a multilingual page :
 
-```ts
+```svelte
 <script lang="ts">
-  import { page } from "$app/stores";
-  import { DetectLanguage, Path, PathForLanguage } from "../../siteUtils";
-
-  let lang = DetectLanguage($page.params.pages);
+  import { lang, Path } from "../../siteUtils";
 
   let Txt = {
     About: {
@@ -198,11 +195,11 @@ Boilplate for a multilingual page. A copy is stored in `src/routes/[pages]/Simpl
   };
 </script>
 
-<p>This text will be same on all languages</p>
+<p> This text will be same on all languages </p>
 
 <p> This text will be multilingual : {Txt.About[lang]}</p>
 
-
+<a rel="external" href={Path("/")}>Go Home</a>
 ```
 
 ### Linking `multilingual` pages

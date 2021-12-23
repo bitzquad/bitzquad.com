@@ -2,10 +2,7 @@
   import HomePageBanner from "../../Components/HomePageBanner.svelte";
   import Header from "../../Components/Header.svelte";
 
-  import { page } from "$app/stores";
-  import { DetectLanguage, Path } from "../../siteUtils";
-
-  let lang = DetectLanguage($page.params.pages);
+  import { lang, Path } from "../../siteUtils";
 
   let Txt = {
     Slogun: {

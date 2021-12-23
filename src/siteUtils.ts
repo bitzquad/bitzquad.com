@@ -3,18 +3,21 @@
 
 import { Langs, DefaultLang } from "./siteSettings";
 
-export let LanguagePreference: string = DefaultLang;
+export let lang: string = DefaultLang;
 
 export function DetectLanguage(para: string) {
-    let lang = para == "." ? DefaultLang : para;
 
-    if (Langs.includes(lang)) {
-        LanguagePreference = lang;
-        return LanguagePreference;
+    if (para == ".") {
+        para = DefaultLang;
+    }
+
+    if (Langs.includes(para)) {
+        lang = para;
+        return lang;
 
     } else {
-        LanguagePreference = DefaultLang;
-        return LanguagePreference;
+        lang = DefaultLang;
+        return lang;
 
     }
 }
@@ -67,5 +70,5 @@ export function PathForLanguage(path: string, lang: string): string {
 
 // Formats a path for the current language. Should be used for all links.
 export function Path(absolutePath: string) {
-    return PathForLanguage(absolutePath, LanguagePreference);
+    return PathForLanguage(absolutePath, lang);
 }

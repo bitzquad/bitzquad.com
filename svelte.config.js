@@ -21,7 +21,10 @@ function GenSSGRoutes() {
   function langSSG(dirpath, udirpath) {
     fs.readdirSync(dirpath).forEach(file => {
 
-      if (file === "index.svelte") {
+      if (file.startsWith(".") || file.startsWith("_")) {
+        return;
+
+      } else if (file === "index.svelte") {
         SSGRoutes.push("/" + udirpath);
 
         SSGLangs.forEach(lang => {
