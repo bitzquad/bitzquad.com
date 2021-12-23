@@ -1,8 +1,8 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { GetLanguage } from "../../siteUtils";
+  import { DetectLanguage } from "../../siteUtils";
 
-  let lang = GetLanguage($page.params.pages);
+  let lang = DetectLanguage($page.params.pages);
 
   let Txt = {
     About: {
