@@ -202,6 +202,20 @@ Boilplate for a multilingual page :
 <a rel="external" href={Path("/")}>Go Home</a>
 ```
 
+When the page gets bigger, it's better to move `Txt` content to a separate file. Ideally, the file should be named `{PageName}-Txt.ts` and the `Txt` object should be `default` exported from the file.
+
+For example, if we define a page `./src/routes/[pages]/pets/cats.svelte` and the file `./src/routes/pets/cats-Txt.ts` looks like this :
+
+```ts
+export default {
+  About: {
+    en: "This is the minimal sample page",
+    fr: "Ceci est la page d'exemple minimale",
+    si: "මෙය සරල උදාහරණයකි",
+  },
+};
+```
+
 ### Linking `multilingual` pages
 
 To link a multilingual page, use the `Path` function.
