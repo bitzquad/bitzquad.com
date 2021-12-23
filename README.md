@@ -199,11 +199,38 @@ Boilplate for a multilingual page. A copy is stored in `src/routes/[pages]/Simpl
 
 ### Linking `multilingual` pages
 
-When you want to link to a multilingual page, use the `Path` function.
+To link a multilingual page, use the `Path` function.
+It will transform path to the correct page for the current language of user. The only parameter is the path relative to the `./src/routes/[pages]/` directory.
 
-For example, `<a rel="external" href={Path("/pets/cats")}> Cats </a>` will link to the correct page for the current language of the user.
+Path can be imported as
 
-Note that `rel="external"` should be used to prevent client side routing from following the link.
+```js
+import { Path } from "../../siteUtils";
+```
+
+#### Link using anchor tags
+
+```svelte
+<a rel="external" href={Path("/pets/cats")}> Cats </a>
+```
+
+Note that `rel="external"` must be added to prevent client side routing from following the link.
+
+#### Link using javascript
+
+```js
+window.location.href = Path("/pets/cats");
+```
+
+### Routing for `monolingual` pages
+
+Monolingual pages are stored inside `./src/routes/`. These files will produce a single route for the default language.
+
+For example, the page `./src/routes/monsters/basilisk.svelte` will produce the path `example.com/monsters/basilisk`
+
+To link a monolingual page, use the URL path directly. For anchor tags, make sure to `rel="external"` to prevent client side routing from following the link.
+
+**We should avoid creating monolingual pages as much as possible.**
 
 # Deploy
 

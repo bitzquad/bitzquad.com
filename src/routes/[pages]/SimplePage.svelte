@@ -20,4 +20,5 @@
 
 <div>
   <a rel="external" href={Path("/SamplePage")}>Go to SamplePage</a>
+  <a rel="external" href={Path("/")}>Go Home</a>
 </div>
