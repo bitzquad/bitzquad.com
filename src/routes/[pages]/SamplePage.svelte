@@ -25,6 +25,5 @@
 </div>
 
 <div>
-  All links should be external and wrapped in Path( )
   <a rel="external" href={Path("/")}>Go home</a>
 </div>
