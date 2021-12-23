@@ -25,5 +25,5 @@
 </div>
 
 <div>
-  <a rel="external" href={Path("/")}>Go home</a>
+  <a rel="external" href={Path("/SimplePage")}>Go to SimplePage</a>
 </div>

@@ -161,7 +161,7 @@ In some special cases, there could be some pages only available in the default l
 
 ### Routing for `multilingual` pages
 
-All `multilingual` pages are stored inside `./src/routes/[pages]/`. These files will produce multiple routes for all defined languages.
+All multilingual pages are stored inside `./src/routes/[pages]/`. These files will produce multiple routes for all defined languages.
 
 For example, if we define languages `en`,`si` and `fr`, the page `./src/routes/[pages]/pets/cats.svelte` will produce the following paths.
 
@@ -172,36 +172,38 @@ For example, if we define languages `en`,`si` and `fr`, the page `./src/routes/[
 
 Here the first path "example.com/pets/cats" is a mirror for the default language path "example.com/en/pets/cats"
 
-Boilplate for a `multilingual` page is as follows.
+Boilplate for a multilingual page. A copy is stored in `src/routes/[pages]/SimplePage.svelte`
 
 ```ts
 <script lang="ts">
-    import { page } from "$app/stores";
-    import { DetectLanguage, Path, PathForLanguage } from "../../siteUtils";
+  import { page } from "$app/stores";
+  import { DetectLanguage, Path, PathForLanguage } from "../../siteUtils";
 
-    let lang = DetectLanguage($page.params.pages);
+  let lang = DetectLanguage($page.params.pages);
 
-    let Txt = {
-        About: {
-        en: "This is the minimal sample page",
-        fr: "Ceci est la page d'exemple minimale",
-        si: "මෙය සරල උදාහරණයකි",
-        },
-    };
-
+  let Txt = {
+    About: {
+      en: "This is the minimal sample page",
+      fr: "Ceci est la page d'exemple minimale",
+      si: "මෙය සරල උදාහරණයකි",
+    },
+  };
 </script>
 
-<div>
-  <h1>{Txt.Welcome[lang]}</h1>
+<p>This text will be same on all languages</p>
 
-  <p>This text will be same on all languages</p>
+<p> This text will be multilingual : {Txt.About[lang]}</p>
 
-  <p>{Txt.About[lang]}</p>
-</div>
 
 ```
 
-When creating links to other pages, the function `Path( )` should be used.
+### Linking `multilingual` pages
+
+When you want to link to a multilingual page, use the `Path` function.
+
+For example, `<a rel="external" href={Path("/pets/cats")}> Cats </a>` will link to the correct page for the current language of the user.
+
+Note that `rel="external"` should be used to prevent client side routing from following the link.
 
 # Deploy
 

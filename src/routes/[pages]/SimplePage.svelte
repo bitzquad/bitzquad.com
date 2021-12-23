@@ -1,6 +1,6 @@
 <script lang="ts">
   import { page } from "$app/stores";
-  import { DetectLanguage } from "../../siteUtils";
+  import { DetectLanguage, Path } from "../../siteUtils";
 
   let lang = DetectLanguage($page.params.pages);
 
@@ -8,7 +8,7 @@
     About: {
       en: "This is the minimal sample page",
       fr: "Ceci est la page d'exemple minimale",
-      si: "මෙය පළමු උපදාරයේ පිටුවක් පෙන්වා ඇත",
+      si: "මෙය සරල උදාහරණයකි",
     },
   };
 </script>
@@ -17,3 +17,7 @@
 <p>This text will be same on all languages</p>
 
 <p>{Txt.About[lang]}</p>
+
+<div>
+  <a rel="external" href={Path("/SamplePage")}>Go to SamplePage</a>
+</div>

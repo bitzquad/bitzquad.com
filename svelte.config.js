@@ -77,6 +77,10 @@ const config = {
       entries: GenSSGRoutes()
     },
 
+    files: {
+      hooks: 'src/hooks',
+    },
+
     vite: {
       css: {
         preprocessorOptions: {

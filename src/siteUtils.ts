@@ -19,10 +19,8 @@ export function DetectLanguage(para: string) {
     }
 }
 
-
-export function PathForLanguage(path: string, lang: string) {
-
-
+// Returns normalized path without the language. Format : path/to/page
+export function NormalizePath(path: string): string {
     // Ideal path format : path/to/page
 
     if (path.startsWith("/")) {
@@ -34,7 +32,6 @@ export function PathForLanguage(path: string, lang: string) {
     }
 
 
-    // Unique path withouth the language. Format : path/to/page
     let upath: string;
 
     let pathsegs = path.split("/");
@@ -51,6 +48,14 @@ export function PathForLanguage(path: string, lang: string) {
             upath = path;
         }
     }
+
+    return upath;
+}
+
+
+export function PathForLanguage(path: string, lang: string): string {
+
+    let upath = NormalizePath(path);
 
     if (lang == DefaultLang) {
         return "/" + upath;
