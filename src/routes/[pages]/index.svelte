@@ -1,7 +1,12 @@
 <script>
-  import HomePageBanner from "../Components/HomePageBanner.svelte";
-  import Header from "../Components/Header.svelte";
-  let lang = "en";
+  import HomePageBanner from "../../Components/HomePageBanner.svelte";
+  import Header from "../../Components/Header.svelte";
+
+  import { page } from "$app/stores";
+  import { DetectLanguage, Path } from "../../siteUtils";
+
+  let lang = DetectLanguage($page.params.pages);
+
   let Txt = {
     Slogun: {
       en: "Solutions beyond Software Engineering",
@@ -22,6 +27,7 @@
 </script>
 
 <svelte:head>
+  <title>Bitzquad | Software and IT Solutions</title>
   <style>
     body {
       background: url("/bg-home.webp") no-repeat;

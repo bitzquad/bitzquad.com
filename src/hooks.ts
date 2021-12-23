@@ -5,9 +5,6 @@ import { Path } from "./siteUtils";
 export async function handle({ request, resolve }) {
   // request.locals.user = await getUserInformation(request.headers.cookie);
 
-  console.log("HOOK : ", request.path);
-
-  // request.path = "/en/SimplePage";
 
   let path = MapPath(request.path);
 

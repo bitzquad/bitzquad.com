@@ -21,7 +21,15 @@ function GenSSGRoutes() {
   function langSSG(dirpath, udirpath) {
     fs.readdirSync(dirpath).forEach(file => {
 
-      if (file.endsWith(".svelte")) {
+      if (file === "index.svelte") {
+        SSGRoutes.push("/" + udirpath);
+
+        SSGLangs.forEach(lang => {
+          let filepath = `/${lang}/${udirpath}`;
+          SSGRoutes.push(filepath);
+        });
+
+      } else if (file.endsWith(".svelte")) {
 
         // Remove extension
         let upath = file.substring(0, file.length - 7);
