@@ -1,4 +1,4 @@
-## How to setup dev environment
+# How to setup dev environment
 
 1. Install NPM
 2. Install visual studio code ( must )
@@ -19,7 +19,7 @@
 1. Run `npm run dev`
 2. Open the output url in browser. It will hot reload.
 
-## How it works
+# How it works
 
 We are using Svelte kit static site generation.
 
@@ -31,6 +31,7 @@ Please read and understand about Svelte and Svlete kit BEFORE doing any developm
 Limitations : Client side svelte - OK ; Build-time static pages - OK ; Server Side Rendering - NOT OK
 
 ## What's configured
+
 - Svelte with Svelte kit (Backend for Svelte)
 - Svelte kit static only pre-rendering
 - Tailwind CSS
@@ -38,7 +39,7 @@ Limitations : Client side svelte - OK ; Build-time static pages - OK ; Server Si
 - SASS and SCSS
 - CSS resets and tailwind typography
 
-## Rules
+# Rules
 
 1. First-time load network traffic for any page must be below 60 kB. !important
 2. Always use Tailwind classes and @apply attributes for styling.
@@ -46,11 +47,11 @@ Limitations : Client side svelte - OK ; Build-time static pages - OK ; Server Si
 4. Never use icon packs/external fonts. Use inline SVGs and CSS embeded SVGs instead.
 5. Refractor into components when possible.
 6. All images must be compressed into lossy JPGs. Use SVGs when possible.
-7. Lighthouse score of every page must be higher than 90.
+7. Lighthouse score of every page must be higher than 95.
 
 Breaking these rules could lead into git commit reverts or bans 😮‍💨
 
-## Contribute
+# Contribute
 
 We are following 'Scrum' git version control concepts for all our projects. Everyone must sync `main` and `dev` branches but never commit directly. For every feature, one should create a branch from `dev` and then pull commits from that branch to `dev`. Use more sub branches like `dev` for complex features.
 
@@ -130,8 +131,78 @@ Resolve the code conflicts very carefully. If you have any doubts, do not resolv
 
 ![D10](https://user-images.githubusercontent.com/35098511/146059931-7a9387d8-0a90-4e57-bbb8-d6bd45c37303.png)
 
+# Develop
 
-## Deploy
+## Static assets
+
+- All the icons must be vector graphics in `svg` format. They should be URL encoded and embeded in CSS
+
+- When possible, images and audio should be encoded in `base64` and used as inline data sources for image elements and audio elements
+
+- Do not store small files (<16 KB) seperately as static files. Encode them and inline inside the markup. This reduces the number of network requests and gains better performance
+
+- Bigger static assets like images and audio should be stored in ./static directory.
+
+  - When programmatically accessing content in `./static` directory, use the file path relative to the `./static` directory. For example, to display `./static/images/cat.webp`, you should use `<img src="/images/cat.webp" />`. Note that the path starts with "/"
+
+- All the raster images must be formated in `.webp` format and lossly compressed to balance size and quality
+
+- Animated GIFs should not be used. Use `.webm` or JS/CSS animations instead.
+
+- All the audio files should be formated in `.mp3` format
+
+## Pages
+
+We are using sveltekit routing system with a few tweaks for multilingual support.
+
+Most of the content in the website should be available in all requested languages. These pages are called `multilingual` pages.
+
+In some special cases, there could be some pages only available in the default language. These pages are called `monolingual` pages. This is not a best practice and these should be added if it's absolutely necessary.
+
+### Routing for `multilingual` pages
+
+All `multilingual` pages are stored inside `./src/routes/[pages]/`. These files will produce multiple routes for all defined languages.
+
+For example, if we define languages `en`,`si` and `fr`, the page `./src/routes/[pages]/pets/cats.svelte` will produce the following paths.
+
+- example.com/pets/cats
+- example.com/en/pets/cats
+- example.com/si/pets/cats
+- example.com/fr/pets/cats
+
+Here the first path "example.com/pets/cats" is a mirror for the default language path "example.com/en/pets/cats"
+
+Boilplate for a `multilingual` page is as follows.
+
+```ts
+<script lang="ts">
+    import { page } from "$app/stores";
+    import { DetectLanguage, Path, PathForLanguage } from "../../siteUtils";
+
+    let lang = DetectLanguage($page.params.pages);
+
+    let Txt = {
+        About: {
+        en: "This is the minimal sample page",
+        fr: "Ceci est la page d'exemple minimale",
+        si: "මෙය සරල උදාහරණයකි",
+        },
+    };
+
+</script>
+
+<div>
+  <h1>{Txt.Welcome[lang]}</h1>
+
+  <p>This text will be same on all languages</p>
+
+  <p>{Txt.About[lang]}</p>
+</div>
+
+```
+
+When creating links to other pages, the function `Path( )` should be used.
+
+# Deploy
 
 To deploy the website in the live server, open https://github.com/bitzquad-dev/bitzquad.com and click `Fetch Upstream`. Only the developers in charge of the website can do this.
-
