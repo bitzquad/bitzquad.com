@@ -1,3 +1,8 @@
 tasks:
   - init: npm install && npm run build
     command: npm run build
+vscode:
+  extensions:
+    - svelte.svelte-vscode
+    - eamodio.gitlens
+    - bradlc.vscode-tailwindcss
