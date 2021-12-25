@@ -1,9 +1,20 @@
+<script lang="ts">
+  import { lang, Path } from "$lib/siteUtils";
+
+  let Txt = {
+    Contact: {
+      en: "Contact",
+      fr: "Contact",
+      si: "Contact",
+    },
+  };
+</script>
+
 <header>
   <nav class="navbar">
     <h2 class="nav-brand">Bitzquad</h2>
     <div>
-      <a href="/" class="nav-link"> Projects </a>
-      <a href="/" class="nav-link">Contact </a>
+      <a href={Path("/contact")} class="nav-link"> {Txt.Contact[lang]} </a>
     </div>
   </nav>
 </header>

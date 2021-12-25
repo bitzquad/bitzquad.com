@@ -1,6 +1,6 @@
 <script>
-  import HomePageBanner from "../../Components/HomePageBanner.svelte";
-  import Header from "../../Components/Header.svelte";
+  import HomePageBanner from "$lib/HomePageBanner.svelte";
+  import Header from "$lib/Header.svelte";
 
   import { lang, Path } from "$lib/siteUtils";
 
