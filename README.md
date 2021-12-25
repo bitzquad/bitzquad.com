@@ -56,7 +56,7 @@ Limitations :
 5. Refractor into components when possible.
 6. Lighthouse score of every page must be higher than 95.
 
-Breaking these rules could lead into git commit reverts or bans 😮‍💨
+Breaking these rules could lead into git commit reverts or bans.
 
 ## How to contribute
 
@@ -107,7 +107,7 @@ Boilplate for a multilingual page :
 
 ```svelte
 <script lang="ts">
-  import { lang, Path } from "../../siteUtils";
+  import { lang, Path } from "$lib/siteUtils";
 
   let Txt = {
     About: {
@@ -122,7 +122,7 @@ Boilplate for a multilingual page :
 
 <p> This text will be multilingual : {Txt.About[lang]}</p>
 
-<a rel="external" href={Path("/")}>Go Home</a>
+<a href={Path("/")}>Go Home</a>
 ```
 
 When the page gets bigger, it's better to move `Txt` content to a separate file. Ideally, the file should be named `{PageName}-Txt.ts` and the `Txt` object should be `default` exported from the file.
@@ -147,16 +147,15 @@ It will transform path to the correct page for the current language of user. The
 Path can be imported as
 
 ```js
-import { Path } from "../../siteUtils";
+import { Path } from "$lib/siteUtils";
 ```
 
 #### Link using anchor tags
 
 ```svelte
-<a rel="external" href={Path("/pets/cats")}> Cats </a>
+<a href={Path("/pets/cats")}> Cats </a>
 ```
 
-Note that `rel="external"` must be added to prevent client side routing from following the link.
 
 #### Link using javascript
 
@@ -170,10 +169,10 @@ Monolingual pages are stored inside `./src/routes/`. Each of these files will pr
 
 For example, the page `./src/routes/monsters/basilisk.svelte` will produce the path `example.com/monsters/basilisk`
 
-To link a monolingual page, use the URL path directly. For anchor tags, make sure to `rel="external"` to prevent client side routing from following the link.
+To link a monolingual page, use the URL path directly.
 
 ```svelte
-<a rel="external" href="/monsters/basilisk"> Basilisk </a>
+<a href="/monsters/basilisk"> Basilisk </a>
 ```
 
 **We should avoid creating monolingual pages as much as possible.**
