@@ -1,6 +1,3 @@
-// "." is the root language. Pages should alias it to English.
-// export default [".", "en", "si", "fr"];
-
 import { Langs, DefaultLang } from "./siteSettings";
 
 export let lang: string = DefaultLang;

@@ -92,6 +92,8 @@ const config = {
       hooks: 'src/hooks',
     },
 
+    router: false,
+
     vite: {
       css: {
         preprocessorOptions: {

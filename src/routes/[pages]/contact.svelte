@@ -1,6 +1,6 @@
 <script lang="ts">
     import { page } from "$app/stores";
-    import { DetectLanguage } from "../../siteUtils";
+    import { DetectLanguage } from "$lib/siteUtils";
   
     let lang = DetectLanguage($page.params.pages);
   

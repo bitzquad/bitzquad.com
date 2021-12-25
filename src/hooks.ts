@@ -1,19 +1,14 @@
-import { Langs, DefaultLang } from "./siteSettings";
-import { Path } from "./siteUtils";
+import { Langs, DefaultLang } from "$lib/siteSettings";
 
 /** @type {import('@sveltejs/kit').Handle} */
 export async function handle({ request, resolve }) {
-  // request.locals.user = await getUserInformation(request.headers.cookie);
-
 
   let path = MapPath(request.path);
 
   console.log("HOOK : ", request.path, " -> ", path);
 
   request.path = path;
-
-
-
+  
   const response = await resolve(request);
 
   return response;

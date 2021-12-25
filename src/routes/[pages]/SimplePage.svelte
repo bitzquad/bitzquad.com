@@ -1,5 +1,5 @@
-<script lang="ts">
-  import { lang, Path } from "../../siteUtils";
+<script lang="ts" context="module">
+  import { lang, Path } from "$lib/siteUtils";
 
   let Txt = {
     About: {
@@ -16,6 +16,6 @@
 <p>{Txt.About[lang]}</p>
 
 <div>
-  <a rel="external" href={Path("/SamplePage")}>Go to SamplePage</a>
-  <a rel="external" href={Path("/")}>Go Home</a>
+  <a href={Path("/SamplePage")}>Go to SamplePage</a>
+  <a href={Path("/")}>Go Home</a>
 </div>
