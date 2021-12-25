@@ -1,8 +1,5 @@
 <script lang="ts">
-  import { page } from "$app/stores";
-  import { DetectLanguage } from "$lib/siteUtils";
-
-  let lang = DetectLanguage($page.params.pages);
+  import { lang } from "$lib/siteUtils";
 
   let Txt = {
     About: {
@@ -17,7 +14,7 @@
   <title>Contact Us - Bitzquad | Software and IT Solutions</title>
 </svelte:head>
 
-<h1>Contact Us</h1>
+<h1 class="text-xl text-center"  >Contact Us</h1>
 <p>This text will be same on all languages</p>
 
 <p>{Txt.About[lang]}</p>
