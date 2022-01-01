@@ -11,7 +11,19 @@
         txt = document.getElementById("txt");
         w = con.clientWidth;
         h = con.clientHeight;
-    
+        window.addEventListener(
+            "contextmenu",
+            function (ev) {
+                if (elem != null) {
+                    ev.preventDefault();
+                    mouseUp();
+                    update = !update;
+                    elem = null;
+                }
+                return false;
+            },
+            false
+        );
     });
     function moveIcon(ele, mouse) {
         let relX = mouse.clientX - (window.innerWidth - w) / 2;
@@ -38,26 +50,14 @@
         moveIcon(elem, e);
     }
     function mouseUp() {
-        console.log("up");
+        console.log("Relese Hook");
         con.removeEventListener("mousemove", move, true);
     }
     function iconClick(e) {
+        console.log("Add Hook");
         elem = e.srcElement;
         update = !update;
-         con.addEventListener("mousemove", move, true);
-        window.addEventListener(
-            "oncontextmenu",
-            function (ev) {
-                if (update && elem != null) {
-                    ev.preventDefault()
-                    mouseUp();
-                    update = !update;
-                    elem = null;
-                }
-                return false;
-            },
-            false
-        );
+        con.addEventListener("mousemove", move, true);
     }
 </script>
 
@@ -70,37 +70,95 @@
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="left:30%; transform:translate(0% , -30%); background-image: url('react-icon.svg');"
+            style="background-image: url('.\react-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="left:13%; top:15%; transform:translate(0% , 0%); background-size:5vw 5vw; background-image: url('svelte-icon.svg');"
+            style="background-size:5vw 5vw; background-image: url('.\svelte-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="left:20%; top:25%; transform:translate(0% , 0%); background-size:6.5vw 6.5vw; background-image: url('dotnet-icon.svg');"
+            style="background-size:6.5vw 6.5vw; background-image: url('.\dotnet-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="left:15%; top:50%; transform:translate(0% , 0%); background-size:5.5vw 5.5vw; background-image: url('1-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\1-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="left:19%; top:70%; transform:translate(0% , 0%); background-size:5.5vw 5.5vw; background-image: url('2-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\2-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="left:40%; top:80%; transform:translate(0% , 0%); background-size:5.5vw 5.5vw; background-image: url('3-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\3-icon.svg');"
         />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\4-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\5-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\6-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\7-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\aws-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\mongodb-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\vs-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\gcloud-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\tailwind-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\sql-icon.svg');"
+        />
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('.\js-icon.svg');"
+        />
+
+
+
 
         <div
             class="relative"
-            style="width: 100%; height: 100%; background-image: url('techstack.svg');  background-repeat: no-repeat; background-position: center;"
+            style="width: 100%; height: 100%; background-image: url('.\techstack.svg');  background-repeat: no-repeat; background-position: center;"
         >
             <h1
                 class="text-center text-gray-500 font-semibold"
@@ -121,7 +179,7 @@
 
 <style>
     .icon-ball {
-        @apply bg-white shadow shadow-slate-400 absolute;
+        @apply bg-white shadow-2xl shadow-slate-400 absolute;
         border-radius: 7vw;
         width: 7vw;
         height: 7vw;
