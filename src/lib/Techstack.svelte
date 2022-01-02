@@ -70,87 +70,87 @@
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-image: url('.\react-icon.svg');"
+            style="background-image: url('\react-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5vw 5vw; background-image: url('.\svelte-icon.svg');"
+            style="background-size:5vw 5vw; background-image: url('\svelte-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:6.5vw 6.5vw; background-image: url('.\dotnet-icon.svg');"
+            style="background-size:6.5vw 6.5vw; background-image: url('\dotnet-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\1-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\1-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\2-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\2-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\3-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\3-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\4-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\4-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\5-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\5-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\6-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\6-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\7-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\7-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\aws-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\aws-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\mongodb-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\mongodb-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\vs-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\vs-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\gcloud-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\gcloud-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\tailwind-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\tailwind-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\sql-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\sql-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('.\js-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('\js-icon.svg');"
         />
 
 
@@ -158,7 +158,7 @@
 
         <div
             class="relative"
-            style="width: 100%; height: 100%; background-image: url('.\techstack.svg');  background-repeat: no-repeat; background-position: center;"
+            style="width: 100%; height: 100%; background-image: url('\techstack.svg');  background-repeat: no-repeat; background-position: center;"
         >
             <h1
                 class="text-center text-gray-500 font-semibold"
