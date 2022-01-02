@@ -17,9 +17,9 @@
 <div>
   Change language :
 
-  <a href={PathForLanguage($page.path, "en")}>English</a>
-  <a href={PathForLanguage($page.path, "si")}>Sinhala</a>
-  <a href={PathForLanguage($page.path, "fr")}>French</a>
+  <a href={PathForLanguage($page.url.pathname, "en")}>English</a>
+  <a href={PathForLanguage($page.url.pathname, "si")}>Sinhala</a>
+  <a href={PathForLanguage($page.url.pathname, "fr")}>French</a>
 </div>
 
 <div>
