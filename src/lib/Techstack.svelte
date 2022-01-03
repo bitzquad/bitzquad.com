@@ -66,99 +66,103 @@
     style="width: 100vw; height:100vh;  "
 >
     <p id="txt" style="position: absolute; top:0px;left:0px" />
-    <div style="width:100%;height:100%;background-color: aqua;" id="container">
+    <div style="width:100%;height:100%;" id="container">
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-image: url('\react-icon.svg');"
+            style="background-image: url('/react-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5vw 5vw; background-image: url('\svelte-icon.svg');"
+            style="background-size:5vw 5vw; background-image: url('/svelte-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:6.5vw 6.5vw; background-image: url('\dotnet-icon.svg');"
+            style="background-size:6.5vw 6.5vw; background-image: url('/dotnet-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\1-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/1-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\2-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/2-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\3-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/3-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\4-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/4-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\5-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/5-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\6-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/6-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\7-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/7-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\aws-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/aws-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\mongodb-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/mongodb-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\vs-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/vs-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\gcloud-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/gcloud-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\tailwind-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/tailwind-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\sql-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/sql-icon.svg');"
         />
         <div
             on:click={iconClick}
             class="icon-ball"
-            style="background-size:5.5vw 5.5vw; background-image: url('\js-icon.svg');"
+            style="background-size:5.5vw 5.5vw; background-image: url('/js-icon.svg');"
         />
-
+        <div
+            on:click={iconClick}
+            class="icon-ball"
+            style="background-size:5.5vw 5.5vw; background-image: url('/lambda-icon.svg');"
+        />
 
 
 
         <div
             class="relative"
-            style="width: 100%; height: 100%; background-image: url('\techstack.svg');  background-repeat: no-repeat; background-position: center;"
+            style="width: 100%; height: 100%; background-image: url('/techstack.svg');  background-repeat: no-repeat; background-position: center;"
         >
             <h1
                 class="text-center text-gray-500 font-semibold"
@@ -167,10 +171,8 @@
                 Our Techstack
             </h1>
             <div class="bottom-0 absolute" style="width: 100%;">
-                <h6 class="text-center text-gray-500 text-xl">
-                    We evolve with the world to acquire cutting edge technology
-                    for you to stay ahead of others stuck on decades old
-                    software.
+                <h6 class="text-center text-gray-500 text-xl" style="padding:0% 25%">
+                    We evolve with the world to acquire cutting edge technology for you to stay ahead of others stuck on decades old software.
                 </h6>
             </div>
         </div>
