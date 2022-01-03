@@ -62,7 +62,7 @@
 </script>
 
 <div
-    class="p-24 flex justify-center align-center"
+    class=" flex justify-center align-center sm:pt-10 sm:pb-10 md:p-10 lg:p-24"
     style="width: 100vw; height:100vh; background: radial-gradient(74.85% 149.16% at 74.53% 25.15%, #410030 0%, #00151A 100%); "
 >
     <p id="txt" style="position: absolute; top:0px;left:0px" />
@@ -142,8 +142,8 @@
 
         <div class="relative" style="width: 100%; height: 100%;">
             <div
-                class="absolute top-0"
-                style="width: 100%; height: 100%;background-image: url('/techstack.svg');  background-repeat: no-repeat; background-position: center; transform:scale(0.9)"
+                class="absolute top-0 md:scale-50 lg:scale-75 xl:scale-90"
+                style="width: 100%; height: 100%;background-image: url('/techstack.svg');  background-repeat: no-repeat; background-position: center;"
             />
             <h1
                 class="text-center text-white font-semibold"
@@ -153,7 +153,7 @@
             </h1>
             <div class="bottom-0 absolute" style="width: 100%;">
                 <h6
-                    class="text-center text-white text-xl pl-60 pr-60 md:pl-32 md:pr-32"
+                    class="text-center text-white sm:text-sm md:text-lg xl:text-xl pl-5 pr-5 md:pl-40 md:pr-40 lg:pl-60 lg:pr-60 xl:pl-96 xl:pr-96"
                 >
                     We evolve with the world to acquire cutting edge technology
                     for you to stay ahead of others stuck on decades old
@@ -167,7 +167,7 @@
 
 <style>
     .icon-ball {
-        @apply bg-white shadow-2xl shadow-slate-400 absolute;
+        @apply bg-white shadow-2xl shadow-slate-400 absolute hover:animate-bounce;
         border-radius: 7vw;
         width: 7vw;
         height: 7vw;
