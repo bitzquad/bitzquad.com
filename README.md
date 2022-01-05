@@ -1,3 +1,8 @@
+## CI
+| main | dev  |
+| :--: | :--: |
+| [![Node build](https://github.com/bitzquad/bitzquad.com/actions/workflows/node.build.yml/badge.svg)](https://github.com/bitzquad/bitzquad.com/actions/workflows/node.build.yml) | [![Node build](https://github.com/bitzquad/bitzquad.com/actions/workflows/node.build.yml/badge.svg?branch=dev)](https://github.com/bitzquad/bitzquad.com/actions/workflows/node.build.yml) |
+
 # How to setup dev environment
 
 1. Install NPM
