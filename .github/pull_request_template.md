@@ -6,8 +6,7 @@
 
 
 # Changes
-<!-- Uncomment all relevent options ( Use CTRL+/ ) -->
-<!-- Add new if needed -->
+<!-- Uncomment all relevent options. Add new if needed -->
 
 <!-- - New feature -->
 <!-- - Bug fix -->
