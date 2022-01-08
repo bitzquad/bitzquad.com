@@ -16,7 +16,7 @@
  <nav class="navbar" in:fly="{{y: -20, duration: 800,delay:150}}">
     <div class="navbar-brand">
 
-        <img src="./circleYellow-Logo.svg" alt="brand"/>
+        <img src="/circleYellow-Logo.svg" alt="brand"/>
 
         <!-- <img src="./logo-sq.jpg" alt="brand"/> -->
     </div>
@@ -44,7 +44,7 @@
 
     <div class="hero" in:fly="{{y: -30, duration: 800,delay:300,}}" >
 
-            <img src="./textYellow-Logo-White-Text.svg" alt="" >
+            <img src="/textYellow-Logo-White-Text.svg" alt="" >
 
             <p>
                 {#each 'Solutions Beyond Technology' as char, i}
