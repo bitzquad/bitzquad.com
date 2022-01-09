@@ -8,4 +8,5 @@ import Txt from "./SamplePage-Text";
 </script>
 
 <Landing/>
+<Techstack/>
 
