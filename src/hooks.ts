@@ -1,15 +1,15 @@
 import { Langs, DefaultLang } from "$lib/siteSettings";
 
 /** @type {import('@sveltejs/kit').Handle} */
-export async function handle({ request, resolve }) {
+export async function handle({ event, resolve }) {
 
-  let path = MapPath(request.url.pathname);
+  let path = MapPath(event.url.pathname);
 
-  console.log("HOOK : ", request.url.pathname, " -> ", path);
+  console.log("HOOK : ", event.url.pathname, " -> ", path);
 
-  request.url.pathname = path;
+  event.url.pathname = path;
 
-  const response = await resolve(request);
+  const response = await resolve(event);
 
   return response;
 }
