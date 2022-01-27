@@ -62,7 +62,7 @@
 </script>
 
 <div
-    class=" flex justify-center align-center sm:pt-10 sm:pb-10 md:p-10 lg:p-24"
+    class=" flex justify-center align-center sm:pt-10 sm:pb-10 md:p-10 lg:p-24 relative"
     style="width: 100vw; height:100vh; background: radial-gradient(74.85% 149.16% at 74.53% 25.15%, #410030 0%, #00151A 100%); "
 >
     <p id="txt" style="position: absolute; top:0px;left:0px" />
