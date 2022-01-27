@@ -54,7 +54,7 @@
       </p>
     </div>
     <div class="home-card">
-      <h3 class="home-card-title">2022.03.16</h3>
+      <h3 class="home-card-title">2022.07.22</h3>
       <p class="home-card-description">
         {Txt.LaunchingSoon[lang]}
       </p>
