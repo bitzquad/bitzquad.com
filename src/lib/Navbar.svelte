@@ -1,5 +1,28 @@
 <script>
 	let menuActive = false;
+	import { lang } from '$lib/siteUtils';
+	let PrimaryMenu = {
+		Services: {
+			en: 'Services',
+			fr: 'Nous sommes une équipe de passionnés qui adore créer.',
+			si: 'සේවා',
+		},
+		Contact: {
+			en: 'Contact',
+			fr: "Nous sommes en train de construire l'infrastructure, préparer les outils de développement, et terminer les serveurs pour la prochaine technologie de votre entreprise",
+			si: 'අමතන්න',
+		},
+		Blog: {
+			en: 'News',
+			fr: 'La date de lancement de nos services pour vous',
+			si: 'පුවත්',
+		},
+		About: {
+			en: 'About',
+			fr: 'La date de lancement de nos services pour vous',
+			si: 'අප ගැන',
+		},
+	};
 </script>
 
 <nav
@@ -9,12 +32,12 @@
 		<div class="flex justify-start">
 			<!-- logo  -->
 			<img
-				src="static/circleYellow-Logo.svg"
+				src="circleYellow-Logo.svg"
 				alt="Bitzquad Logo"
 				class="h-8 sm:hidden"
 			/>
 			<img
-				src="static/textYellow-Logo-White-Text.svg"
+				src="textYellow-Logo-White-Text.svg"
 				alt="Bitzquad Logo"
 				class="h-8 hidden sm:inline-block"
 			/>
@@ -22,20 +45,20 @@
 		<div class="justify-end hidden md:flex">
 			<!--  menu  -->
 			<a href="#" class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
-				>Services</a
+				>{PrimaryMenu.Services[lang]}</a
 			>
 			<a href="#" class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
-				>Contact</a
+				>{PrimaryMenu.Contact[lang]}</a
 			>
 			<a
 				href="#"
 				class="mx-2 bg-yellow-400 text-yellow-700 rounded px-2 py-1 hover:bg-yellow-500 hover:text-white duration-500 "
-				>Blog</a
+				>{PrimaryMenu.Blog[lang]}</a
 			>
 			<a
 				href="#"
 				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
-				>About</a
+				>{PrimaryMenu.About[lang]}</a
 			>
 		</div>
 
