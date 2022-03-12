@@ -1,4 +1,5 @@
 <script>
+	import Footer from '$lib/Footer.svelte';
 	import HeroSection from '$lib/Home/HeroSection.svelte';
 	import Navbar from '$lib/Navbar.svelte';
 	import { lang, Path } from '$lib/siteUtils';
@@ -74,4 +75,5 @@
 <main class="main">
 	<Navbar />
 	<HeroSection />
+	<Footer />
 </main>
