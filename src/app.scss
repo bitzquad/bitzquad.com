@@ -8,20 +8,22 @@
   @apply flex flex-row mt-4;
 }
 
-.footer {
-  @apply text-white flex items-center justify-center;
-}
 body {
   font-family: "Quicksand";
   font-display: swap;
   overflow-x: hidden;
 }
 
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
 
+.bz-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 ::-webkit-scrollbar {
   display: none;

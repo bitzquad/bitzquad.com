@@ -1,4 +1,5 @@
 <script>
+	import Navbar from '$lib/Navbar.svelte';
 	import { lang, Path } from '$lib/siteUtils';
 
 	let Txt = {
@@ -69,4 +70,6 @@
 	/>
 </svelte:head>
 
-<main class="main">Hello</main>
+<main class="main">
+	<Navbar />
+</main>
