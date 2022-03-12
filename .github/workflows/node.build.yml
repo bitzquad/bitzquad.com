@@ -8,17 +8,17 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [ 17.x ]
+        node-version: [17.x]
 
     steps:
-    - uses: actions/checkout@v2
-    - run: cp package-lock.basic.json package-lock.json
-    
-    - name: Use Node.js ${{ matrix.node-version }}
-      uses: actions/setup-node@v2
-      with:
-        node-version: ${{ matrix.node-version }}
-    - run: npm install
-    - run: npm run build
-    - run: ls -alhR ./build
-    - run: du -hs ./build
+      - uses: actions/checkout@v2
+      # - run: cp package-lock.basic.json package-lock.json
+
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install
+      - run: npm run build
+      - run: ls -alhR ./build
+      - run: du -hs ./build
