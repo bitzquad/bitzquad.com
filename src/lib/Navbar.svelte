@@ -29,7 +29,7 @@
 	class="bz-container py-4 px-5 md:px-10 lg:px-20 bg-gray-100 text-gray-500 dark:bg-black dark:text-gray-200 font-bold"
 >
 	<div class="container max-w-7xl grid grid-cols-2">
-		<div class="flex justify-start">
+		<div class="flex justify-start cursor-pointer">
 			<!-- logo  -->
 			<img
 				src="circleYellow-Logo.svg"
@@ -83,11 +83,17 @@
 		{#if menuActive == true}
 			<div class="pt-5 md:hidden w-full col-span-2">
 				<a href="#" class="block py-2 px-2 w-full  hover:bg-gray-200"
-					>Services</a
+					>{PrimaryMenu.Services[lang]}</a
 				>
-				<a href="#" class="block py-2 px-2  hover:bg-gray-200">Services</a>
-				<a href="#" class="block py-2 px-2  hover:bg-gray-200">Services</a>
-				<a href="#" class="block py-2 px-2  hover:bg-gray-200">Services</a>
+				<a href="#" class="block py-2 px-2  hover:bg-gray-200"
+					>{PrimaryMenu.Contact[lang]}</a
+				>
+				<a href="#" class="block py-2 px-2  hover:bg-gray-200"
+					>{PrimaryMenu.Blog[lang]}</a
+				>
+				<a href="#" class="block py-2 px-2  hover:bg-gray-200"
+					>{PrimaryMenu.About[lang]}</a
+				>
 			</div>
 		{/if}
 	</div>
