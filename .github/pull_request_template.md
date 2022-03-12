@@ -1,58 +1,33 @@
-<!-- Delete any part that's not relevant. -->
+## Summary
 
-# Description
-<!-- What has changed? Keep it simple -->
+_Provide an overview..._
+- _How to reproduce the bug?_
+- _What was the reason?_
+- _What is the solution?_
 
+## Details
 
+_Add more context to describe the changes_
 
-# Changes
-<!-- Uncomment all relevent options. Add new if needed -->
+## References
 
-<!-- - New feature -->
-<!-- - Bug fix -->
-<!-- - Feature improvement -->
-<!-- - Performance improvement -->
-<!-- - Infrastructure improvement -->
+- [Example reference link 1](www.google.com)
+- [Example reference link 2](www.google.com)
+- [Example reference link 3](www.google.com)
 
-<!-- - Code refractoring -->
-<!-- - Tidy up project -->
-<!-- - Project structure change -->
-<!-- - Build config change -->
-<!-- - Unit test improvement -->
-<!-- - Static asset change -->
+## Checklist
 
-<!-- - Dependency update -->
-<!-- - New dependency addition -->
-<!-- - Git submodule update -->
+- [x] Tested Changes
+- [x] Stakeholder Approval
+- [ ] I fixed|updated|added unit tests and integration tests for each feature (if applicable).
+- [ ] No error nor warning in the console.
+- [ ] I joined a screenshot of the app before and after the fix.
 
-<!-- - Documentation update -->
-<!-- - Documentation update required ! -->
+## Screenshots
+[upload the screenshot here]
 
-<!-- - Breaking change ! -->
-<!-- - Breaking change for API ! -->
-<!-- - Breaking change for DB ! -->
-<!-- - Breaking change for Package / module consumers ! -->
-<!-- - Dependancy version conflict could occur ! -->
-
-<!-- - NPM Package publication -->
-<!-- - Go module publication -->
-<!-- - Git tag publication -->
-
-
-## Related tasks
-<!-- Uncomment and change issue ID -->
-
-<!-- Done #54 -->
-<!-- Progress #69 -->
-<!-- Reject #91 -->
-<!-- Skip #153 -->
-
-
-## Notes
-
-
-
-## New bugs / issues ?
-<!-- New bugs/glitches/issues you found during development that's not yet in github issues ?  -->
-
-
+## Test Environments
+- _Windows 10 Pro_
+- _VSCode_
+## Other Notes
+(Add any additional information that would be useful to the developer or QA tester)
