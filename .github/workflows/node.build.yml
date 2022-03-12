@@ -12,7 +12,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - run: cp package-lock.basic.json package-lock.json
+#     - run: cp package-lock.basic.json package-lock.json
     
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v2
