@@ -26,7 +26,7 @@
 >
 	<div class="container max-w-7xl flex flex-col-reverse md:flex-row">
 		<div
-			class="col-span-1 py-5 md:py-10 lg:py-20 xl:py-28 md:pr-10 flex flex-col justify-center"
+			class="col-span-1 md:w-7/12 py-5 md:py-10 lg:py-20 xl:py-28 md:pr-10 flex flex-col justify-center"
 		>
 			<h1
 				class="text-2xl md:text-4xl lg:text-5xl text-center md:text-left xl:text-7xl text-gray-800 font-bold"
@@ -44,12 +44,12 @@
 				libero perspiciatis natus nisi voluptatum. Dolorum, voluptatum.
 			</p>
 			<button
-				class="rounded bg-yellow-400 mt-5 max-w-sm py-2 font-bold text-yellow-700 hover:bg-yellow-500 hover:text-white duration-500"
+				class="rounded bg-yellow-400 mt-5 md:max-w-sm py-2 font-bold text-yellow-700 hover:bg-yellow-500 hover:text-white duration-500"
 				>Learn More</button
 			>
 		</div>
-		<div class="col-span-1 flex items-center">
-			<img class="p-5 md:p-10" src="heroImage.svg" alt="heroImage" />
+		<div class="col-span-1 md:w-5/12 flex items-center">
+			<img class="p-5 md:p-6" src="heroImage.svg" alt="heroImage" />
 		</div>
 	</div>
 </section>

@@ -4,34 +4,34 @@
 
 	let services = {
 		title: {
-			en: 'Services',
+			en: 'Our Services',
 			fr: 'Services',
 			si: 'අපගේ සේවාවන්',
 		},
 		web: {
 			title: {
-				en: 'Web Development',
+				en: 'Information Systems',
 				fr: 'Desarrollo Web',
-				si: 'වෙබ් අඩවි නිර්මාණය',
+				si: 'තොරතුරු පද්ධති නිර්මාණය',
 			},
 			description: {
-				en: 'We develop web applications using the latest technologies and frameworks.',
+				en: 'Upgrade with the best technology that helps your business grow',
 				fr: 'Desarrollamos aplicaciones web utilizando las últimas tecnologías y frameworks.',
-				si: 'We develop web applications using the latest technologies and frameworks.',
+				si: 'Upgrade with the best technology that helps your business grow',
 			},
 			image: 'web.svg',
 			link: 'web',
 		},
 		mobile: {
 			title: {
-				en: 'Mobile Apps',
+				en: 'Software Development',
 				fr: 'Desarrollo Móvil',
-				si: 'දුරකථන මෘදුකාංග ',
+				si: 'මෘදුකාංග නිර්මාණය',
 			},
 			description: {
-				en: 'We develop mobile applications using the latest technologies and frameworks.',
+				en: 'Powerful, yet intuitive web, desktop and mobile apps',
 				fr: 'Desarrollamos aplicaciones móviles utilizando las últimas tecnologías y frameworks.',
-				si: 'We develop mobile applications using the latest technologies and frameworks.',
+				si: 'Powerful, yet intuitive web, desktop and mobile apps',
 			},
 			image: 'mobile.png',
 			link: 'mobile',
@@ -40,40 +40,40 @@
 			title: {
 				en: 'Blockchain Solutions',
 				fr: 'Blockchain',
-				si: 'Blockchain',
+				si: 'Blockchain නිර්මාණ',
 			},
 			description: {
-				en: 'We develop blockchain applications using the latest technologies and frameworks.',
+				en: 'Prepare for the next technological revolution of decentralizing',
 				fr: 'Desarrollamos aplicaciones blockchain utilizando las últimas tecnologías y frameworks.',
-				si: 'We develop blockchain applications using the latest technologies and frameworks.',
+				si: 'Prepare for the next technological revolution of decentralizing',
 			},
 			image: 'ethereum.png',
 			link: 'blockchain',
 		},
 		brand: {
 			title: {
-				en: 'Brand Designing',
+				en: 'Brand Design',
 				fr: 'Desarrollo de Marca',
 				si: 'වෙළඳ නාම නිර්මාණය',
 			},
 			description: {
-				en: 'We develop brand strategies and identity using the latest technologies and frameworks.',
+				en: 'Build a solid brand that one day, everyone will know',
 				fr: 'Desarrollamos estrategias de marca y identidad utilizando las últimas tecnologías y frameworks.',
-				si: 'We develop brand strategies and identity using the latest technologies and frameworks.',
+				si: 'Build a solid brand that one day, everyone will know',
 			},
 			image: 'brand.png',
 			link: 'brand',
 		},
 		social: {
 			title: {
-				en: 'Social Media Marketing',
+				en: 'Digital Marketing',
 				fr: 'Redes Sociales',
-				si: 'සමාජ මාධ්ය අලෙවිකරණය',
+				si: 'ඩිජිටල් අලෙවිකරණය',
 			},
 			description: {
-				en: 'We develop social media strategies and identity using the latest technologies and frameworks.',
+				en: 'Let us bring your presence to your future customers',
 				fr: 'Desarrollamos estrategias de redes sociales y identidad utilizando las últimas tecnologías y frameworks.',
-				si: 'We develop social media strategies and identity using the latest technologies and frameworks.',
+				si: 'Let us bring your presence to your future customers',
 			},
 			image: 'social.png',
 			link: 'social',
@@ -101,7 +101,7 @@
 	class="services-section bz-container px-5 md:px-10 lg:px-20 bg-gray-50"
 >
 	<div class="container max-w-7xl flex flex-col items-center mb-32">
-		<h2 class="text-5xl mt-12 md:mt-32 font-bold text-gray-600">
+		<h2 class="text-3xl md:text-5xl mt-12 md:mt-32 font-bold text-gray-600">
 			{services.title[lang]}
 		</h2>
 		<div class="flex justify-center md:justify-start w-full mt-10 md:mt-24">
