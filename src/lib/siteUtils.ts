@@ -69,3 +69,18 @@ export function PathForLanguage(path: string, lang: string): string {
 export function Path(absolutePath: string) {
     return PathForLanguage(absolutePath, lang);
 }
+
+export function GetLanguageFromPath(path: string): string {
+
+    if (path.startsWith("/")) {
+        path = path.substring(1);
+    }
+
+    let pathsegs = path.split("/");
+
+    if (pathsegs.length == 0) {
+        return DefaultLang;
+    } else {
+        return DetectLanguage(pathsegs[1]);
+    }
+}
