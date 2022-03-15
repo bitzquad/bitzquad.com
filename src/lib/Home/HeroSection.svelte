@@ -53,7 +53,7 @@
 				class="p-5 md:p-6"
 				height="235"
 				width="485"
-				src="heroImage.svg"
+				src="/heroImage.svg"
 				alt="heroImage"
 			/>
 		</div>
