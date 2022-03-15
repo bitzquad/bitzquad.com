@@ -57,7 +57,7 @@
         <img
           src="/contact-form.svg"
           alt="contact-form"
-          class="hidden lg:visible lg:w-1/2 lg:h-auto px-20"
+          class="hidden lg:block lg:w-1/2 lg:h-auto px-20"
         />
         <form class="pt-10 w-full lg:w-1/2 md:px-20">
           <div class="group relative  z-0 mb-6 w-full">
