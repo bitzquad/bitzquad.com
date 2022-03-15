@@ -8,7 +8,7 @@
 		>
 			<!-- Logo -->
 			<img
-				src="textYellow-Logo-White-Text.svg"
+				src="/textYellow-Logo-White-Text.svg"
 				alt=""
 				class="w-1/2 lg:h-8 lg:w-auto "
 			/>
@@ -23,23 +23,23 @@
 				<!-- Social Links -->
 				<div class="mt-3.5 flex gap-4 lg:mt-10">
 					<a href="/social/facebook"
-						><img src="social-facebook.svg" alt="social-facebook" class="" /></a
+						><img src="/social-facebook.svg" alt="social-facebook" class="" /></a
 					>
 					<a href="/social/linkedin"
-						><img src="social-linkedin.svg" alt="social-linkedin" class="" /></a
+						><img src="/social-linkedin.svg" alt="social-linkedin" class="" /></a
 					>
 					<a href="/social/instagram"
 						><img
-							src="social-instagram.svg"
+							src="/social-instagram.svg"
 							alt="social-instagram"
 							class=""
 						/></a
 					>
 					<a href="/social/twitter"
-						><img src="social-twitter.svg" alt="social-twitter" class="" /></a
+						><img src="/social-twitter.svg" alt="social-twitter" class="" /></a
 					>
 					<a href="/social/youtube"
-						><img src="social-youtube.svg" alt="social-youtube" class="" /></a
+						><img src="/social-youtube.svg" alt="social-youtube" class="" /></a
 					>
 				</div>
 				<!-- NewsLetter -->
@@ -95,10 +95,10 @@
 				<!-- Social Links - Resources -->
 				<div class="mt-3.5 flex gap-4 ">
 					<a href="/social/behance"
-						><img src="social-behance.svg" alt="social-behance" class="" /></a
+						><img src="/social-behance.svg" alt="social-behance" class="" /></a
 					>
 					<a href="/social/github"
-						><img src="social-github.svg" alt="social-github" class="" /></a
+						><img src="/social-github.svg" alt="social-github" class="" /></a
 					>
 				</div>
 			</div>
