@@ -53,17 +53,17 @@
 		</div>
 		<div class="justify-end hidden md:flex">
 			<!--  menu  -->
-			<a href="#" class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
+			<a href="/" class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
 				>{PrimaryMenu.Services[lang]}</a
 			>
-			<a href="#" class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
+			<a href="/" class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
 				>{PrimaryMenu.Contact[lang]}</a
 			>
-			<a href="#" class="mx-2  rounded px-2 py-1 bz-button duration-500 "
+			<a href="/" class="mx-2  rounded px-2 py-1 bz-button duration-500 "
 				>{PrimaryMenu.Blog[lang]}</a
 			>
 			<a
-				href="#"
+				href="/"
 				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
 				>{PrimaryMenu.About[lang]}</a
 			>
@@ -92,16 +92,16 @@
 		</div>
 		{#if menuActive == true}
 			<div class="pt-5 md:hidden w-full col-span-2">
-				<a href="#" class="block py-2 px-2 w-full  hover:bg-gray-200"
+				<a href="/" class="block py-2 px-2 w-full  hover:bg-gray-200"
 					>{PrimaryMenu.Services[lang]}</a
 				>
-				<a href="#" class="block py-2 px-2  hover:bg-gray-200"
+				<a href="/" class="block py-2 px-2  hover:bg-gray-200"
 					>{PrimaryMenu.Contact[lang]}</a
 				>
-				<a href="#" class="block py-2 px-2  hover:bg-gray-200"
+				<a href="/" class="block py-2 px-2  hover:bg-gray-200"
 					>{PrimaryMenu.Blog[lang]}</a
 				>
-				<a href="#" class="block py-2 px-2  hover:bg-gray-200"
+				<a href="/" class="block py-2 px-2  hover:bg-gray-200"
 					>{PrimaryMenu.About[lang]}</a
 				>
 			</div>
