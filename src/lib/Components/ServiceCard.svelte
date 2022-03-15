@@ -4,6 +4,7 @@
 	export let description;
 	export let image;
 	export let link;
+	export let width;
 </script>
 
 <div
@@ -15,7 +16,7 @@
 	<div
 		class="card-left bg-gray-200 p-2 w-3/12 flex items-center rounded-md justify-center"
 	>
-		<img src={image} alt={title} />
+		<img src={image} {width} height="35" alt={title} />
 	</div>
 	<div class="card-right  flex flex-col w-9/12 py-2 px-3">
 		<h3 class="text-lg font-bold text-gray-700">{title}</h3>

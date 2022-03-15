@@ -111,36 +111,42 @@
 					description={services.web.description[lang]}
 					image={services.web.image}
 					link={services.web.link}
+					width="53"
 				/>
 				<ServiceCard
 					title={services.mobile.title[lang]}
 					description={services.mobile.description[lang]}
 					image={services.mobile.image}
 					link={services.mobile.link}
+					width="27"
 				/>
 				<ServiceCard
 					title={services.blockchain.title[lang]}
 					description={services.blockchain.description[lang]}
 					image={services.blockchain.image}
 					link={services.blockchain.link}
+					width="41"
 				/>
 				<ServiceCard
 					title={services.brand.title[lang]}
 					description={services.brand.description[lang]}
 					image={services.brand.image}
 					link={services.brand.link}
+					width="43"
 				/>
 				<ServiceCard
 					title={services.social.title[lang]}
 					description={services.social.description[lang]}
 					image={services.social.image}
 					link={services.social.link}
+					width="37"
 				/>
 				<ServiceCard
 					title={services.ecommerce.title[lang]}
 					description={services.ecommerce.description[lang]}
 					image={services.ecommerce.image}
 					link={services.ecommerce.link}
+					width="44"
 				/>
 			</div>
 			<div class="hidden w-6/12 md:flex items-center justify-center">

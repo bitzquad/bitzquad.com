@@ -45,6 +45,8 @@
 				src="/textYellow-Logo-White-Text.svg"
 				alt="Bitzquad Logo"
 				class="h-8 hidden sm:inline-block"
+				width="147"
+				height="32"
 			/>
 		</div>
 		<div class="justify-end hidden md:flex">

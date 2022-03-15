@@ -30,7 +30,13 @@
 			{worldWithUs.description[lang]}
 		</p>
 
-		<img class="w-full mt-10 md:mt-24" src="world.svg" alt="World" />
+		<img
+			class="w-full mt-10 md:mt-24"
+			width="1280"
+			height="547.719"
+			src="world.svg"
+			alt="World"
+		/>
 	</div>
 </section>
 <!-- end of servies section -->

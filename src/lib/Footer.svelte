@@ -9,7 +9,9 @@
 			<!-- Logo -->
 			<img
 				src="/textYellow-Logo-White-Text.svg"
-				alt=""
+				width="147"
+				height="32"
+				alt="Bitzquad Logo"
 				class="w-1/2 lg:h-8 lg:w-auto "
 			/>
 			<span
@@ -25,6 +27,8 @@
 					<a href="/social/facebook"
 						><img
 							src="/social-facebook.svg"
+							height="31"
+							width="31"
 							alt="social-facebook"
 							class=""
 						/></a
@@ -32,6 +36,8 @@
 					<a href="/social/linkedin"
 						><img
 							src="/social-linkedin.svg"
+							height="31"
+							width="31"
 							alt="social-linkedin"
 							class=""
 						/></a
@@ -39,15 +45,29 @@
 					<a href="/social/instagram"
 						><img
 							src="/social-instagram.svg"
+							height="31"
+							width="31"
 							alt="social-instagram"
 							class=""
 						/></a
 					>
 					<a href="/social/twitter"
-						><img src="/social-twitter.svg" alt="social-twitter" class="" /></a
+						><img
+							src="/social-twitter.svg"
+							height="31"
+							width="31"
+							alt="social-twitter"
+							class=""
+						/></a
 					>
 					<a href="/social/youtube"
-						><img src="/social-youtube.svg" alt="social-youtube" class="" /></a
+						><img
+							src="/social-youtube.svg"
+							height="31"
+							width="31"
+							alt="social-youtube"
+							class=""
+						/></a
 					>
 				</div>
 				<!-- NewsLetter -->
@@ -103,10 +123,22 @@
 				<!-- Social Links - Resources -->
 				<div class="mt-3.5 flex gap-4 ">
 					<a href="/social/behance"
-						><img src="/social-behance.svg" alt="social-behance" class="" /></a
+						><img
+							src="/social-behance.svg"
+							height="31"
+							width="31"
+							alt="social-behance"
+							class=""
+						/></a
 					>
 					<a href="/social/github"
-						><img src="/social-github.svg" alt="social-github" class="" /></a
+						><img
+							src="/social-github.svg"
+							height="31"
+							width="31"
+							alt="social-github"
+							class=""
+						/></a
 					>
 				</div>
 			</div>

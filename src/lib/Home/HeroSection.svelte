@@ -49,7 +49,13 @@
 			>
 		</div>
 		<div class="col-span-1 md:w-5/12 flex items-center">
-			<img class="p-5 md:p-6" src="heroImage.svg" alt="heroImage" />
+			<img
+				class="p-5 md:p-6"
+				height="235"
+				width="485"
+				src="heroImage.svg"
+				alt="heroImage"
+			/>
 		</div>
 	</div>
 </section>
