@@ -45,3 +45,14 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #a0aec0;
 }
+
+.bz-button {
+  background: #facc15;
+  color: #713f12;
+  cursor: pointer;
+
+  &:hover {
+    background: #ca8a04;
+    color: #ffffff;
+  }
+}

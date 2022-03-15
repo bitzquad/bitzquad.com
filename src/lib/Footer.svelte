@@ -9,11 +9,13 @@
 			<!-- Logo -->
 			<img
 				src="/textYellow-Logo-White-Text.svg"
-				alt=""
+				width="147"
+				height="32"
+				alt="Bitzquad Logo"
 				class="w-1/2 lg:h-8 lg:w-auto "
 			/>
 			<span
-				class="mx-10 lg:mx-0 lg:w-full lg:text-lg py-3 text-center text-gray-400 lg:text-left"
+				class="mx-10 lg:mx-0 lg:w-full lg:text-lg py-3 text-center text-gray-500 lg:text-left"
 				>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
 				sint.</span
 			>
@@ -23,30 +25,56 @@
 				<!-- Social Links -->
 				<div class="mt-3.5 flex gap-4 lg:mt-10">
 					<a href="/social/facebook"
-						><img src="/social-facebook.svg" alt="social-facebook" class="" /></a
+						><img
+							src="/social-facebook.svg"
+							height="31"
+							width="31"
+							alt="social-facebook"
+							class=""
+						/></a
 					>
 					<a href="/social/linkedin"
-						><img src="/social-linkedin.svg" alt="social-linkedin" class="" /></a
+						><img
+							src="/social-linkedin.svg"
+							height="31"
+							width="31"
+							alt="social-linkedin"
+							class=""
+						/></a
 					>
 					<a href="/social/instagram"
 						><img
 							src="/social-instagram.svg"
+							height="31"
+							width="31"
 							alt="social-instagram"
 							class=""
 						/></a
 					>
 					<a href="/social/twitter"
-						><img src="/social-twitter.svg" alt="social-twitter" class="" /></a
+						><img
+							src="/social-twitter.svg"
+							height="31"
+							width="31"
+							alt="social-twitter"
+							class=""
+						/></a
 					>
 					<a href="/social/youtube"
-						><img src="/social-youtube.svg" alt="social-youtube" class="" /></a
+						><img
+							src="/social-youtube.svg"
+							height="31"
+							width="31"
+							alt="social-youtube"
+							class=""
+						/></a
 					>
 				</div>
 				<!-- NewsLetter -->
 				<form
 					class="mt-8 flex flex-col items-center w-full gap-y-3 lg:items-start"
 				>
-					<span class="text-xl font-bold text-gray-500"
+					<span class="text-xl font-bold text-gray-600"
 						>Subscribe to Newsletter</span
 					>
 					<div class="w-full gap-y-3 flex flex-col lg:gap-3 ">
@@ -54,13 +82,13 @@
 							type="email"
 							name="email"
 							id="input-email"
-							class="h-10 w-full border rounded border-gray-500 p-3 lg:w-full"
+							class="h-10 w-full border rounded border-gray-400 p-3 lg:w-full"
 							placeholder="Enter Your Email..."
 						/>
 
 						<button
 							type="submit"
-							class="h-10 px-2 w-full border rounded bg-yellow-400 shadow-xl border-none text-yellow-700 hover:bg-yellow-500 duration-500 hover:text-white font-bold tracking-wide"
+							class="h-10 px-2 w-full border rounded shadow-xl border-none  duration-500 bz-button font-bold tracking-wide"
 							>Subscribe</button
 						>
 					</div>
@@ -73,9 +101,9 @@
 		> -->
 		<!-- Links - Explore -->
 		<div class="mt-20 lg:mt-0   flex flex-col items-center ">
-			<span class="mb-4 text-xl text-gray-500 font-bold">Explore</span>
+			<span class="mb-4 text-xl text-gray-700 font-bold">Explore</span>
 			<div
-				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-400"
+				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
 				<a href="/">Home</a>
 				<a href="/about">About Us</a>
@@ -85,9 +113,9 @@
 		</div>
 		<!-- Links - Resources -->
 		<div class="mt-20 lg:mt-0  flex flex-col items-center  ">
-			<span class="mb-4 text-xl text-gray-500 font-bold">Resources</span>
+			<span class="mb-4 text-xl text-gray-700 font-bold">Resources</span>
 			<div
-				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-400"
+				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
 				<a href="/news">News Feed</a>
 
@@ -95,19 +123,31 @@
 				<!-- Social Links - Resources -->
 				<div class="mt-3.5 flex gap-4 ">
 					<a href="/social/behance"
-						><img src="/social-behance.svg" alt="social-behance" class="" /></a
+						><img
+							src="/social-behance.svg"
+							height="31"
+							width="31"
+							alt="social-behance"
+							class=""
+						/></a
 					>
 					<a href="/social/github"
-						><img src="/social-github.svg" alt="social-github" class="" /></a
+						><img
+							src="/social-github.svg"
+							height="31"
+							width="31"
+							alt="social-github"
+							class=""
+						/></a
 					>
 				</div>
 			</div>
 		</div>
 		<!-- Links - Contact -->
 		<div class="mt-20 lg:mt-0  mb-20 flex flex-col items-center ">
-			<span class="mb-4 text-xl text-gray-500 font-bold">Reach Us</span>
+			<span class="mb-4 text-xl text-gray-700 font-bold">Reach Us</span>
 			<div
-				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-400"
+				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
 				<a href="/location">Colombo, Sri Lanka</a>
 				<a href="tel:+94778813384">+94 778813384</a>
