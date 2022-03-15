@@ -1,9 +1,24 @@
-<script>
-  import { Path, GetLanguageFromPath, lang } from "$lib/siteUtils";
+<script context="module">
+  import {
+    Path,
+    GetLanguageFromPath,
+    lang as langOfPath,
+  } from "$lib/siteUtils";
 
-  import { page } from "$app/stores";
-  import { base } from "$app/paths";
-  import { goto } from "$app/navigation";
+  import { browser } from "$app/env";
+
+  let lang = langOfPath;
+
+  export async function load({ fetch }) {
+    if (browser) {
+      if (window.location.search && window.location.search.startsWith("?")) {
+        lang = GetLanguageFromPath(window.location.search.slice(1));
+      }
+    } else {
+      // Runs on server
+    }
+    return {};
+  }
 
   let Txt = {
     Msg: {

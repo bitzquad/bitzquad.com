@@ -81,6 +81,6 @@ export function GetLanguageFromPath(path: string): string {
     if (pathsegs.length == 0) {
         return DefaultLang;
     } else {
-        return DetectLanguage(pathsegs[1]);
+        return DetectLanguage(pathsegs[0]);
     }
 }
