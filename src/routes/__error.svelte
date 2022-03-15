@@ -21,20 +21,22 @@
 <div class="w-screen">
   <Navbar />
   <div
-    class="bz-container py-4 px-5 md:px-10 lg:px-20 bg-gray-100 text-gray-500 "
+    class="bz-container py-4 px-5 md:px-10 lg:px-20 2xl:py-20 bg-gray-100 text-gray-500"
   >
     <div
       class="container max-w-7xl flex items-center mt-12 justify-center flex-col"
     >
-      <h1 class="text-4xl font-bold">
+      <h1 class="2xl:text-4xl lg:text-3xl font-bold">
         {status === 404 ? 'Page Not Found! ' : `Server Error ${status}`}
       </h1>
-      <p class="md:w-1/2 text-center mt-5">
+      <p class="md:w-1/2 lg:text-sm text-center mt-5">
         {status === 404
           ? "Page you're trying reach dose not exsits. Or content may be moved to another page, or you don't have access to view requested content."
           : 'an error occured on our side. Our Engineers are working on it!'}
       </p>
-      <div class="md:relative w-full md:w-1/2 mt-10 mb-5 flex flex-col-reverse">
+      <div
+        class="md:relative w-full md:w-1/2 2xl:w-3/4 mt-10 mb-5 flex flex-col-reverse"
+      >
         <a
           href="/"
           class="md:absolute my-10 md:mt-0 w-full md:w-auto md:top-0 md:left-1/2 flex justify-center  md:-translate-x-1/2 bg-yellow-400 text-yellow-700 p-3 px-4 rounded hover:text-gray-600 transition-all duration-300 shadow-lg hover:bg-yellow-300 hover:shadow-xl"
