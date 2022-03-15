@@ -23,10 +23,18 @@
 				<!-- Social Links -->
 				<div class="mt-3.5 flex gap-4 lg:mt-10">
 					<a href="/social/facebook"
-						><img src="/social-facebook.svg" alt="social-facebook" class="" /></a
+						><img
+							src="/social-facebook.svg"
+							alt="social-facebook"
+							class=""
+						/></a
 					>
 					<a href="/social/linkedin"
-						><img src="/social-linkedin.svg" alt="social-linkedin" class="" /></a
+						><img
+							src="/social-linkedin.svg"
+							alt="social-linkedin"
+							class=""
+						/></a
 					>
 					<a href="/social/instagram"
 						><img

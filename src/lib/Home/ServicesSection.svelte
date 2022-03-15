@@ -100,7 +100,7 @@
 	id="services-section"
 	class="services-section bz-container px-5 md:px-10 lg:px-20 bg-gray-50"
 >
-	<div class="container max-w-7xl flex flex-col items-center mb-32">
+	<div class="container max-w-7xl flex flex-col items-center mb-24">
 		<h2 class="text-3xl md:text-5xl mt-12 md:mt-32 font-bold text-gray-600">
 			{services.title[lang]}
 		</h2>

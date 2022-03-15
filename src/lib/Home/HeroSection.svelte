@@ -34,17 +34,17 @@
 				{heroText.mainTitle[lang]}
 			</h1>
 			<h2
-				class="text-lg md:text-xl text-center font-bold md:text-left mt-10 text-gray-500"
+				class="text-lg md:text-xl text-center font-bold md:text-left mt-10 text-gray-600"
 			>
 				{heroText.subTitle[lang]}
 			</h2>
-			<p class="text-md text-gray-500 mt-3">
+			<p class="text-md text-gray-600 mt-3">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facere
 				amet. Deserunt consequuntur, architecto facilis vitae cupiditate cumque
 				libero perspiciatis natus nisi voluptatum. Dolorum, voluptatum.
 			</p>
 			<button
-				class="rounded bg-yellow-400 mt-5 md:max-w-sm py-2 font-bold text-yellow-700 hover:bg-yellow-500 hover:text-white duration-500"
+				class="bz-button rounded  mt-5 md:max-w-sm py-2 font-bold duration-500"
 				>Learn More</button
 			>
 		</div>

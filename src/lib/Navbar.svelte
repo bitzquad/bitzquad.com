@@ -26,7 +26,7 @@
 </script>
 
 <nav
-	class="bz-container py-4 px-5 md:px-10 lg:px-20 bg-gray-100 text-gray-500  font-bold"
+	class="bz-container py-4 px-5 md:px-10 lg:px-20 bg-gray-100 text-gray-600  font-bold"
 >
 	<div class="container max-w-7xl grid grid-cols-2">
 		<div
@@ -55,9 +55,7 @@
 			<a href="#" class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
 				>{PrimaryMenu.Contact[lang]}</a
 			>
-			<a
-				href="#"
-				class="mx-2 bg-yellow-400 text-yellow-700 rounded px-2 py-1 hover:bg-yellow-500 hover:text-white duration-500 "
+			<a href="#" class="mx-2  rounded px-2 py-1 bz-button duration-500 "
 				>{PrimaryMenu.Blog[lang]}</a
 			>
 			<a
