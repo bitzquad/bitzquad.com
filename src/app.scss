@@ -8,20 +8,22 @@
   @apply flex flex-row mt-4;
 }
 
-.footer {
-  @apply text-white flex items-center justify-center;
-}
 body {
-  font-family: "Quicksand";
+  font-family: "Poppins";
   font-display: swap;
   overflow-x: hidden;
 }
 
-*{
+* {
   padding: 0px;
   margin: 0px;
 }
 
+.bz-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
 
 ::-webkit-scrollbar {
   display: none;
@@ -42,4 +44,15 @@ body {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #a0aec0;
+}
+
+.bz-button {
+  background: #facc15;
+  color: #713f12;
+  cursor: pointer;
+
+  &:hover {
+    background: #ca8a04;
+    color: #ffffff;
+  }
 }
