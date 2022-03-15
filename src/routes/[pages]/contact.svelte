@@ -50,7 +50,7 @@
   <div class="bg-slate-100 w-full py-10 lg:py-20 bz-container">
     <div class="bg-slate-100 w-full container max-w-7xl">
       <div>
-        <h3 class="text-3xl  text-center">Get in Touch</h3>
+        <h3 class="text-3xl lg:text-4xl   text-center">Get in Touch</h3>
         <p class="py-2 text-center">Amet minim mollit non deserunt</p>
       </div>
       <div class="px-5 w-full flex lg:flex-row">
