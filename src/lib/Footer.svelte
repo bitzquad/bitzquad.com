@@ -1,3 +1,7 @@
+<script>
+	import { Path } from '$lib/siteUtils';
+</script>
+
 <!-- dark:bg-slate-900 -->
 <footer class="bz-container py-20 px-5 md:px-10 lg:px-20">
 	<div
@@ -24,7 +28,7 @@
 			>
 				<!-- Social Links -->
 				<div class="mt-3.5 flex gap-4 lg:mt-10">
-					<a href="/social/facebook"
+					<a href={Path('/social/facebook')}
 						><img
 							src="/social-facebook.svg"
 							height="31"
@@ -33,7 +37,7 @@
 							class=""
 						/></a
 					>
-					<a href="/social/linkedin"
+					<a href={Path('/social/linkedin')}
 						><img
 							src="/social-linkedin.svg"
 							height="31"
@@ -42,7 +46,7 @@
 							class=""
 						/></a
 					>
-					<a href="/social/instagram"
+					<a href={Path('/social/instagram')}
 						><img
 							src="/social-instagram.svg"
 							height="31"
@@ -51,7 +55,7 @@
 							class=""
 						/></a
 					>
-					<a href="/social/twitter"
+					<a href={Path('/social/twitter')}
 						><img
 							src="/social-twitter.svg"
 							height="31"
@@ -60,7 +64,7 @@
 							class=""
 						/></a
 					>
-					<a href="/social/youtube"
+					<a href={Path('/social/youtube')}
 						><img
 							src="/social-youtube.svg"
 							height="31"
@@ -105,10 +109,10 @@
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href="/">Home</a>
-				<a href="/about">About Us</a>
-				<a href="/team">Our Team</a>
-				<a href="/contact">Contact Us</a>
+				<a href={Path('/')}>Home</a>
+				<a href={Path('/about')}>About Us</a>
+				<a href={Path('/team')}>Our Team</a>
+				<a href={Path('/contact')}>Contact Us</a>
 			</div>
 		</div>
 		<!-- Links - Resources -->
@@ -117,12 +121,12 @@
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href="/news">News Feed</a>
+				<a href={Path('/news')}>News Feed</a>
 
-				<a href="/school">BitZchool</a>
+				<a href={Path('/school')}>BitZchool</a>
 				<!-- Social Links - Resources -->
 				<div class="mt-3.5 flex gap-4 ">
-					<a href="/social/behance"
+					<a href={Path('/social/behance')}
 						><img
 							src="/social-behance.svg"
 							height="31"
@@ -131,7 +135,7 @@
 							class=""
 						/></a
 					>
-					<a href="/social/github"
+					<a href={Path('/social/github')}
 						><img
 							src="/social-github.svg"
 							height="31"
@@ -149,9 +153,9 @@
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href="/location">Colombo, Sri Lanka</a>
-				<a href="tel:+94778813384">+94 778813384</a>
-				<a href="mailto:contact@bitzquad.com">contact@bitzquad.com</a>
+				<a href={Path('/location')}>Colombo, Sri Lanka</a>
+				<a href={Path('tel:+94778813384')}>+94 778813384</a>
+				<a href={Path('mailto:contact@bitzquad.com')}>contact@bitzquad.com</a>
 			</div>
 		</div>
 	</div>

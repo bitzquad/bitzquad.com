@@ -1,6 +1,7 @@
 <script context="module">
 	import Footer from '$lib/Footer.svelte';
 	import Navbar from '$lib/Navbar.svelte';
+	import { Path } from '$lib/siteUtils';
 	import '../app.scss';
 	/** @type {import('@sveltejs/kit').ErrorLoad} */
 	export function load({ error, status }) {
@@ -17,8 +18,8 @@
 	export let status;
 </script>
 
-<div class="w-screen">
-	<Navbar />
+<Navbar />
+<main>
 	<div
 		class="bz-container py-4 px-5 md:px-10 lg:px-20 2xl:py-20 bg-gray-100 text-gray-500"
 	>
@@ -37,7 +38,7 @@
 				class="md:relative w-full md:w-1/2 2xl:w-3/4 mt-10 mb-5 flex flex-col-reverse"
 			>
 				<a
-					href="/"
+					href={Path('/')}
 					class="md:absolute my-10 md:mt-0 w-full md:w-auto md:top-0 md:left-1/2 flex justify-center  md:-translate-x-1/2 bg-yellow-400 text-yellow-700 p-3 px-4 rounded hover:text-gray-600 transition-all duration-300 shadow-lg hover:bg-yellow-300 hover:shadow-xl"
 					>Go To Home</a
 				>
@@ -49,5 +50,5 @@
 			</div>
 		</div>
 	</div>
-	<Footer />
-</div>
+</main>
+<Footer />
