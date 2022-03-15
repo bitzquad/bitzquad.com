@@ -14,7 +14,6 @@
 </script>
 
 <script>
-	export let error;
 	export let status;
 </script>
 

@@ -38,7 +38,7 @@
 			>
 				{heroText.subTitle[lang]}
 			</h2>
-			<p class="text-md text-gray-600 mt-3">
+			<p class="text-md text-center md:text-start text-gray-600 mt-3">
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facere
 				amet. Deserunt consequuntur, architecto facilis vitae cupiditate cumque
 				libero perspiciatis natus nisi voluptatum. Dolorum, voluptatum.
