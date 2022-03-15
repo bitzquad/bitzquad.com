@@ -26,7 +26,7 @@
     <div
       class="container max-w-7xl flex items-center mt-12 justify-center flex-col"
     >
-      <h1 class="2xl:text-4xl lg:text-3xl font-bold">
+      <h1 class="text-4xl lg:text-3xl 2xl:text-4xl  font-bold">
         {status === 404 ? 'Page Not Found! ' : `Server Error ${status}`}
       </h1>
       <p class="md:w-1/2 lg:text-sm text-center mt-5">
