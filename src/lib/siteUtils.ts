@@ -48,13 +48,13 @@ export function NormalizePath(path: string): string {
 	return upath;
 }
 
-export function PathForLanguage(path: string, lang: string): string {
+export function PathForLanguage(path: string, language: string): string {
 	let upath = NormalizePath(path);
 
-	if (lang == DefaultLang) {
+	if (language == DefaultLang) {
 		return '/' + upath;
 	} else {
-		return '/' + lang + '/' + upath;
+		return '/' + language + '/' + upath;
 	}
 }
 
