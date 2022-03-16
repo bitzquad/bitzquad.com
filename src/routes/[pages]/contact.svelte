@@ -1,6 +1,8 @@
 <script>
-  import ContactForm from '$lib/Components/ContactForm.svelte';
+
+import ContactForm from '$lib/Components/ContactForm.svelte';
 import Footer from '$lib/Footer.svelte';
+
   import Navbar from '$lib/Navbar.svelte';
 </script>
 
@@ -48,6 +50,8 @@ import Footer from '$lib/Footer.svelte';
     </div>
   </div>
   <!-- Form Section - get in touch -->
+
   <ContactForm/>
+
 </main>
 <Footer />
