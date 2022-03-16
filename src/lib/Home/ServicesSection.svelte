@@ -19,7 +19,7 @@
 				fr: 'Desarrollamos aplicaciones web utilizando las últimas tecnologías y frameworks.',
 				si: 'Upgrade with the best technology that helps your business grow',
 			},
-			image: '/web.svg',
+			image: 'web.svg',
 			link: 'web',
 		},
 		mobile: {
@@ -33,7 +33,7 @@
 				fr: 'Desarrollamos aplicaciones móviles utilizando las últimas tecnologías y frameworks.',
 				si: 'Powerful, yet intuitive web, desktop and mobile apps',
 			},
-			image: '/mobile.png',
+			image: 'mobile.png',
 			link: 'mobile',
 		},
 		blockchain: {
@@ -47,7 +47,7 @@
 				fr: 'Desarrollamos aplicaciones blockchain utilizando las últimas tecnologías y frameworks.',
 				si: 'Prepare for the next technological revolution of decentralizing',
 			},
-			image: '/ethereum.png',
+			image: 'ethereum.png',
 			link: 'blockchain',
 		},
 		brand: {
@@ -61,7 +61,7 @@
 				fr: 'Desarrollamos estrategias de marca y identidad utilizando las últimas tecnologías y frameworks.',
 				si: 'Build a solid brand that one day, everyone will know',
 			},
-			image: '/brand.png',
+			image: 'brand.png',
 			link: 'brand',
 		},
 		social: {
@@ -75,7 +75,7 @@
 				fr: 'Desarrollamos estrategias de redes sociales y identidad utilizando las últimas tecnologías y frameworks.',
 				si: 'Let us bring your presence to your future customers',
 			},
-			image: '/social.png',
+			image: 'social.png',
 			link: 'social',
 		},
 		ecommerce: {
@@ -89,7 +89,7 @@
 				fr: 'Desarrollamos aplicaciones e-commerce utilizando las últimas tecnologías y frameworks.',
 				si: 'We develop e-commerce applications using the latest technologies and frameworks.',
 			},
-			image: '/ecommerce.png',
+			image: 'ecommerce.png',
 			link: 'ecommerce',
 		},
 	};
@@ -152,7 +152,7 @@
 			<div class="hidden w-6/12 md:flex items-center justify-center">
 				<div
 					class="image-holder w-full rounded-xl h-full p-2 bg-cover bg-center"
-					style="background-image: url('/services.svg');"
+					style="background-image: url('services.svg');"
 				/>
 			</div>
 		</div>
