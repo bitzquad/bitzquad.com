@@ -34,7 +34,7 @@
 			class="w-full mt-10 md:mt-24"
 			width="1280"
 			height="547.719"
-			src="/world.svg"
+			src="world.svg"
 			alt="World"
 		/>
 	</div>
