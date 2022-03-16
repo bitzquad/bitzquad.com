@@ -3,7 +3,7 @@
 </script>
 
 <!-- dark:bg-slate-900 -->
-<footer class="bz-container py-20 px-5 md:px-10 lg:px-20">
+<footer class="bz-container pt-20 pb-7 px-5 md:px-10 lg:px-20">
 	<div
 		class="container grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 md:gap-20  max-w-7xl"
 	>
@@ -26,54 +26,6 @@
 			<div
 				class="w-full flex items-center lg:items-start flex-col lg:flex-col-reverse"
 			>
-				<!-- Social Links -->
-				<div class="mt-3.5 flex gap-4 lg:mt-10">
-					<a href={Path('/social/facebook')}
-						><img
-							src="/social-facebook.svg"
-							height="31"
-							width="31"
-							alt="social-facebook"
-							class=""
-						/></a
-					>
-					<a href={Path('/social/linkedin')}
-						><img
-							src="/social-linkedin.svg"
-							height="31"
-							width="31"
-							alt="social-linkedin"
-							class=""
-						/></a
-					>
-					<a href={Path('/social/instagram')}
-						><img
-							src="/social-instagram.svg"
-							height="31"
-							width="31"
-							alt="social-instagram"
-							class=""
-						/></a
-					>
-					<a href={Path('/social/twitter')}
-						><img
-							src="/social-twitter.svg"
-							height="31"
-							width="31"
-							alt="social-twitter"
-							class=""
-						/></a
-					>
-					<a href={Path('/social/youtube')}
-						><img
-							src="/social-youtube.svg"
-							height="31"
-							width="31"
-							alt="social-youtube"
-							class=""
-						/></a
-					>
-				</div>
 				<!-- NewsLetter -->
 				<form
 					class="mt-8 flex flex-col items-center w-full gap-y-3 lg:items-start"
@@ -154,10 +106,63 @@
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
 				<a href={Path('/location')}>Colombo, Sri Lanka</a>
-				<a href={Path('tel:+94778813384')}>+94 778813384</a>
-				<a href={Path('mailto:contact@bitzquad.com')}>contact@bitzquad.com</a>
+				<a href="tel:+94778813384">+94 778813384</a>
+				<a href="mailto:contact@bitzquad.com">contact@bitzquad.com</a>
 			</div>
 		</div>
 	</div>
 	<!-- </div> -->
+	<div class="bz-container w-full max-w-7xl border-t-2 border-gray-500">
+		<div class="container flex items-center justify-between">
+			<div class="text-gray-500 font-normal">© Bitzquad. 2022</div>
+			<!-- Social Links -->
+			<div class="flex gap-4">
+				<a href={Path('/social/facebook')}
+					><img
+						src="/social-facebook.svg"
+						height="31"
+						width="31"
+						alt="social-facebook"
+						class=""
+					/></a
+				>
+				<a href={Path('/social/linkedin')}
+					><img
+						src="/social-linkedin.svg"
+						height="31"
+						width="31"
+						alt="social-linkedin"
+						class=""
+					/></a
+				>
+				<a href={Path('/social/instagram')}
+					><img
+						src="/social-instagram.svg"
+						height="31"
+						width="31"
+						alt="social-instagram"
+						class=""
+					/></a
+				>
+				<a href={Path('/social/twitter')}
+					><img
+						src="/social-twitter.svg"
+						height="31"
+						width="31"
+						alt="social-twitter"
+						class=""
+					/></a
+				>
+				<a href={Path('/social/youtube')}
+					><img
+						src="/social-youtube.svg"
+						height="31"
+						width="31"
+						alt="social-youtube"
+						class=""
+					/></a
+				>
+			</div>
+		</div>
+	</div>
 </footer>

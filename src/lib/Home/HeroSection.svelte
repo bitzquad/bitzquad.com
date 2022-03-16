@@ -38,7 +38,9 @@
 			>
 				{heroText.subTitle[lang]}
 			</h2>
-			<p class="text-md text-center md:text-start text-gray-600 mt-3">
+			<p
+				class="text-md text-center md:text-left md:text-start text-gray-600 mt-3"
+			>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facere
 				amet. Deserunt consequuntur, architecto facilis vitae cupiditate cumque
 				libero perspiciatis natus nisi voluptatum. Dolorum, voluptatum.
@@ -48,7 +50,7 @@
 				>Learn More</button
 			>
 		</div>
-		<div class="col-span-1 md:w-5/12 flex items-center">
+		<div class="col-span-1 md:w-5/12 flex items-center justify-center">
 			<img
 				class="p-5 md:p-6"
 				height="235"
