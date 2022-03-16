@@ -2,19 +2,26 @@
   import {
     Path,
     GetLanguageFromPath,
-    lang as langOfPath,
+    lang,
+    PathForLanguage,
   } from "$lib/siteUtils";
 
   import { browser } from "$app/env";
   import Footer from "$lib/Footer.svelte";
   import Navbar from "$lib/Navbar.svelte";
 
-  let lang = langOfPath;
-
   export async function load({ fetch }) {
     if (browser) {
       if (window.location.search && window.location.search.startsWith("?")) {
-        lang = GetLanguageFromPath(window.location.search.slice(1));
+        let origlang = GetLanguageFromPath(window.location.pathname);
+        let queryLang = GetLanguageFromPath(window.location.search.slice(1));
+
+        if (queryLang && queryLang !== origlang) {
+          console.log("redirecting");
+          window.location.replace(
+            PathForLanguage("/Error" + window.location.search, queryLang)
+          );
+        }
       }
     } else {
       // Runs on server
