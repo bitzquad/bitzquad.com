@@ -1,30 +1,32 @@
 <script>
-  import { lang } from '$lib/siteUtils';
-  let heroText = {
-    mainTitle: {
-      en: 'Solutions Beyond Technology',
-      fr: 'Nous sommes une équipe de passionnés qui adore créer.',
-      si: 'Solutions Beyond Technology',
-    },
-    subTitle: {
-      en: 'Welcome to Bitzquad',
-      fr: "Nous sommes en train de construire l'infrastructure, préparer les outils de développement, et terminer les serveurs pour la prochaine technologie de votre entreprise",
-      si: 'Bitzquad වෙත ඔබව සාදරයෙන් පිළිගනිමු.',
-    },
-    description: {
-      en: 'lorem100',
-      fr: 'La date de lancement de nos services pour vous',
-      si: 'පුවත්',
-    },
-  };
+	import { lang } from '$lib/siteUtils';
+	let heroText = {
+		mainTitle: {
+			en: 'Solutions Beyond Technology',
+			fr: 'Nous sommes une équipe de passionnés qui adore créer.',
+			si: 'Solutions Beyond Technology',
+		},
+		subTitle: {
+			en: 'Welcome to Bitzquad',
+			fr: "Nous sommes en train de construire l'infrastructure, préparer les outils de développement, et terminer les serveurs pour la prochaine technologie de votre entreprise",
+			si: 'Bitzquad වෙත ඔබව සාදරයෙන් පිළිගනිමු.',
+		},
+		description: {
+			en: 'lorem100',
+			fr: 'La date de lancement de nos services pour vous',
+			si: 'පුවත්',
+		},
+	};
 </script>
 
 <!-- hero section  -->
 <section
-  id="hero-section"
-  class="hero-section bz-container py-5 px-5 lg:py-20 md:px-10 lg:px-20 bg-gray-50"
+	id="hero-section"
+	class="hero-section bz-container py-5 px-5 lg:py-20 md:px-10 lg:px-20 bg-gray-50"
 >
-	<div class="container max-w-7xl flex flex-col-reverse md:flex-row">
+	<div
+		class="container max-w-7xl flex md:items-center flex-col-reverse md:flex-row"
+	>
 		<div
 			class="col-span-1 md:w-7/12 py-5 md:py-10 lg:py-20 xl:py-28 md:pr-10 flex flex-col justify-center"
 		>
@@ -52,9 +54,9 @@
 		</div>
 		<div class="col-span-1 md:w-5/12 flex items-center justify-center">
 			<img
-				class="p-5 md:p-6"
+				class="p-5 md:p-2"
 				height="235"
-				width="485"
+				width="585"
 				src="/heroImage.svg"
 				alt="heroImage"
 			/>
