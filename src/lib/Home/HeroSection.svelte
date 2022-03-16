@@ -24,7 +24,9 @@
 	id="hero-section"
 	class="hero-section bz-container py-5 px-5 lg:py-20 md:px-10 lg:px-20 bg-gray-50"
 >
-	<div class="container max-w-7xl flex flex-col-reverse md:flex-row">
+	<div
+		class="container max-w-7xl flex md:items-center flex-col-reverse md:flex-row"
+	>
 		<div
 			class="col-span-1 md:w-7/12 py-5 md:py-10 lg:py-20 xl:py-28 md:pr-10 flex flex-col justify-center"
 		>
@@ -38,7 +40,9 @@
 			>
 				{heroText.subTitle[lang]}
 			</h2>
-			<p class="text-md text-center md:text-start text-gray-600 mt-3">
+			<p
+				class="text-md text-center md:text-left md:text-start text-gray-600 mt-3"
+			>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facere
 				amet. Deserunt consequuntur, architecto facilis vitae cupiditate cumque
 				libero perspiciatis natus nisi voluptatum. Dolorum, voluptatum.
@@ -48,12 +52,12 @@
 				>Learn More</button
 			>
 		</div>
-		<div class="col-span-1 md:w-5/12 flex items-center">
+		<div class="col-span-1 md:w-5/12 flex items-center justify-center">
 			<img
-				class="p-5 md:p-6"
+				class="p-5 md:p-2"
 				height="235"
-				width="485"
-				src="heroImage.svg"
+				width="585"
+				src="/heroImage.svg"
 				alt="heroImage"
 			/>
 		</div>
