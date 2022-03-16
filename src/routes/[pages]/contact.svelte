@@ -1,5 +1,8 @@
 <script>
-  import Footer from '$lib/Footer.svelte';
+
+import ContactForm from '$lib/Components/ContactForm.svelte';
+import Footer from '$lib/Footer.svelte';
+
   import Navbar from '$lib/Navbar.svelte';
 </script>
 
@@ -47,83 +50,8 @@
     </div>
   </div>
   <!-- Form Section - get in touch -->
-  <div class="bg-slate-100 w-full py-10 lg:py-20 bz-container">
-    <div class="bg-slate-100 w-full container max-w-7xl">
-      <div>
-        <h3 class="text-3xl lg:text-4xl   text-center">Get in Touch</h3>
-        <p class="py-2 text-center">Amet minim mollit non deserunt</p>
-      </div>
-      <div class="px-5 w-full flex lg:flex-row">
-        <img
-          src="/contact-form.svg"
-          alt="contact-form"
-          class="hidden lg:block lg:w-1/2 lg:h-auto px-20"
-        />
-        <form class="pt-10 w-full lg:w-1/2 md:px-20">
-          <div class="group relative  z-0 mb-6 w-full">
-            <input
-              type="text"
-              name="floating_name"
-              class="peer block w-full px-2 appearance-none border rounded border-gray-300 bg-transparent py-2.5 Stext-sm text-gray-900 outline-none autofill:bg-none focus:border-yellow-600  focus:ring-0 dark:border-gray-600 "
-              placeholder=" "
-              required
-            />
-            <label
-              for="floating_name"
-              class="absolute top-3 mx-2 z-10 px-1 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75  peer-focus:bg-slate-100 dark:text-gray-400 peer-focus:text-yellow-600"
-            >
-              Name
-            </label>
-          </div>
-          <div class="group relative  z-0 mb-6 w-full">
-            <input
-              type="text"
-              name="floating_email"
-              class="peer block w-full px-2 appearance-none border rounded border-gray-300 bg-transparent py-2.5 Stext-sm text-gray-900 outline-none autofill:bg-none focus:border-yellow-600  focus:ring-0 dark:border-gray-600 "
-              placeholder=" "
-              required
-            />
-            <label
-              for="floating_email"
-              class="absolute top-3 mx-2 z-10 px-1 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75  peer-focus:bg-slate-100 dark:text-gray-400 peer-focus:text-yellow-600"
-            >
-              Email
-            </label>
-          </div>
-          <div class="group relative  z-0 mb-6 w-full">
-            <input
-              type="text"
-              name="floating_subject"
-              class="peer block w-full px-2 appearance-none border rounded border-gray-300 bg-transparent py-2.5 Stext-sm text-gray-900 outline-none autofill:bg-none focus:border-yellow-600  focus:ring-0 dark:border-gray-600 "
-              placeholder=" "
-              required
-            />
-            <label
-              for="floating_subject"
-              class="absolute top-3 mx-2 z-10 px-1 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75  peer-focus:bg-slate-100 dark:text-gray-400 peer-focus:text-yellow-600"
-            >
-              Subject
-            </label>
-          </div>
-          <div class="group relative  z-0 mb-6 w-full">
-            <textarea
-              name="floating_subject"
-              class="peer block w-full px-2 appearance-none border rounded border-gray-300 bg-transparent py-2.5 Stext-sm text-gray-900 outline-none autofill:bg-none focus:border-yellow-600  focus:ring-0 dark:border-gray-600 "
-              placeholder=" "
-              rows="4"
-              required
-            />
-            <label
-              for="floating_subject"
-              class="absolute top-3 mx-2 z-10 px-1 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75  peer-focus:bg-slate-100 dark:text-gray-400 peer-focus:text-yellow-600"
-            >
-              Subject
-            </label>
-          </div>
-          <div class="bz-button rounded  py-2 text-center">Send Message</div>
-        </form>
-      </div>
-    </div>
-  </div>
+
+  <ContactForm/>
+
 </main>
 <Footer />
