@@ -1,5 +1,14 @@
 <script>
-	import { Path } from '$lib/siteUtils';
+	import { GetLanguageFromPath, Path } from '$lib/siteUtils';
+	import Language from './Components/Language.svelte';
+	import { setContext } from 'svelte';
+	import { page } from '$app/stores';
+	let lang = false;
+	const setLang = () => {
+		lang = !lang;
+	};
+	setContext('setLang', setLang);
+	let currentLang = $page.params.pages;
 </script>
 
 <!-- dark:bg-slate-900 -->
@@ -112,56 +121,85 @@
 		</div>
 	</div>
 	<!-- </div> -->
-	<div class="bz-container w-full max-w-7xl border-t-2 border-gray-500">
-		<div class="container flex items-center justify-between">
-			<div class="text-gray-500 font-normal">© Bitzquad. 2022</div>
+	<div class="bz-container w-full max-w-7xl border-t-2 border-gray-500 pt-5">
+		<div
+			class="container flex flex-col-reverse md:flex-row items-center justify-between"
+		>
+			<div class="text-gray-500 font-normal mt-3 md:mt-0">© Bitzquad. 2022</div>
 			<!-- Social Links -->
-			<div class="flex gap-4">
-				<a href={Path('/social/facebook')}
-					><img
-						src="/social-facebook.svg"
-						height="31"
-						width="31"
-						alt="social-facebook"
-						class=""
-					/></a
+			<div class="flex gap-4 md:items-center">
+				<div class="social flex gap-4">
+					<a href={Path('/social/facebook')}
+						><img
+							src="/social-facebook.svg"
+							height="31"
+							width="31"
+							alt="social-facebook"
+							class=""
+						/></a
+					>
+					<a href={Path('/social/linkedin')}
+						><img
+							src="/social-linkedin.svg"
+							height="31"
+							width="31"
+							alt="social-linkedin"
+							class=""
+						/></a
+					>
+					<a href={Path('/social/instagram')}
+						><img
+							src="/social-instagram.svg"
+							height="31"
+							width="31"
+							alt="social-instagram"
+							class=""
+						/></a
+					>
+					<a href={Path('/social/twitter')}
+						><img
+							src="/social-twitter.svg"
+							height="31"
+							width="31"
+							alt="social-twitter"
+							class=""
+						/></a
+					>
+					<a href={Path('/social/youtube')}
+						><img
+							src="/social-youtube.svg"
+							height="31"
+							width="31"
+							alt="social-youtube"
+							class=""
+						/></a
+					>
+				</div>
+				{#if lang == true}
+					<Language />
+				{/if}
+				<div
+					class="flex gap-1 rounded-xl p-2 hover:bg-gray-200 cursor-pointer"
+					on:click={setLang}
 				>
-				<a href={Path('/social/linkedin')}
-					><img
-						src="/social-linkedin.svg"
-						height="31"
-						width="31"
-						alt="social-linkedin"
-						class=""
-					/></a
-				>
-				<a href={Path('/social/instagram')}
-					><img
-						src="/social-instagram.svg"
-						height="31"
-						width="31"
-						alt="social-instagram"
-						class=""
-					/></a
-				>
-				<a href={Path('/social/twitter')}
-					><img
-						src="/social-twitter.svg"
-						height="31"
-						width="31"
-						alt="social-twitter"
-						class=""
-					/></a
-				>
-				<a href={Path('/social/youtube')}
-					><img
-						src="/social-youtube.svg"
-						height="31"
-						width="31"
-						alt="social-youtube"
-						class=""
-					/></a
-				>
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						class="h-6 w-6"
+						fill="none"
+						viewBox="0 0 24 24"
+						stroke="rgb(107 114 128 / var(--tw-border-opacity))"
+						stroke-width="2"
+					>
+						<path
+							stroke-linecap="round"
+							stroke-linejoin="round"
+							d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"
+						/>
+					</svg>
+					<span class="text-gray-500 font-semibold"
+						>{#if currentLang == 'en'}English{:else if currentLang == 'si'}සිංහල{/if}</span
+					>
+				</div>
 			</div>
 		</div>
 	</div>
