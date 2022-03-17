@@ -4,19 +4,19 @@
 		GetLanguageFromPath,
 		lang,
 		PathForLanguage,
-	} from "$lib/siteUtils";
+	} from '$lib/siteUtils';
 
-	import { browser } from "$app/env";
-	import Footer from "$lib/Footer.svelte";
-	import Navbar from "$lib/Navbar.svelte";
+	import { browser } from '$app/env';
+	import Footer from '$lib/Footer.svelte';
+	import Navbar from '$lib/Navbar.svelte';
 
-	import Txt from "./Error_Text";
+	import Txt from './ErrorText';
 
 	export async function load({ fetch }) {
 		if (browser) {
 			if (
 				window.location.search &&
-				window.location.search.startsWith("?")
+				window.location.search.startsWith('?')
 			) {
 				let origlang = GetLanguageFromPath(window.location.pathname);
 				let queryLang = GetLanguageFromPath(
@@ -24,10 +24,10 @@
 				);
 
 				if (queryLang && queryLang !== origlang) {
-					console.log("redirecting");
+					console.log('redirecting');
 					window.location.replace(
 						PathForLanguage(
-							"/Error" + window.location.search,
+							'/Error' + window.location.search,
 							queryLang
 						)
 					);
@@ -64,12 +64,12 @@
 				class="md:relative w-full md:w-1/2 2xl:w-3/4 mt-10 mb-5 flex flex-col-reverse"
 			>
 				<a
-					href={Path("/")}
+					href={Path('/')}
 					class="md:absolute my-10 md:mt-0 w-full md:w-auto md:top-0 md:left-1/2 flex justify-center  md:-translate-x-1/2 bg-yellow-400 text-yellow-700 p-3 px-4 rounded hover:text-gray-600 transition-all duration-300 shadow-lg hover:bg-yellow-300 hover:shadow-xl"
 					>Go To Home</a
 				>
 				<img
-					src={statusCode === 404 ? "/404-error.svg" : "/bug-fix.svg"}
+					src={statusCode === 404 ? '/404-error.svg' : '/bug-fix.svg'}
 					alt="404-error"
 					class="w-full"
 				/>

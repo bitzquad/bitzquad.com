@@ -53,7 +53,7 @@
 
 						<button
 							type="submit"
-							class="h-10 px-2 w-full border rounded shadow-xl border-none  duration-500 bz-button font-bold tracking-wide"
+							class="h-10 px-2 w-full border rounded border-none  bz-button font-bold tracking-wide"
 							>{Txt.Subscribe[lang]}</button
 						>
 					</div>

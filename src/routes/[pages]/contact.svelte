@@ -1,10 +1,10 @@
 <script>
-	import ContactForm from "$lib/Components/ContactForm.svelte";
-	import Footer from "$lib/Footer.svelte";
+	import ContactForm from '$lib/Components/ContactForm.svelte';
+	import Footer from '$lib/Footer.svelte';
 
-	import Navbar from "$lib/Navbar.svelte";
-	import { lang } from "$lib/siteUtils";
-	import Txt from "./contact_Text";
+	import Navbar from '$lib/Navbar.svelte';
+	import { lang } from '$lib/siteUtils';
+	import Txt from './ContactText';
 </script>
 
 <Navbar />
@@ -41,9 +41,9 @@
 			<div class="contact-section-content">
 				<h2>{Txt.EmailUs[lang]}</h2>
 				<p>
-					{Txt.EmailUs[lang]}
+					{Txt.EmailUsDescription[lang]}
 				</p>
-				<button>{Txt.EmailUsDescription[lang]}</button>
+				<button>{Txt.EmailUs[lang]}</button>
 			</div>
 		</div>
 	</div>
