@@ -1,6 +1,6 @@
 <script context="module">
-	import '../app.scss';
-	import Error from './[pages]/Error.svelte';
+	import "../app.scss";
+	import Error from "./[pages]/Error.svelte";
 	/** @type {import('@sveltejs/kit').ErrorLoad} */
 	export function load({ error, status }) {
 		return {
