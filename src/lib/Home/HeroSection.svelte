@@ -1,22 +1,6 @@
 <script>
-	import { lang } from '$lib/siteUtils';
-	let heroText = {
-		mainTitle: {
-			en: 'Solutions Beyond Technology',
-			fr: 'Nous sommes une équipe de passionnés qui adore créer.',
-			si: 'Solutions Beyond Technology',
-		},
-		subTitle: {
-			en: 'Welcome to Bitzquad',
-			fr: "Nous sommes en train de construire l'infrastructure, préparer les outils de développement, et terminer les serveurs pour la prochaine technologie de votre entreprise",
-			si: 'Bitzquad වෙත ඔබව සාදරයෙන් පිළිගනිමු.',
-		},
-		description: {
-			en: 'lorem100',
-			fr: 'La date de lancement de nos services pour vous',
-			si: 'පුවත්',
-		},
-	};
+	import { lang } from "$lib/siteUtils";
+	import heroText from "./HeroSection_Text";
 </script>
 
 <!-- hero section  -->
@@ -43,13 +27,11 @@
 			<p
 				class="text-md text-center md:text-left md:text-start text-gray-600 mt-3"
 			>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, facere
-				amet. Deserunt consequuntur, architecto facilis vitae cupiditate cumque
-				libero perspiciatis natus nisi voluptatum. Dolorum, voluptatum.
+				{heroText.description[lang]}
 			</p>
 			<button
 				class="bz-button rounded  mt-5 md:max-w-sm py-2 font-bold duration-500"
-				>Learn More</button
+				>{heroText.learn_more[lang]}</button
 			>
 		</div>
 		<div class="col-span-1 md:w-5/12 flex items-center justify-center">

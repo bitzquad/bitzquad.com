@@ -1,14 +1,15 @@
 <script>
-	import { GetLanguageFromPath, Path } from '$lib/siteUtils';
-	import Language from './Components/Language.svelte';
-	import { setContext } from 'svelte';
-	import { page } from '$app/stores';
-	let lang = false;
+	import { Path, lang } from "$lib/siteUtils";
+
+	import Language from "./Components/Language.svelte";
+	import { setContext } from "svelte";
+	let langModelVisible = false;
 	const setLang = () => {
-		lang = !lang;
+		langModelVisible = !langModelVisible;
 	};
-	setContext('setLang', setLang);
-	let currentLang = $page.params.pages;
+	setContext("setLang", setLang);
+
+	import Txt from "./Footer_Text";
 </script>
 
 <!-- dark:bg-slate-900 -->
@@ -29,8 +30,7 @@
 			/>
 			<span
 				class="mx-10 lg:mx-0 lg:w-full lg:text-lg py-3 text-center text-gray-500 lg:text-left"
-				>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-				sint.</span
+				>{Txt.LogoSubtitle[lang]}</span
 			>
 			<div
 				class="w-full flex items-center lg:items-start flex-col lg:flex-col-reverse"
@@ -40,7 +40,7 @@
 					class="mt-8 flex flex-col items-center w-full gap-y-3 lg:items-start"
 				>
 					<span class="text-xl font-bold text-gray-600"
-						>Subscribe to Newsletter</span
+						>{Txt.SubscribeToNewsletter[lang]}</span
 					>
 					<div class="w-full gap-y-3 flex flex-col lg:gap-3 ">
 						<input
@@ -54,7 +54,7 @@
 						<button
 							type="submit"
 							class="h-10 px-2 w-full border rounded shadow-xl border-none  duration-500 bz-button font-bold tracking-wide"
-							>Subscribe</button
+							>{Txt.Subscribe[lang]}</button
 						>
 					</div>
 				</form>
@@ -70,24 +70,26 @@
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href={Path('/')}>Home</a>
-				<a href={Path('/about')}>About Us</a>
-				<a href={Path('/team')}>Our Team</a>
-				<a href={Path('/contact')}>Contact Us</a>
+				<a href={Path("/")}> {Txt.Home[lang]} </a>
+				<a href={Path("/about")}> {Txt.AboutUs[lang]}</a>
+				<a href={Path("/team")}>{Txt.OurTeam[lang]}</a>
+				<a href={Path("/contact")}>{Txt.ContactUs[lang]}</a>
 			</div>
 		</div>
 		<!-- Links - Resources -->
 		<div class="mt-20 lg:mt-0  flex flex-col items-center  ">
-			<span class="mb-4 text-xl text-gray-700 font-bold">Resources</span>
+			<span class="mb-4 text-xl text-gray-700 font-bold"
+				>{Txt.Resources[lang]}</span
+			>
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href={Path('/news')}>News Feed</a>
+				<a href={Path("/news")}>{Txt.NewFeed[lang]}</a>
 
-				<a href={Path('/school')}>BitZchool</a>
+				<a href={Path("/school")}>BitZchool</a>
 				<!-- Social Links - Resources -->
 				<div class="mt-3.5 flex gap-4 ">
-					<a href={Path('/social/behance')}
+					<a href={Path("/social/behance")}
 						><img
 							src="/social-behance.svg"
 							height="31"
@@ -96,7 +98,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path('/social/github')}
+					<a href={Path("/social/github")}
 						><img
 							src="/social-github.svg"
 							height="31"
@@ -110,11 +112,13 @@
 		</div>
 		<!-- Links - Contact -->
 		<div class="mt-20 lg:mt-0  mb-20 flex flex-col items-center ">
-			<span class="mb-4 text-xl text-gray-700 font-bold">Reach Us</span>
+			<span class="mb-4 text-xl text-gray-700 font-bold"
+				>{Txt.ReachUs[lang]}</span
+			>
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href={Path('/location')}>Colombo, Sri Lanka</a>
+				<a href={Path("/location")}>Colombo, Sri Lanka</a>
 				<a href="tel:+94778813384">+94 778813384</a>
 				<a href="mailto:contact@bitzquad.com">contact@bitzquad.com</a>
 			</div>
@@ -125,11 +129,13 @@
 		<div
 			class="container flex flex-col-reverse md:flex-row items-center justify-between"
 		>
-			<div class="text-gray-500 font-normal mt-3 md:mt-0">© Bitzquad. 2022</div>
+			<div class="text-gray-500 font-normal mt-3 md:mt-0">
+				© Bitzquad. 2022
+			</div>
 			<!-- Social Links -->
 			<div class="flex gap-4 md:items-center">
 				<div class="social flex gap-4">
-					<a href={Path('/social/facebook')}
+					<a href={Path("/social/facebook")}
 						><img
 							src="/social-facebook.svg"
 							height="31"
@@ -138,7 +144,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path('/social/linkedin')}
+					<a href={Path("/social/linkedin")}
 						><img
 							src="/social-linkedin.svg"
 							height="31"
@@ -147,7 +153,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path('/social/instagram')}
+					<a href={Path("/social/instagram")}
 						><img
 							src="/social-instagram.svg"
 							height="31"
@@ -156,7 +162,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path('/social/twitter')}
+					<a href={Path("/social/twitter")}
 						><img
 							src="/social-twitter.svg"
 							height="31"
@@ -165,7 +171,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path('/social/youtube')}
+					<a href={Path("/social/youtube")}
 						><img
 							src="/social-youtube.svg"
 							height="31"
@@ -175,7 +181,7 @@
 						/></a
 					>
 				</div>
-				{#if lang == true}
+				{#if langModelVisible == true}
 					<Language />
 				{/if}
 				<div
@@ -197,7 +203,7 @@
 						/>
 					</svg>
 					<span class="text-gray-500 font-semibold"
-						>{#if currentLang == 'en'}English{:else if currentLang == 'si'}සිංහල{/if}</span
+						>{#if lang == "en"}English{:else if lang == "si"}සිංහල{/if}</span
 					>
 				</div>
 			</div>

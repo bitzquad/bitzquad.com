@@ -1,28 +1,10 @@
 <script>
-	import Footer from '$lib/Footer.svelte';
-	import HeroSection from '$lib/Home/HeroSection.svelte';
-	import ServicesSection from '$lib/Home/ServicesSection.svelte';
-	import WorldWithUs from '$lib/Home/WorldWithUs.svelte';
-	import Navbar from '$lib/Navbar.svelte';
-	import { lang, Path } from '$lib/siteUtils';
-
-	let Txt = {
-		Slogun: {
-			en: 'Solutions beyond Software Engineering',
-			fr: 'Nous sommes une équipe de passionnés qui adore créer.',
-			si: 'Api thamai hodatama karanne.',
-		},
-		GearingUp: {
-			en: 'We are currently building infrastructure, preparing dev tools, and winding up servers for the next technological advancement of your business',
-			fr: "Nous sommes en train de construire l'infrastructure, préparer les outils de développement, et terminer les serveurs pour la prochaine technologie de votre entreprise",
-			si: 'Thaama hadana gaman',
-		},
-		LaunchingSoon: {
-			en: 'The date, we are launching our services for you',
-			fr: 'La date de lancement de nos services pour vous',
-			si: 'Me davase aewith balanna',
-		},
-	};
+	import Footer from "$lib/Footer.svelte";
+	import HeroSection from "$lib/Home/HeroSection.svelte";
+	import ServicesSection from "$lib/Home/ServicesSection.svelte";
+	import WorldWithUs from "$lib/Home/WorldWithUs.svelte";
+	import Navbar from "$lib/Navbar.svelte";
+	import { lang, Path } from "$lib/siteUtils";
 </script>
 
 <svelte:head>
