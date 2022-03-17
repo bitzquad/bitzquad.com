@@ -27,7 +27,7 @@
 					console.log("redirecting");
 					window.location.replace(
 						PathForLanguage(
-							"/error" + window.location.search,
+							"/Error" + window.location.search,
 							queryLang
 						)
 					);
