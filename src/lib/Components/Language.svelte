@@ -1,7 +1,7 @@
 <script>
-	import { SetLanguage } from '$lib/siteUtils';
-	import { getContext } from 'svelte';
-	let setLang = getContext('setLang');
+	import { SetLanguage } from "$lib/siteUtils";
+	import { getContext } from "svelte";
+	let setLang = getContext("setLang");
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->
@@ -82,7 +82,7 @@
 								<li
 									class="mt-5 cursor-pointer"
 									on:click={() => {
-										SetLanguage('en');
+										SetLanguage("en");
 									}}
 								>
 									English
@@ -90,7 +90,7 @@
 								<li
 									class="mt-5 cursor-pointer"
 									on:click={() => {
-										SetLanguage('si');
+										SetLanguage("si");
 									}}
 								>
 									සිංහල
@@ -100,7 +100,9 @@
 					</div>
 				</div>
 			</div>
-			<div class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
+			<div
+				class="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse"
+			>
 				<button
 					on:click={setLang}
 					type="button"
