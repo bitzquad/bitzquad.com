@@ -49,11 +49,10 @@ body {
   color: #713f12;
   cursor: pointer;
 
-  @apply duration-300 transition-all;
+  @apply duration-200 transition-all;
 
   &:hover {
-    background: #ca8a04;
-    color: #ffffff;
+    @apply shadow-xl;
   }
 }
 

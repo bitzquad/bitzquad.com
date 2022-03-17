@@ -1,5 +1,8 @@
-<script>
-	import Language from '$lib/Components/Language.svelte';
+<script context="module">
+	export async function load() {
+		return {
+			status: 302,
+			redirect: "/Error",
+		};
+	}
 </script>
-
-<Language />

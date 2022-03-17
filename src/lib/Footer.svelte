@@ -15,7 +15,7 @@
 <!-- dark:bg-slate-900 -->
 <footer class="bz-container pt-20 pb-7 px-5 md:px-10 lg:px-20">
 	<div
-		class="container grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 md:gap-20  max-w-7xl"
+		class="container grid grid-cols-1 md:grid-cols-3 xl:grid-cols-4 md:gap-20  max-w-7xl lg:bg-[url('/footer-map.svg')]  bg-contain bg-no-repeat bg-right"
 	>
 		<div
 			class="flex flex-col md:col-span-3 md:mb-10 xl:col-span-1 items-center lg:items-start"
@@ -53,7 +53,7 @@
 
 						<button
 							type="submit"
-							class="h-10 px-2 w-full border rounded shadow-xl border-none  duration-500 bz-button font-bold tracking-wide"
+							class="h-10 px-2 w-full border rounded border-none  bz-button font-bold tracking-wide"
 							>{Txt.Subscribe[lang]}</button
 						>
 					</div>

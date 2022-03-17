@@ -1,7 +1,17 @@
 <script>
-	import { SetLanguage } from "$lib/siteUtils";
+	import { PathForLanguage } from "$lib/siteUtils";
 	import { getContext } from "svelte";
+	import { page } from "$app/stores";
 	let setLang = getContext("setLang");
+
+	/**
+	 * @param {string} lang
+	 */
+	function SetLanguage(lang) {
+		if (window) {
+			window.location.href = PathForLanguage($page.url.pathname, lang);
+		}
+	}
 </script>
 
 <!-- This example requires Tailwind CSS v2.0+ -->

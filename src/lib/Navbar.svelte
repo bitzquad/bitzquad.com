@@ -33,12 +33,12 @@
 		<div class="justify-end hidden md:flex">
 			<!--  menu  -->
 			<a
-				href={Path("/")}
+				href={Path("/services")}
 				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
 				>{Txt.Services[lang]}</a
 			>
 			<a
-				href={Path("/")}
+				href={Path("/contact")}
 				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
 				>{Txt.Contact[lang]}</a
 			>
@@ -48,7 +48,7 @@
 				>{Txt.Blog[lang]}</a
 			>
 			<a
-				href={Path("/")}
+				href={Path("/about")}
 				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
 				>{Txt.About[lang]}</a
 			>
@@ -78,17 +78,21 @@
 		{#if menuActive == true}
 			<div class="pt-5 md:hidden w-full col-span-2">
 				<a
-					href={Path("/")}
+					href={Path("/services")}
 					class="block py-2 px-2 w-full  hover:bg-gray-200"
 					>{Txt.Services[lang]}</a
 				>
-				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
+				<a
+					href={Path("/contact")}
+					class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.Contact[lang]}</a
 				>
 				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.Blog[lang]}</a
 				>
-				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
+				<a
+					href={Path("/about")}
+					class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.About[lang]}</a
 				>
 			</div>
