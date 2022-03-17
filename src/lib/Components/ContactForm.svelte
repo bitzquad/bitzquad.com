@@ -6,8 +6,8 @@
 <div class="bg-slate-100 w-full py-10 lg:py-20 bz-container">
 	<div class="bg-slate-100 w-full container max-w-7xl">
 		<div>
-			<h3 class="text-3xl lg:text-4xl   text-center">{Txt.MainTitle}</h3>
-			<p class="py-2 text-center">{Txt.SubTitle}</p>
+			<h3 class="text-3xl lg:text-4xl   text-center">{Txt.MainTitle[lang]}</h3>
+			<p class="py-2 text-center">{Txt.SubTitle[lang]}</p>
 		</div>
 		<div class="px-5 w-full flex lg:flex-row">
 			<img
@@ -25,7 +25,7 @@
 						required
 					/>
 					<label for="floating_name" class="contact-form-input-label">
-						{Txt.Name}
+						{Txt.Name[lang]}
 					</label>
 				</div>
 				<div class="group relative  z-0 mb-6 w-full">
@@ -40,7 +40,7 @@
 						for="floating_email"
 						class="contact-form-input-label"
 					>
-						{Txt.Email}
+						{Txt.Email[lang]}
 					</label>
 				</div>
 				<div class="group relative  z-0 mb-6 w-full">
@@ -55,7 +55,7 @@
 						for="floating_subject"
 						class="contact-form-input-label"
 					>
-						{Txt.Subject}
+						{Txt.Subject[lang]}
 					</label>
 				</div>
 				<div class="group relative  z-0 mb-6 w-full">
@@ -70,11 +70,11 @@
 						for="floating_message"
 						class="contact-form-input-label"
 					>
-						{Txt.Message}
+						{Txt.Message[lang]}
 					</label>
 				</div>
 				<button class="bz-button w-full rounded  py-2 text-center"
-					>{Txt.Send}</button
+					>{Txt.Send[lang]}</button
 				>
 			</form>
 		</div>
