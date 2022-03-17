@@ -1,5 +1,5 @@
 <script>
-	import { Path } from '$lib/siteUtils';
+	import { Path } from "$lib/siteUtils";
 	export let title;
 	export let description;
 	export let image;
@@ -10,7 +10,7 @@
 <div
 	class="service-card w-full flex my-2 shadow-md hover:shadow-lg duration-500 rounded-md max-w-md min-w-min cursor-pointer"
 	on:click={() => {
-		location.href = Path(link);
+		window.location.href = Path(link);
 	}}
 >
 	<div

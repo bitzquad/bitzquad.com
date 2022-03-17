@@ -1,30 +1,7 @@
 <script>
 	let menuActive = false;
-	import { lang } from '$lib/siteUtils';
-	import { Path } from '$lib/siteUtils';
-
-	let PrimaryMenu = {
-		Services: {
-			en: 'Services',
-			fr: 'Nous sommes une équipe de passionnés qui adore créer.',
-			si: 'සේවා',
-		},
-		Contact: {
-			en: 'Contact',
-			fr: "Nous sommes en train de construire l'infrastructure, préparer les outils de développement, et terminer les serveurs pour la prochaine technologie de votre entreprise",
-			si: 'අමතන්න',
-		},
-		Blog: {
-			en: 'News',
-			fr: 'La date de lancement de nos services pour vous',
-			si: 'පුවත්',
-		},
-		About: {
-			en: 'About',
-			fr: 'La date de lancement de nos services pour vous',
-			si: 'අප ගැන',
-		},
-	};
+	import { lang, Path } from "$lib/siteUtils";
+	import Txt from "./Navbar_Text";
 </script>
 
 <nav
@@ -34,7 +11,7 @@
 		<div
 			class="flex justify-start cursor-pointer"
 			on:click={() => {
-				location.href = Path('/');
+				location.href = Path("/");
 			}}
 		>
 			<!-- logo  -->
@@ -56,24 +33,24 @@
 		<div class="justify-end hidden md:flex">
 			<!--  menu  -->
 			<a
-				href={Path('/')}
+				href={Path("/services")}
 				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
-				>{PrimaryMenu.Services[lang]}</a
+				>{Txt.Services[lang]}</a
 			>
 			<a
-				href={Path('/')}
+				href={Path("/contact")}
 				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
-				>{PrimaryMenu.Contact[lang]}</a
+				>{Txt.Contact[lang]}</a
 			>
 			<a
-				href={Path('/')}
+				href={Path("/")}
 				class="mx-2  rounded px-2 py-1 bz-button duration-500 "
-				>{PrimaryMenu.Blog[lang]}</a
+				>{Txt.Blog[lang]}</a
 			>
 			<a
-				href={Path('/')}
+				href={Path("/about")}
 				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
-				>{PrimaryMenu.About[lang]}</a
+				>{Txt.About[lang]}</a
 			>
 		</div>
 
@@ -100,17 +77,19 @@
 		</div>
 		{#if menuActive == true}
 			<div class="pt-5 md:hidden w-full col-span-2">
-				<a href={Path('/')} class="block py-2 px-2 w-full  hover:bg-gray-200"
-					>{PrimaryMenu.Services[lang]}</a
+				<a
+					href={Path("/services")}
+					class="block py-2 px-2 w-full  hover:bg-gray-200"
+					>{Txt.Services[lang]}</a
 				>
-				<a href={Path('/')} class="block py-2 px-2  hover:bg-gray-200"
-					>{PrimaryMenu.Contact[lang]}</a
+				<a href={Path("/contact")} class="block py-2 px-2  hover:bg-gray-200"
+					>{Txt.Contact[lang]}</a
 				>
-				<a href={Path('/')} class="block py-2 px-2  hover:bg-gray-200"
-					>{PrimaryMenu.Blog[lang]}</a
+				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
+					>{Txt.Blog[lang]}</a
 				>
-				<a href={Path('/')} class="block py-2 px-2  hover:bg-gray-200"
-					>{PrimaryMenu.About[lang]}</a
+				<a href={Path("/about")} class="block py-2 px-2  hover:bg-gray-200"
+					>{Txt.About[lang]}</a
 				>
 			</div>
 		{/if}

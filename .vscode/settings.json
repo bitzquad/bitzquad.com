@@ -1,3 +1,7 @@
 {
-    "css.lint.unknownAtRules": "ignore"
+    "css.lint.unknownAtRules": "ignore",
+    "prettier.useTabs": true,
+    "prettier.tabWidth": 4,
+    "prettier.printWidth": 80,
+    "svelte.plugin.svelte.useNewTransformation": true
 }
