@@ -2,3 +2,7 @@ User-agent: *
 Sitemap: https://bitzquad.com/sitemap.xml
 Disallow: /fr/
 Allow: /
+Sitemap: https://bitzquad.com/sitemap.xml
+Disallow: /cgi-bin/
+Disallow: /cdn-cgi/
+Disallow: /fr/
