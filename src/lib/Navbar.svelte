@@ -82,13 +82,17 @@
 					class="block py-2 px-2 w-full  hover:bg-gray-200"
 					>{Txt.Services[lang]}</a
 				>
-				<a href={Path("/contact")} class="block py-2 px-2  hover:bg-gray-200"
+				<a
+					href={Path("/contact")}
+					class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.Contact[lang]}</a
 				>
 				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.Blog[lang]}</a
 				>
-				<a href={Path("/about")} class="block py-2 px-2  hover:bg-gray-200"
+				<a
+					href={Path("/about")}
+					class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.About[lang]}</a
 				>
 			</div>
