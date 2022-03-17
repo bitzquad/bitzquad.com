@@ -1,10 +1,10 @@
 <script>
-	import ContactForm from '$lib/Components/ContactForm.svelte';
-	import Footer from '$lib/Footer.svelte';
+	import ContactForm from "$lib/Components/ContactForm.svelte";
+	import Footer from "$lib/Footer.svelte";
 
-	import Navbar from '$lib/Navbar.svelte';
-	import { lang } from '$lib/siteUtils';
-	import Txt from './ContactText';
+	import Navbar from "$lib/Navbar.svelte";
+	import { lang } from "$lib/siteUtils";
+	import Txt from "./ContactText";
 </script>
 
 <Navbar />
