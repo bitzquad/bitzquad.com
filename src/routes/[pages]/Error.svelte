@@ -10,7 +10,7 @@
 	import Footer from "$lib/Footer.svelte";
 	import Navbar from "$lib/Navbar.svelte";
 
-	import Txt from "./Error_Text";
+	import Txt from "./ErrorText";
 
 	export async function load({ fetch }) {
 		if (browser) {

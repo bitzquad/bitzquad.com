@@ -1,0 +1,104 @@
+/* Write your global styles here, in SCSS syntax. Variables and mixins from the src/variables.scss file are available here without importing */
+/* Write your global styles here, in PostCSS syntax */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.socialContainer {
+  @apply flex flex-row mt-4;
+}
+
+body {
+  font-family: 'Poppins';
+  font-display: swap;
+  overflow-x: hidden;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+.bz-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 100vh;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e0;
+  border-radius: 100vh;
+  border: 3px solid #edf2f7;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a0aec0;
+}
+
+.bz-button {
+  background: #facc15;
+  color: #713f12;
+  cursor: pointer;
+  @apply duration-300 transition-all;
+}
+
+.bz-button:hover {
+  background: #ca8a04;
+  color: #ffffff;
+}
+
+.contact-section {
+  @apply py-8 xl: py-32 w-full flex flex-col items-center justify-center px-5 lg:flex-row gap-10 container max-w-7xl;
+}
+
+.contact-section-image {
+  @apply w-1/2 lg: flex flex-col justify-center items-center;
+}
+
+.contact-section-image img {
+  @apply lg: w-3/4 flex justify-start items-start;
+}
+
+.contact-section-content {
+  @apply w-full lg: w-1/2 flex items-center flex-col;
+}
+
+.contact-section-content h2 {
+  @apply text-3xl lg: text-4xl pt-10 text-gray-700;
+}
+
+.contact-section-content p {
+  @apply py-4 text-center;
+}
+
+.contact-section-content button {
+  @apply bz-button py-2 w-full rounded md: w-1/2;
+}
+
+.contact-form {
+  @apply pt-10 w-full lg: w-1/2 md:px-20;
+}
+
+.contact-form-input {
+  @apply block w-full px-2 appearance-none border rounded border-gray-300 bg-transparent py-2.5 text-sm text-gray-900 outline-none autofill: bg-none focus:border-yellow-600 focus:ring-0 dark:border-gray-600;
+}
+
+.contact-form-input-label {
+  @apply absolute top-3 mx-2 z-10 px-1 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 bg-slate-100 duration-300 peer-placeholder-shown: translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 dark:text-gray-400 peer-focus:text-yellow-600;
+}
+/*# sourceMappingURL=app.css.map */

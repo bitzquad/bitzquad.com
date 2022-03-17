@@ -1,7 +1,7 @@
 <script>
-	import ServiceCard from "$lib/Components/ServiceCard.svelte";
-	import { lang } from "$lib/siteUtils";
-	import services from "./ServicesSection_Text";
+	import ServiceCard from '$lib/Components/ServiceCard.svelte';
+	import { lang } from '$lib/siteUtils';
+	import services from './ServicesSectionText';
 </script>
 
 <!-- services section -->

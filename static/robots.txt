@@ -1,2 +1,4 @@
 User-agent: *
+Sitemap: https://bitzquad.com/sitemap.xml
+Disallow: /fr/
 Allow: /
