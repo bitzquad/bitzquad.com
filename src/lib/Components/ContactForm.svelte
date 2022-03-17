@@ -1,6 +1,6 @@
 <script>
-	import { lang } from '$lib/siteUtils';
-	import Txt from './ContactFormText';
+	import { lang } from "$lib/siteUtils";
+	import Txt from "./ContactFormText";
 </script>
 
 <div class="bg-slate-100 w-full py-10 lg:py-20 bz-container">
