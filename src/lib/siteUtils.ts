@@ -77,6 +77,3 @@ export function GetLanguageFromPath(path: string): string {
 	}
 }
 
-export function SetLanguage(para: string) {
-	location.href = PathForLanguage(window.location.pathname, para);
-}
