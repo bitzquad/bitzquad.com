@@ -43,7 +43,7 @@
 				>{Txt.Contact[lang]}</a
 			>
 			<a
-				href={Path("/")}
+				href={Path("/news")}
 				class="mx-2  rounded px-2 py-1 bz-button duration-500 "
 				>{Txt.Blog[lang]}</a
 			>

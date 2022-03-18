@@ -54,32 +54,31 @@ body {
   background: #facc15;
   color: #713f12;
   cursor: pointer;
-  @apply duration-300 transition-all;
+  @apply duration-200 transition-all;
 }
 
 .bz-button:hover {
-  background: #ca8a04;
-  color: #ffffff;
+  @apply shadow-xl;
 }
 
 .contact-section {
-  @apply py-8 xl: py-32 w-full flex flex-col items-center justify-center px-5 lg:flex-row gap-10 container max-w-7xl;
+  @apply py-8 xl:py-32  w-full flex flex-col items-center justify-center px-5 lg:flex-row gap-10 container max-w-7xl;
 }
 
 .contact-section-image {
-  @apply w-1/2 lg: flex flex-col justify-center items-center;
+  @apply w-1/2 lg:flex flex-col justify-center items-center;
 }
 
 .contact-section-image img {
-  @apply lg: w-3/4 flex justify-start items-start;
+  @apply lg:w-3/4 flex justify-start items-start;
 }
 
 .contact-section-content {
-  @apply w-full lg: w-1/2 flex items-center flex-col;
+  @apply w-full lg:w-1/2 flex items-center flex-col;
 }
 
 .contact-section-content h2 {
-  @apply text-3xl lg: text-4xl pt-10 text-gray-700;
+  @apply text-3xl lg:text-4xl pt-10 text-gray-700;
 }
 
 .contact-section-content p {
@@ -87,18 +86,67 @@ body {
 }
 
 .contact-section-content button {
-  @apply bz-button py-2 w-full rounded md: w-1/2;
+  @apply bz-button py-2 w-full rounded md:w-1/2;
 }
 
 .contact-form {
-  @apply pt-10 w-full lg: w-1/2 md:px-20;
+  @apply pt-10 w-full lg:w-1/2 md:px-20;
 }
 
 .contact-form-input {
-  @apply block w-full px-2 appearance-none border rounded border-gray-300 bg-transparent py-2.5 text-sm text-gray-900 outline-none autofill: bg-none focus:border-yellow-600 focus:ring-0 dark:border-gray-600;
+  @apply block w-full px-2 appearance-none border rounded border-gray-300 bg-transparent py-2.5 text-sm text-gray-900 outline-none autofill:bg-none focus:border-yellow-600  focus:ring-0 dark:border-gray-600;
 }
 
 .contact-form-input-label {
-  @apply absolute top-3 mx-2 z-10 px-1 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 bg-slate-100 duration-300 peer-placeholder-shown: translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75 dark:text-gray-400 peer-focus:text-yellow-600;
+  @apply absolute top-3 mx-2 z-10 px-1 origin-[0] -translate-y-6 scale-75 transform text-sm text-gray-500 bg-slate-100 duration-300 peer-placeholder-shown:translate-y-0 peer-placeholder-shown:scale-100 peer-focus:left-0 peer-focus:-translate-y-6 peer-focus:scale-75   dark:text-gray-400 peer-focus:text-yellow-600;
+}
+
+.user-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  width: 200px;
+  height: 300px;
+  background-color: transparent;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 10px;
+  @apply shadow-xl;
+  -webkit-box-shadow: inset 0px 0px 0px 0px #ccc, inset 0px -80px 40px 10px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0px 0px 0px 0px #ccc, inset 0px -80px 40px 10px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  margin: 20px;
+  overflow: hidden;
+}
+
+.user-card:hover .img-placeholder {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
+
+.user-card .img-placeholder {
+  position: absolute;
+  -webkit-transform: scale(1) translate(-50%, -50%);
+          transform: scale(1) translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: center no-repeat;
+  background-size: cover;
+  z-index: -1;
+  @apply duration-1000;
 }
 /*# sourceMappingURL=app.css.map */

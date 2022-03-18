@@ -2,6 +2,7 @@
 	import Footer from "$lib/Footer.svelte";
 	import HeroSection from "$lib/Home/HeroSection.svelte";
 	import ServicesSection from "$lib/Home/ServicesSection.svelte";
+	import TeamSection from "$lib/Home/TeamSection.svelte";
 	import WorldWithUs from "$lib/Home/WorldWithUs.svelte";
 	import Navbar from "$lib/Navbar.svelte";
 	import { lang, Path } from "$lib/siteUtils";
@@ -19,6 +20,7 @@
 		name="keywords"
 		content="bitzquad, bitsquad, software, solutions, website"
 	/>
+
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<meta name="language" content="English" />
 	<meta name="author" content="Bitzquad" />
@@ -59,5 +61,6 @@
 	<HeroSection />
 	<ServicesSection />
 	<WorldWithUs />
+	<TeamSection />
 </main>
 <Footer />

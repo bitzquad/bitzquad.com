@@ -1,8 +1,8 @@
-<script context="module">
-	export async function load() {
-		return {
-			status: 302,
-			redirect: "/Error",
-		};
-	}
+<script>
+	import Footer from "$lib/Footer.svelte";
+	import Navbar from "$lib/Navbar.svelte";
 </script>
+
+<Navbar />
+<main>School</main>
+<Footer />
