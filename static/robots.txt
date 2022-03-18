@@ -1,2 +1,6 @@
 User-agent: *
 Allow: /
+Sitemap: https://bitzquad.com/sitemap.xml
+Disallow: /cgi-bin/
+Disallow: /cdn-cgi/
+Disallow: /fr/

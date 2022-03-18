@@ -1,6 +1,6 @@
 <script>
 	import { lang } from "$lib/siteUtils";
-	import heroText from "./HeroSection_Text";
+	import heroText from "./HeroSectionText";
 </script>
 
 <!-- hero section  -->

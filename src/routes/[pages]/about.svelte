@@ -1,3 +1,4 @@
+
 <script>
 import Footer from "$lib/Footer.svelte";
 import Navbar from "$lib/Navbar.svelte";
@@ -40,7 +41,6 @@ import Navbar from "$lib/Navbar.svelte";
 						<span class="about-tech-tag">Git</span>
 						<span class="about-tech-tag">Docker</span>
 						<span class="about-tech-tag">Kubernetes</span>
-						<!-- <br> -->
 						<span class="about-tech-tag-see-all">See All</span>
 					</div>
 					
@@ -56,16 +56,7 @@ import Navbar from "$lib/Navbar.svelte";
 		</div>
 	</div>
 	<div class=" hidden md:block h-[50vh] w-full"/>
-	<!-- <div class="pt-20 pb-32 flex flex-col justify-center items-center">
-		<h1
-			class="text-4xl md:text-3xl lg:text-4xl xl:text-6xl text-center md:text-left  text-gray-800 font-bold"
-		>
-			About Us
-		</h1>
-		<p class="mt-3">Amet minim mollit non deserunt </p>
-	</div> -->
 	
 </main>
 <Footer/>
-
 

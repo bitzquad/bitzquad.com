@@ -1,6 +1,6 @@
 <script>
-	import { lang } from "$lib/siteUtils";
-	import worldWithUs from "./WorldWithUs_Text";
+	import { lang } from '$lib/siteUtils';
+	import worldWithUs from './WorldWithUsText';
 </script>
 
 <!-- services section -->
