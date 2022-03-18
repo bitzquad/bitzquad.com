@@ -93,3 +93,11 @@ body {
 		}
 	}
 }
+
+.about-tech-tag {
+	@apply bg-slate-400 text-gray-100 px-2 text-lg rounded-lg inline-block mb-2;
+
+	&-see-all {
+		@apply bg-slate-600 text-gray-200 px-2 text-lg rounded-lg;
+	}
+}
