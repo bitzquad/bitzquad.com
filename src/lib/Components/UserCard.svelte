@@ -12,7 +12,7 @@
 		<span class="text-sm font-bold text-gray-100">{name}</span>
 	</div>
 	<div class="user-role">
-		<span class="text-xs font-semi-bold text-gray-300">{role}</span>
+		<span class="text-xs  font-semi-bold text-yellow-600">{role}</span>
 	</div>
 	<div class="location">
 		<span class="text-gray-400 text-sm flex items-center"
