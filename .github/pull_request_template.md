@@ -1,4 +1,4 @@
-## Summary
+# Summary
 
 <!--
 Provide an overview
@@ -15,20 +15,26 @@ Provide an overview
 ## References
 
 <!--
+Where can we find more information?
+
+Include any links to specifications, documentations,
+ or other resources that you find relevant.
+
 -   [Example reference link 1](www.google.com)
 -   [Example reference link 2](www.google.com)
 -->
 
-## Checklist
+# Checklist
 
--   [ ] Reviewed changes
--   [ ] Tested changes with `npm run static`
+-   [ ] Tested changes
+-   [ ] Project builds with `npm run static`
 -   [ ] No error nor warning in the console
--   [x] I fixed|updated|added unit tests and integration tests for each feature (if applicable)
+
+-   [ ] I updated the documentation to reflect the changes
 
 -   [x] Stakeholder Approval
--   [ ] I joined a screenshot of the app before and after the fix
--   [ ] I updated the documentation to reflect the changes
+-   [x] I joined a screenshot of the app before and after the fix (if applicable)
+-   [x] I fixed|updated|added unit tests and integration tests for each feature (if applicable)
 
 ## Screenshots
 
@@ -39,6 +45,7 @@ Provide an overview
 <!-- Uncomment all that apply -->
 
 <!-- -   Windows 10 -->
+<!-- -   Windows 11 -->
 <!-- -   Linux -->
 
 <!-- -   Visual Studio Code -->
