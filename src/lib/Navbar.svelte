@@ -48,7 +48,7 @@
 				>{Txt.Blog[lang]}</a
 			>
 			<a
-				href={Path("/about")}
+				href={Path("/")}
 				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
 				>{Txt.About[lang]}</a
 			>
@@ -91,7 +91,7 @@
 					>{Txt.Blog[lang]}</a
 				>
 				<a
-					href={Path("/about")}
+					href={Path("/")}
 					class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.About[lang]}</a
 				>

@@ -71,7 +71,7 @@
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
 				<a href={Path("/")}> {Txt.Home[lang]} </a>
-				<a href={Path("/about")}> {Txt.AboutUs[lang]}</a>
+				<a href={Path("/")}> {Txt.AboutUs[lang]}</a>
 				<a href={Path("/team")}>{Txt.OurTeam[lang]}</a>
 				<a href={Path("/contact")}>{Txt.ContactUs[lang]}</a>
 			</div>
