@@ -9,8 +9,11 @@ export let defaultLang = "en"
 export let AdditionalStaticRoutes = [
 ]
 
+export let RemovePaths = [
+    "/about",
+]
+
 export let ExcludeInSiteMap = [
-    "/Error",
     "/error",
 ]
 export let OriginURL = "https://bitzquad.com"

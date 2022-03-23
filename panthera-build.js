@@ -1,5 +1,5 @@
 import fs from "fs";
-import { Langs, ExcludeInSiteMap, AdditionalStaticRoutes, OriginURL } from "./site-settings.js";
+import { Langs, AdditionalStaticRoutes, OriginURL, ExcludeInSiteMap, RemovePaths } from "./site-settings.js";
 
 let staticRoutesFromSvelteFiles = null
 let siteMap = []
@@ -19,11 +19,18 @@ export let GetStaticRoutes = () => {
             if (file.startsWith(".") || file.startsWith("_")) {
                 return
 
+
             } else if (file.indexOf("[") > -1 && file.endsWith(".svelte")) {
                 // Parameraized route
 
                 // Check .routes.js for list of routes
                 let upath = file.substring(0, file.length - 7)
+
+                let route = `/${udirpath}${upath}`
+                if (RemovePaths.includes(route)) {
+                    console.log("Excluding route : ", route)
+                    return
+                }
 
                 let routesFile = `${dirpath}${upath}.routes.json`
                 if (fs.existsSync(routesFile)) {
@@ -70,6 +77,10 @@ export let GetStaticRoutes = () => {
                 let upath = file.substring(0, file.length - 7)
                 let route = `/${udirpath}${upath}`
 
+                if (RemovePaths.includes(route)) {
+                    console.log("Excluding route : ", route)
+                    return
+                }
                 genStaticRoutesForPath(route)
 
             } else if (!file.includes(".")) {
