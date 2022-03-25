@@ -1,8 +1,8 @@
 <script>
 	import { page } from "$app/stores";
-	import { DetectLanguage } from "$lib/siteUtils";
+	import { DetectAndSetLanguage } from "$lib/siteUtils";
 
-	DetectLanguage($page.params.pages);
+	DetectAndSetLanguage($page.params.pages);
 </script>
 
 <slot />

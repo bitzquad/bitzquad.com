@@ -7,8 +7,11 @@
 	import { lang } from "$lib/siteUtils";
 
 	import GetTextData from "$lib/Text/Contact";
+	import Head from "$lib/Components/Head.svelte";
 	let Txt = GetTextData();
 </script>
+
+<Head title="Contact Bitzquad" />
 
 <Navbar />
 <main class="bz-container text-slate-600">
