@@ -1,7 +1,8 @@
 <script>
 	import ServiceCard from "$lib/Components/ServiceCard.svelte";
-	import { lang } from "$lib/siteUtils";
-	import services from "./ServicesSectionText";
+
+	import GetTextData from "$lib/Text/ServicesSection";
+	let services = GetTextData();
 </script>
 
 <!-- services section -->
@@ -11,48 +12,48 @@
 >
 	<div class="container max-w-7xl flex flex-col items-center mb-24">
 		<h2 class="text-3xl md:text-5xl mt-12 md:mt-32 font-bold text-gray-600">
-			{services.title[lang]}
+			{services.title}
 		</h2>
 		<div class="flex justify-center md:justify-start w-full mt-10 md:mt-24">
 			<div class="flex md:w-6/12 flex-col md:pr-5">
 				<ServiceCard
-					title={services.web_title[lang]}
-					description={services.web_description[lang]}
+					title={services.sysTitle}
+					description={services.sysDescription}
 					image="/web.svg"
 					link="web"
 					width="53"
 				/>
 				<ServiceCard
-					title={services.mobile_title[lang]}
-					description={services.mobile_description[lang]}
+					title={services.appTitle}
+					description={services.appDescription}
 					image="/mobile.png"
 					link="mobile"
 					width="27"
 				/>
 				<ServiceCard
-					title={services.blockchain_title[lang]}
-					description={services.blockchain_description[lang]}
+					title={services.blockchainTitle}
+					description={services.blockchainDescription}
 					image="/ethereum.png"
 					link="blockchain"
 					width="41"
 				/>
 				<ServiceCard
-					title={services.brand_title[lang]}
-					description={services.brand_description[lang]}
+					title={services.brandTitle}
+					description={services.brandDescription}
 					image="/brand.png"
 					link="brand"
 					width="43"
 				/>
 				<ServiceCard
-					title={services.social_title[lang]}
-					description={services.social_description[lang]}
+					title={services.brandTitle}
+					description={services.brandDescription}
 					image="/social.png"
 					link="social"
 					width="37"
 				/>
 				<ServiceCard
-					title={services.ecommerce_title[lang]}
-					description={services.ecommerce_description[lang]}
+					title={services.ecommerceTitle}
+					description={services.ecommerceDescription}
 					image="/ecommerce.png"
 					link="ecommerce"
 					width="44"

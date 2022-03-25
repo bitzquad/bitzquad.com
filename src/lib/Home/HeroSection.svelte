@@ -1,5 +1,4 @@
 <script>
-	import { lang } from "$lib/siteUtils";
 	import GetTextData from "$lib/Text/HeroSection";
 	let heroText = GetTextData();
 </script>
