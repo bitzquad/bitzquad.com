@@ -1,6 +1,6 @@
 <script>
-	import { lang } from '$lib/siteUtils';
-	import worldWithUs from './WorldWithUsText';
+	import GetTextData from "$lib/Text/WorldWithUs";
+	let worldWithUs = GetTextData();
 </script>
 
 <!-- services section -->
@@ -12,10 +12,10 @@
 		<h2
 			class="text-3xl md:text-5xl mt-12 md:mt-32 font-bold text-center text-gray-600"
 		>
-			{worldWithUs.title[lang]}
+			{worldWithUs.title}
 		</h2>
 		<p class="text-md text-gray-600 mt-5 max-w-xl text-center">
-			{worldWithUs.description[lang]}
+			{worldWithUs.description}
 		</p>
 
 		<img
