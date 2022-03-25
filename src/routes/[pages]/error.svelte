@@ -10,7 +10,8 @@
 	import Footer from "$lib/Footer.svelte";
 	import Navbar from "$lib/Navbar.svelte";
 
-	import Txt from "./ErrorText";
+	import GetTextData from "$lib/Text/Error";
+	let Txt = GetTextData();
 
 	export async function load({ fetch }) {
 		if (browser) {
@@ -53,12 +54,10 @@
 			class="container max-w-7xl flex items-center mt-12 justify-center flex-col"
 		>
 			<h1 class="text-4xl lg:text-3xl 2xl:text-4xl  font-bold">
-				{statusCode === 404 ? Txt.Msg404[lang] : Txt.MsgOther[lang]}
+				{statusCode === 404 ? Txt.msg404 : Txt.msgUnknown}
 			</h1>
 			<p class="md:w-1/2 lg:text-sm text-center mt-5">
-				{statusCode === 404
-					? Txt.Description404[lang]
-					: Txt.DescriptionOther[lang]}
+				{statusCode === 404 ? Txt.decription404 : Txt.decriptionUnknown}
 			</p>
 			<div
 				class="md:relative w-full md:w-1/2 2xl:w-3/4 mt-10 mb-5 flex flex-col-reverse"

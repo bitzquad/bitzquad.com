@@ -20,7 +20,7 @@ let TextData = {
 	} as NavbarText,
 	si: {
 		"services": "සේවාවන්",
-		"contact": "සම්බන්ධ කරගන්න / අමතන්න",
+		"contact": "සම්බන්ධ කරගන්න",
 		"blog": "පුවත්",
 		"about": "අපි ගැන"
 	} as NavbarText,
