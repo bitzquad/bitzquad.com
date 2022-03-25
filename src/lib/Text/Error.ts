@@ -1,3 +1,5 @@
+import { lang } from "$lib/siteUtils";
+
 export interface ErrorText {
 	msg404: string
 	decription404: string
@@ -5,7 +7,7 @@ export interface ErrorText {
 	decriptionUnknown: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"msg404": "404 not found",
 		"decription404": "The page you are looking for does not exist.",
@@ -42,4 +44,8 @@ export default {
 		"msgUnknown": "",
 		"decriptionUnknown": ""
 	} as ErrorText,
+}
+
+export default function (): ErrorText {
+    return TextData[lang];
 }

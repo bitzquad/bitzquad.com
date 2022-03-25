@@ -126,7 +126,7 @@ async function generateFiles() {
 
             let sectionTextType = section + "Text"
 
-            let str = `export interface ${sectionTextType} {`
+            let str = `import { lang } from "$lib/siteUtils";\n\nexport interface ${sectionTextType} {`
 
             for (const identifier in sectionData) {
                 if (Object.hasOwnProperty.call(sectionData, identifier)) {
@@ -146,7 +146,7 @@ async function generateFiles() {
                 }
             }
 
-            str += `\n}\n\nexport default {\n`
+            str += `\n}\n\nlet TextData = {\n`
 
             for (const lang in headerLangs) {
                 if (Object.hasOwnProperty.call(headerLangs, lang)) {
@@ -157,7 +157,10 @@ async function generateFiles() {
                 }
             }
 
-            str += `}\n`
+            str += `}\n
+export default function (): ${sectionTextType} {
+    return TextData[lang];
+}`
 
             fs.writeFileSync(sectionFile, str)
         }
