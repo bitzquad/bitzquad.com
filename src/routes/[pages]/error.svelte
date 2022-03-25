@@ -1,7 +1,7 @@
 <script context="module">
 	import {
 		Path,
-		GetLanguageFromPath,
+		DetectAndSetLanguageFromPath,
 		lang,
 		PathForLanguage,
 	} from "$lib/siteUtils";
@@ -19,8 +19,8 @@
 				window.location.search &&
 				window.location.search.startsWith("?")
 			) {
-				let origlang = GetLanguageFromPath(window.location.pathname);
-				let queryLang = GetLanguageFromPath(
+				let origlang = DetectAndSetLanguageFromPath(window.location.pathname);
+				let queryLang = DetectAndSetLanguageFromPath(
 					window.location.search.slice(1)
 				);
 

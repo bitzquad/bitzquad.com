@@ -1,4 +1,4 @@
-import { Langs, DefaultLang } from "$lib/siteSettings";
+import { Langs, DefaultLang } from "../site-settings";
 
 /** @type {import('@sveltejs/kit').Handle} */
 export async function handle({ event, resolve }) {
