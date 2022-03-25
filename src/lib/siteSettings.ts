@@ -1,2 +1,2 @@
-export let Langs = [".", "en", "si", "fr"];
+export let Langs = [".", "en", "si"]
 export let DefaultLang = "en";

@@ -1,9 +1,11 @@
+import { lang } from "$lib/siteUtils";
+
 export interface WorldWithUsText {
 	title: string
 	description: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"title": "The world with us",
 		"description": "We come from different places but have the same name"
@@ -28,4 +30,8 @@ export default {
 		"title": "",
 		"description": ""
 	} as WorldWithUsText,
+}
+
+export default function (): WorldWithUsText {
+    return TextData[lang];
 }

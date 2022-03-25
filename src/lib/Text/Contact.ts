@@ -1,3 +1,5 @@
+import { lang } from "$lib/siteUtils";
+
 export interface ContactText {
 	contactUs: string
 	contactUsDescription: string
@@ -9,7 +11,7 @@ export interface ContactText {
 	emailUsBtn: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"contactUs": "Contact Us",
 		"contactUsDescription": "We work alongside our customers. When we start a project, you become a member of our bitzquad family. You have all the freedom to discuss and clarify every aspect of 'our' project.",
@@ -70,4 +72,8 @@ export default {
 		"emailUsDes": "",
 		"emailUsBtn": ""
 	} as ContactText,
+}
+
+export default function (): ContactText {
+    return TextData[lang];
 }

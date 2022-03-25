@@ -1,3 +1,5 @@
+import { lang } from "$lib/siteUtils";
+
 export interface ServicesSectionText {
 	title: string
 	sysTitle: string
@@ -14,7 +16,7 @@ export interface ServicesSectionText {
 	ecommerceDescription: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"title": "Our Services",
 		"sysTitle": "Information Systems",
@@ -105,4 +107,8 @@ export default {
 		"ecommerceTitle": "",
 		"ecommerceDescription": ""
 	} as ServicesSectionText,
+}
+
+export default function (): ServicesSectionText {
+    return TextData[lang];
 }
