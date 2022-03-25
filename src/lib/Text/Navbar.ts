@@ -1,3 +1,5 @@
+import { lang } from "$lib/siteUtils";
+
 export interface NavbarText {
 	services: string
 	contact: string
@@ -5,7 +7,7 @@ export interface NavbarText {
 	about: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"services": "Services",
 		"contact": "Contact",
@@ -42,4 +44,8 @@ export default {
 		"blog": "",
 		"about": ""
 	} as NavbarText,
+}
+
+export default function (): NavbarText {
+    return TextData[lang];
 }

@@ -1,3 +1,5 @@
+import { lang } from "$lib/siteUtils";
+
 export interface ContactFormText {
 	title: string
 	description: string
@@ -8,7 +10,7 @@ export interface ContactFormText {
 	submitBtn: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"title": "Let's talk",
 		"description": "We will reply soon",
@@ -63,4 +65,8 @@ export default {
 		"placeholderMessage": "",
 		"submitBtn": ""
 	} as ContactFormText,
+}
+
+export default function (): ContactFormText {
+    return TextData[lang];
 }

@@ -1,3 +1,5 @@
+import { lang } from "$lib/siteUtils";
+
 export interface HeroSectionText {
 	mainTitle: string
 	subTitle: string
@@ -5,7 +7,7 @@ export interface HeroSectionText {
 	learnMore: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"mainTitle": "Solutions Beyond Technology",
 		"subTitle": "Welcome to Bitzquad",
@@ -42,4 +44,8 @@ export default {
 		"description": "",
 		"learnMore": ""
 	} as HeroSectionText,
+}
+
+export default function (): HeroSectionText {
+    return TextData[lang];
 }

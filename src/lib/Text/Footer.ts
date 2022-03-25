@@ -1,3 +1,5 @@
+import { lang } from "$lib/siteUtils";
+
 export interface FooterText {
 	logoSubtitle: string
 	subscribeToNewsletter: string
@@ -13,7 +15,7 @@ export interface FooterText {
 	reachUs: string
 }
 
-export default {
+let TextData = {
 	en: {
 		"logoSubtitle": "Bitzquad - Solutions beyond technology",
 		"subscribeToNewsletter": "Subscribe to Newsletter",
@@ -98,4 +100,8 @@ export default {
 		"bitzchool": "",
 		"reachUs": ""
 	} as FooterText,
+}
+
+export default function (): FooterText {
+    return TextData[lang];
 }
