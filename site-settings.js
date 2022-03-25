@@ -1,6 +1,6 @@
 
 // "." is the root language. Pages should alias it to English.
-export let Langs = [".", "en", "si"]
+export let Langs = [".", "en", "si", "it", "ja", "zh", "ta"]
 export let defaultLang = "en"
 
 // Additional Static Routes that are

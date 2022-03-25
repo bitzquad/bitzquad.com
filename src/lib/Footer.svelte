@@ -9,7 +9,8 @@
 	};
 	setContext("setLang", setLang);
 
-	import Txt from "./Footer_Text";
+	import GetTextData from "$lib/Text/Footer";
+	let Txt = GetTextData();
 </script>
 
 <!-- dark:bg-slate-900 -->
@@ -30,7 +31,7 @@
 			/>
 			<span
 				class="mx-10 lg:mx-0 lg:w-full lg:text-lg py-3 text-center text-gray-500 lg:text-left"
-				>{Txt.LogoSubtitle[lang]}</span
+				>{Txt.logoSubtitle}</span
 			>
 			<div
 				class="w-full flex items-center lg:items-start flex-col lg:flex-col-reverse"
@@ -40,7 +41,7 @@
 					class="mt-8 flex flex-col items-center w-full gap-y-3 lg:items-start"
 				>
 					<span class="text-xl font-bold text-gray-600"
-						>{Txt.SubscribeToNewsletter[lang]}</span
+						>{Txt.subscribeToNewsletter}</span
 					>
 					<div class="w-full gap-y-3 flex flex-col lg:gap-3 ">
 						<input
@@ -48,13 +49,13 @@
 							name="email"
 							id="input-email"
 							class="h-10 w-full border rounded border-gray-400 p-3 lg:w-full"
-							placeholder="Enter Your Email..."
+							placeholder={Txt.subscribePlaceholder}
 						/>
 
 						<button
 							type="submit"
 							class="h-10 px-2 w-full border rounded border-none  bz-button font-bold tracking-wide"
-							>{Txt.Subscribe[lang]}</button
+							>{Txt.subscribe}</button
 						>
 					</div>
 				</form>
@@ -70,21 +71,21 @@
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href={Path("/")}> {Txt.Home[lang]} </a>
-				<a href={Path("/")}> {Txt.AboutUs[lang]}</a>
-				<a href={Path("/team")}>{Txt.OurTeam[lang]}</a>
-				<a href={Path("/contact")}>{Txt.ContactUs[lang]}</a>
+				<a href={Path("/")}> {Txt.home} </a>
+				<a href={Path("/")}> {Txt.aboutUs}</a>
+				<a href={Path("/team")}>{Txt.ourTeam}</a>
+				<a href={Path("/contact")}>{Txt.contactUs}</a>
 			</div>
 		</div>
 		<!-- Links - Resources -->
 		<div class="mt-20 lg:mt-0  flex flex-col items-center  ">
 			<span class="mb-4 text-xl text-gray-700 font-bold"
-				>{Txt.Resources[lang]}</span
+				>{Txt.resources}</span
 			>
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href={Path("/news")}>{Txt.NewFeed[lang]}</a>
+				<a href={Path("/news")}>{Txt.newsFeed}</a>
 
 				<a href={Path("/school")}>BitZchool</a>
 				<!-- Social Links - Resources -->
@@ -113,7 +114,7 @@
 		<!-- Links - Contact -->
 		<div class="mt-20 lg:mt-0  mb-20 flex flex-col items-center ">
 			<span class="mb-4 text-xl text-gray-700 font-bold"
-				>{Txt.ReachUs[lang]}</span
+				>{Txt.reachUs}</span
 			>
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
