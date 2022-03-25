@@ -42,9 +42,9 @@ let TextData = {
 		"home": "ප්‍රධාන පිටුව",
 		"aboutUs": "අපි ගැන",
 		"ourTeam": "අපගේ කණ්ඩායම",
-		"contactUs": "අපිව සම්බන්ධ කරගන්න / අප අමතන්න",
+		"contactUs": "අපිව සම්බන්ධ කරගන්න",
 		"resources": "සම්පත්",
-		"newsFeed": "පුවත් ගොනුව / පුවත්",
+		"newsFeed": "පුවත්",
 		"bitzchool": "BitZchool",
 		"reachUs": "අප වෙත ළඟා වන්න"
 	} as FooterText,

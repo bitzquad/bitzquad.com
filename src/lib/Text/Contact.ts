@@ -27,14 +27,14 @@ let TextData = {
 		"emailUsBtn": "Email Us"
 	} as ContactText,
 	si: {
-		"contactUs": "අපිව සම්බන්ධ කරගන්න / අප අමතන්න",
+		"contactUs": "අපිව සම්බන්ධ කරගන්න",
 		"contactUsDescription": "",
 		"liveChatTitle": "",
 		"liveChatDes": "අපි ඔබට උපකාර කිරීම සඳහා නිරතුරුව ම බැඳී සිටින්නෙමු",
 		"liveChatBtn": "",
-		"emailUsTitle": "අපට විද්‍යුත් පණිවිඩයක් යොමු කරන්න / අපට Email කරන්න",
+		"emailUsTitle": "අපට විද්‍යුත් පණිවිඩයක් යොමු කරන්න",
 		"emailUsDes": "",
-		"emailUsBtn": "අපට විද්‍යුත් පණිවිඩයක් යොමු කරන්න / අපට Email කරන්න"
+		"emailUsBtn": "අපට විද්‍යුත් පණිවිඩයක් යොමු කරන්න"
 	} as ContactText,
 	it: {
 		"contactUs": "Contattaci",
@@ -79,5 +79,5 @@ let TextData = {
 }
 
 export default function (): ContactText {
-	return TextData[lang];
+    return TextData[lang];
 }

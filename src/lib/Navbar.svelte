@@ -1,7 +1,9 @@
 <script>
 	let menuActive = false;
 	import { lang, Path } from "$lib/siteUtils";
-	import Txt from "./Navbar_Text";
+
+	import GetTextData from "$lib/Text/Navbar";
+	let Txt = GetTextData();
 </script>
 
 <nav
@@ -35,22 +37,22 @@
 			<a
 				href={Path("/services")}
 				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
-				>{Txt.Services[lang]}</a
+				>{Txt.services}</a
 			>
 			<a
 				href={Path("/contact")}
 				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
-				>{Txt.Contact[lang]}</a
+				>{Txt.contact}</a
 			>
 			<a
 				href={Path("/")}
 				class="mx-2  rounded px-2 py-1 bz-button duration-500 "
-				>{Txt.Blog[lang]}</a
+				>{Txt.blog}</a
 			>
 			<a
 				href={Path("/")}
 				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
-				>{Txt.About[lang]}</a
+				>{Txt.about}</a
 			>
 		</div>
 
@@ -80,20 +82,17 @@
 				<a
 					href={Path("/services")}
 					class="block py-2 px-2 w-full  hover:bg-gray-200"
-					>{Txt.Services[lang]}</a
+					>{Txt.services}</a
 				>
 				<a
 					href={Path("/contact")}
-					class="block py-2 px-2  hover:bg-gray-200"
-					>{Txt.Contact[lang]}</a
+					class="block py-2 px-2  hover:bg-gray-200">{Txt.contact}</a
 				>
 				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
-					>{Txt.Blog[lang]}</a
+					>{Txt.blog}</a
 				>
-				<a
-					href={Path("/")}
-					class="block py-2 px-2  hover:bg-gray-200"
-					>{Txt.About[lang]}</a
+				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
+					>{Txt.about}</a
 				>
 			</div>
 		{/if}
