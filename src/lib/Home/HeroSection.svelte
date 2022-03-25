@@ -1,6 +1,7 @@
 <script>
 	import { lang } from "$lib/siteUtils";
-	import heroText from "./HeroSectionText";
+	import GetTextData from "$lib/Text/HeroSection";
+	let heroText = GetTextData();
 </script>
 
 <!-- hero section  -->
@@ -17,21 +18,21 @@
 			<h1
 				class="text-2xl md:text-4xl lg:text-5xl text-center md:text-left xl:text-7xl text-gray-800 font-bold"
 			>
-				{heroText.mainTitle[lang]}
+				{heroText.mainTitle}
 			</h1>
 			<h2
 				class="text-lg md:text-xl text-center font-bold md:text-left mt-10 text-gray-600"
 			>
-				{heroText.subTitle[lang]}
+				{heroText.subTitle}
 			</h2>
 			<p
 				class="text-md text-center md:text-left md:text-start text-gray-600 mt-3"
 			>
-				{heroText.description[lang]}
+				{heroText.description}
 			</p>
 			<button
 				class="bz-button rounded  mt-5 md:max-w-sm py-2 font-bold duration-500"
-				>{heroText.learn_more[lang]}</button
+				>{heroText.learnMore}</button
 			>
 		</div>
 		<div class="col-span-1 md:w-5/12 flex items-center justify-center">
