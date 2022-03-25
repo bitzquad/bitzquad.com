@@ -1,7 +1,8 @@
 
 // "." is the root language. Pages should alias it to English.
 export let Langs = [".", "en", "si", "it", "ja", "zh", "ta"]
-export let defaultLang = "en"
+export let DefaultLang = "en"
+export let OriginURL = "https://bitzquad.com"
 
 // Additional Static Routes that are
 // not detected from link crawling or directory structure
@@ -17,7 +18,6 @@ export let ExcludeInSiteMap = [
     "/error",
 ]
 
-export let OriginURL = "https://bitzquad.com"
 
 export let TextFolder = "./src/lib/Text"
 export let TextTSV_URL = "https://docs.google.com/spreadsheets/d/1KskuvNHKYRGvoMbk4izAkUITJB7mKAgDLcDm_2mVeBQ/export?format=tsv&id=1KskuvNHKYRGvoMbk4izAkUITJB7mKAgDLcDm_2mVeBQ&gid=0"

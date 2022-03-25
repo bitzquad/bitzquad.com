@@ -11,6 +11,21 @@ let textData = {}
 
 
 console.log("Panthera text build")
+
+async function writeSiteSettings() {
+    console.log("Writing site settings")
+
+    let settings = `
+    export let Langs = ${JSON.stringify(Langs)}
+    export let DefaultLang = "${Langs[0]}"
+    export let OriginURL = "${OriginURL}"
+`
+
+    fs.writeFileSync(`${TextFolder}/site-settings.ts`, settings)
+
+}
+
+
 await parseTextData()
 
 async function parseTextData() {

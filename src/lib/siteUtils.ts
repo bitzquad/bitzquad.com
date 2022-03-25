@@ -1,20 +1,6 @@
-import { Langs, DefaultLang } from "./siteSettings";
+import { Langs, DefaultLang } from "../../site-settings";
 
 export let lang: string = DefaultLang;
-
-export function DetectLanguage(para: string) {
-	if (para == ".") {
-		para = DefaultLang;
-	}
-
-	if (Langs.includes(para)) {
-		lang = para;
-		return lang;
-	} else {
-		lang = DefaultLang;
-		return lang;
-	}
-}
 
 // Returns normalized path without the language. Format : path/to/page
 export function NormalizePath(path: string): string {
@@ -63,7 +49,26 @@ export function Path(absolutePath: string) {
 	return PathForLanguage(absolutePath, lang);
 }
 
-export function GetLanguageFromPath(path: string): string {
+
+export function DetectLanguage(para: string): string {
+	if (para == ".") {
+		para = DefaultLang;
+	}
+
+	if (Langs.includes(para)) {
+		return para;
+	} else {
+		return DefaultLang;
+	}
+}
+
+export function DetectAndSetLanguage(para: string): string {
+	lang = DetectLanguage(para);
+	return lang;
+}
+
+
+export function DetectLanguageFromPath(path: string): string {
 	if (path.startsWith("/")) {
 		path = path.substring(1);
 	}
@@ -75,4 +80,9 @@ export function GetLanguageFromPath(path: string): string {
 	} else {
 		return DetectLanguage(pathsegs[0]);
 	}
+}
+
+export function DetectAndSetLanguageFromPath(path: string): string {
+	lang = DetectLanguageFromPath(path);
+	return lang;
 }
