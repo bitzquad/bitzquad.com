@@ -49,11 +49,11 @@ body {
 	color: #713f12;
 	cursor: pointer;
 
-  @apply duration-200 transition-all;
+	@apply duration-200 transition-all;
 
-  &:hover {
-    @apply shadow-xl;
-  }
+	&:hover {
+		@apply shadow-xl;
+	}
 }
 
 .contact-section {
@@ -99,4 +99,39 @@ body {
 	&-see-all {
 		@apply bg-slate-600 text-gray-200 px-2 text-lg rounded-lg;
 	}
+}
+
+blockquote {
+	font-family: Georgia, serif;
+	position: relative;
+	margin: 0.5em;
+	padding: 0.5rem 2rem 0.5rem 3rem;
+}
+
+blockquote:before {
+	font-family: Georgia, serif;
+	position: absolute;
+	font-size: 6rem;
+	line-height: 1;
+	top: 0;
+	left: 0;
+	content: '\201C';
+}
+blockquote:after {
+	font-family: Georgia, serif;
+	position: absolute;
+	/* display: block; don't use this, it raised the quote too high from the bottom - defeated line-height? */
+	float: right;
+	font-size: 6rem;
+	line-height: 1;
+	right: 0;
+	bottom: -0.5rem;
+	content: '\201D';
+}
+blockquote footer {
+	padding: 0 2rem 0 0;
+	text-align: right;
+}
+blockquote cite:before {
+	content: '\2013';
 }
