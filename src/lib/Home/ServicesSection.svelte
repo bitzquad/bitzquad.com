@@ -20,42 +20,42 @@
 					title={services.sysTitle}
 					description={services.sysDescription}
 					image="/web.svg"
-					link="web"
+					link="services/system"
 					width="53"
 				/>
 				<ServiceCard
 					title={services.appTitle}
 					description={services.appDescription}
 					image="/mobile.png"
-					link="mobile"
+					link="services/software"
 					width="27"
 				/>
 				<ServiceCard
 					title={services.blockchainTitle}
 					description={services.blockchainDescription}
 					image="/ethereum.png"
-					link="blockchain"
+					link="services/blockchain"
 					width="41"
 				/>
 				<ServiceCard
 					title={services.brandTitle}
 					description={services.brandDescription}
 					image="/brand.png"
-					link="brand"
+					link="services/brand"
 					width="43"
 				/>
 				<ServiceCard
-					title={services.brandTitle}
-					description={services.brandDescription}
+					title={services.marketingTitle}
+					description={services.marketingDescription}
 					image="/social.png"
-					link="social"
+					link="services/marketing"
 					width="37"
 				/>
 				<ServiceCard
 					title={services.ecommerceTitle}
 					description={services.ecommerceDescription}
 					image="/ecommerce.png"
-					link="ecommerce"
+					link="services/commerce"
 					width="44"
 				/>
 			</div>
