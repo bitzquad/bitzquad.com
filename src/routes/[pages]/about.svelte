@@ -7,7 +7,7 @@ import Navbar from "$lib/Navbar.svelte";
 <Navbar/>
 <main class="text-slate-600 bg-slate-200 md:bg-[url('/about-bg.webp')] bg-fixed  bg-cover bg-no-repeat bg-center">
 	<div class="bz-container w-screen bg-slate-200 md:pt-20 bg-opacity-50 backdrop-blur-lg">
-		<div class="container max-w-7xl bg-slate-200 md:my-20">
+		<div class="container max-w-7xl bg-slate-200 2xl:my-20 md:my-10">
 		<div class="w-full py-10 md:py-20 flex flex-col md:flex-row justify-center items-center">
 			<div class="w-11/12 md:w-5/12 relative flex flex-col md:flex-row md:justify-center md:items-center">
 				<div class="md:w-3/4 relative bg-slate-200 group"><img src="/about-team.svg" alt="about-team" class=" w-full h-full p-3 z-20">
