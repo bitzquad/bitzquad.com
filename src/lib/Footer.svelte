@@ -61,10 +61,6 @@
 				</form>
 			</div>
 		</div>
-
-		<!-- <div
-			class="text-gray-400 lg:w-8/12 flex flex-col lg:flex-row lg:justify-end lg:bg-[url('footer-map.svg')]  bg-contain bg-no-repeat bg-top"
-		> -->
 		<!-- Links - Explore -->
 		<div class="mt-20 lg:mt-0   flex flex-col items-center ">
 			<span class="mb-4 text-xl text-gray-700 font-bold">Explore</span>
@@ -72,7 +68,7 @@
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
 				<a href={Path("/")}> {Txt.home} </a>
-				<a href={Path("/")}> {Txt.aboutUs}</a>
+				<a href={Path("/about")}> {Txt.aboutUs}</a>
 				<a href={Path("/team")}>{Txt.ourTeam}</a>
 				<a href={Path("/contact")}>{Txt.contactUs}</a>
 			</div>
