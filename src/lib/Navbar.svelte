@@ -50,7 +50,7 @@
 				>{Txt.blog}</a
 			>
 			<a
-				href={Path("/")}
+				href={Path("/about")}
 				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
 				>{Txt.about}</a
 			>
