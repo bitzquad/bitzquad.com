@@ -1,7 +1,7 @@
 <script>
 	let menuActive = false;
 	import { lang, Path } from "$lib/siteUtils";
-
+	import { page } from '$app/stores';
 	import GetTextData from "$lib/Text/Navbar";
 	let Txt = GetTextData();
 </script>
@@ -10,11 +10,10 @@
 	class="bz-container py-4 px-5 md:px-10 lg:px-20 bg-gray-100 text-gray-600  font-bold"
 >
 	<div class="container max-w-7xl grid grid-cols-2">
-		<div
+		<a
+			href={Path("/")}
 			class="flex justify-start cursor-pointer"
-			on:click={() => {
-				location.href = Path("/");
-			}}
+			
 		>
 			<!-- logo  -->
 			<img
@@ -31,27 +30,27 @@
 				width="147"
 				height="32"
 			/>
-		</div>
+		</a>
 		<div class="justify-end hidden md:flex">
 			<!--  menu  -->
 			<a
 				href={Path("/services")}
-				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
+				class="mx-2 px-2 py-1 duration-500 {$page.url.pathname.includes("/services") ? "bz-button pointer-events-none" : ""} hover:bg-gray-200 rounded"
 				>{Txt.services}</a
 			>
 			<a
 				href={Path("/contact")}
-				class="mx-2 px-2 py-1 duration-500 hover:bg-gray-200 rounded"
+				class="mx-2 px-2 py-1 duration-500 {$page.url.pathname.includes("/contact") ? "bz-button pointer-events-none" : ""} hover:bg-gray-200 rounded"
 				>{Txt.contact}</a
 			>
 			<a
 				href={Path("/")}
-				class="mx-2  rounded px-2 py-1 bz-button duration-500 "
+				class="mx-2  rounded px-2 py-1 {$page.url.pathname.includes("/blog") ? "bz-button pointer-events-none" : ""} hover:bg-gray-200  duration-500 "
 				>{Txt.blog}</a
 			>
 			<a
 				href={Path("/about")}
-				class="flex items-cener mx-2 px-2 py-1 hover:bg-gray-200 rounded duration-500"
+				class="flex items-cener mx-2 px-2 py-1 {$page.url.pathname.includes("/about") ? "bz-button pointer-events-none" : ""}  hover:bg-gray-200 rounded duration-500"
 				>{Txt.about}</a
 			>
 		</div>
