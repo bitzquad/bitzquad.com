@@ -23,9 +23,8 @@
 		>
 			<!-- Logo -->
 			<img
-				src="/textYellow-Logo-White-Text.svg"
-				width="147"
-				height="32"
+				src="/bz-logo-dark.png"
+				
 				alt="Bitzquad Logo"
 				class="w-1/2 lg:h-8 lg:w-auto "
 			/>

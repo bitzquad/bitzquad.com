@@ -17,18 +17,17 @@
 		>
 			<!-- logo  -->
 			<img
-				src="/circleYellow-Logo.svg"
+				src="/bz-logo-sq.png"
 				alt="Bitzquad Logo"
 				class="h-8 sm:hidden"
 				width="29"
 				height="32"
 			/>
 			<img
-				src="/textYellow-Logo-White-Text.svg"
+				src="/bz-logo-dark.png"
 				alt="Bitzquad Logo"
 				class="h-8 hidden sm:inline-block"
-				width="147"
-				height="32"
+				
 			/>
 		</a>
 		<div class="justify-end hidden md:flex">
@@ -43,11 +42,11 @@
 				class="mx-2 px-2 py-1 duration-500 {$page.url.pathname.includes("/contact") ? "bz-button pointer-events-none" : ""} hover:bg-gray-200 rounded"
 				>{Txt.contact}</a
 			>
-			<a
+			<!-- <a
 				href={Path("/")}
 				class="mx-2  rounded px-2 py-1 {$page.url.pathname.includes("/blog") ? "bz-button pointer-events-none" : ""} hover:bg-gray-200  duration-500 "
 				>{Txt.blog}</a
-			>
+			> -->
 			<a
 				href={Path("/about")}
 				class="flex items-cener mx-2 px-2 py-1 {$page.url.pathname.includes("/about") ? "bz-button pointer-events-none" : ""}  hover:bg-gray-200 rounded duration-500"
@@ -87,9 +86,9 @@
 					href={Path("/contact")}
 					class="block py-2 px-2  hover:bg-gray-200">{Txt.contact}</a
 				>
-				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
+				<!-- <a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.blog}</a
-				>
+				> -->
 				<a href={Path("/")} class="block py-2 px-2  hover:bg-gray-200"
 					>{Txt.about}</a
 				>
