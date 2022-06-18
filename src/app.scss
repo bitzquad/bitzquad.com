@@ -45,11 +45,7 @@ body {
 }
 
 .bz-button {
-	background: #facc15;
-	color: #713f12;
-	cursor: pointer;
-
-	@apply duration-200 transition-all;
+	@apply bg-violet-500 text-violet-100 cursor-pointer tracking-widest;
 
 	&:hover {
 		@apply shadow-xl;
