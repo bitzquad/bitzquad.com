@@ -80,12 +80,12 @@
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href={Path("/news")}>{Txt.newsFeed}</a>
+				<a href={Path("/news")} target="_blank">{Txt.newsFeed}</a>
 
-				<a href={Path("/school")}>BitZchool</a>
+				<a href={Path("/school")} target="_blank">BitZchool</a>
 				<!-- Social Links - Resources -->
 				<div class="mt-3.5 flex gap-4 ">
-					<a href={Path("/social/behance")}
+					<a href={Path("/social/behance")} target="_blank"
 						><img
 							src="/social-behance.svg"
 							height="31"
@@ -94,7 +94,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path("/social/github")}
+					<a href={Path("/social/github")} target="_blank"
 						><img
 							src="/social-github.svg"
 							height="31"
@@ -114,7 +114,7 @@
 			<div
 				class="flex items-center text-lg flex-col gap-y-1.5 font-bold text-gray-500"
 			>
-				<a href={Path("/location")}>Colombo, Sri Lanka</a>
+				<a href={Path("/location")} target="_blank">Colombo, Sri Lanka</a>
 				<a href="tel:+94778813384">+94 778813384</a>
 				<a href="mailto:contact@bitzquad.com">contact@bitzquad.com</a>
 			</div>
@@ -131,7 +131,7 @@
 			<!-- Social Links -->
 			<div class="flex gap-4 md:items-center">
 				<div class="social flex gap-4">
-					<a href={Path("/social/facebook")}
+					<a href={Path("/social/facebook")} target="_blank"
 						><img
 							src="/social-facebook.svg"
 							height="31"
@@ -140,7 +140,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path("/social/linkedin")}
+					<a href={Path("/social/linkedin")} target="_blank"
 						><img
 							src="/social-linkedin.svg"
 							height="31"
@@ -149,7 +149,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path("/social/instagram")}
+					<a href={Path("/social/instagram")} target="_blank"
 						><img
 							src="/social-instagram.svg"
 							height="31"
@@ -158,7 +158,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path("/social/twitter")}
+					<a href={Path("/social/twitter")} target="_blank"
 						><img
 							src="/social-twitter.svg"
 							height="31"
@@ -167,7 +167,7 @@
 							class=""
 						/></a
 					>
-					<a href={Path("/social/youtube")}
+					<a href={Path("/social/youtube")} target="_blank"
 						><img
 							src="/social-youtube.svg"
 							height="31"

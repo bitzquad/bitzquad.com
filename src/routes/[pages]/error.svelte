@@ -64,7 +64,7 @@
 			>
 				<a
 					href={Path("/")}
-					class="md:absolute my-10 md:mt-0 w-full md:w-auto md:top-0 md:left-1/2 flex justify-center  md:-translate-x-1/2 bg-yellow-400 text-yellow-700 p-3 px-4 rounded hover:text-gray-600 transition-all duration-300 shadow-lg hover:bg-yellow-300 hover:shadow-xl"
+					class="md:absolute my-10 md:mt-0 w-full md:w-auto md:top-0 md:left-1/2 flex justify-center  md:-translate-x-1/2 bg-violet-400 text-violet-700 p-3 px-4 rounded hover:text-gray-600 transition-all duration-300 shadow-lg hover:bg-violet-300 hover:shadow-xl"
 					>Go To Home</a
 				>
 				<img
