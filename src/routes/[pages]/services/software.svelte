@@ -24,7 +24,9 @@ import Navbar from "$lib/Navbar.svelte";
 			<div class="w-full lg:w-1/2 flex items-center text-center flex-col">
                 <div class="py-4 text-lg">
                     <p class="pt-2 text-center lg:text-left">
-                        Using modern technologies, we develop powerful desktop and mobile apps which are easy to use. Your app will look, feel, work the same way on every desktop, laptop, and mobile phone.
+						We develop desktop and mobile apps that run on every platform identically using modern technologies. Your app will look and feel the same way on desktops, laptops, and mobile phones.
+						These apps outperform the traditional platform-dependent apps.
+						
                     </p>
                 </div>
 			</div>
