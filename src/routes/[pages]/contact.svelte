@@ -21,7 +21,7 @@
 		>
 			{Txt.contactUs}
 		</h1>
-		<p class="mt-3">{Txt.contactUsDescription}</p>
+		<p class="mt-3 lg:w-1/2 text-center">{Txt.contactUsDescription}</p>
 	</div>
 
 	<div class="bg-slate-100 w-full bz-container">

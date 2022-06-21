@@ -36,10 +36,10 @@
 		</div>
 		<div class="col-span-1 md:w-5/12 flex items-center justify-center">
 			<img
-				class="p-5 md:p-2"
+				class="p-5 md:p-2 w-1/2"
 				height="235"
 				width="585"
-				src="/heroImage.svg"
+				src="/bz-logo-sq.png"
 				alt="heroImage"
 			/>
 		</div>
