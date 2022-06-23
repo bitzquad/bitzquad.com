@@ -5,7 +5,11 @@ import Navbar from "$lib/Navbar.svelte";
 
 </script>
 
-<Head title="Brand Design Bitzquad" />
+<Head
+	title="Brand Design - Services Bitzquad"
+	description="Brand Design - Build a solid brand that one day, everyone will know"
+	keywords="bitzquad, Brand Design, Brand Designing, Build a solid brand, bitzquad services"
+/>
 <Navbar/>
 <main class=" text-slate-600 md:bg-[url('/about-bg.webp')] bg-fixed  bg-cover bg-no-repeat bg-center">
     <div class="py-20 bg-slate-50 bg-opacity-80 backdrop-blur-lg flex flex-col justify-center items-center ">
