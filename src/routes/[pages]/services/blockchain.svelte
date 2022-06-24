@@ -5,14 +5,18 @@ import Navbar from "$lib/Navbar.svelte";
 
 </script>
 
-<Head title="Block Chain Development Bitzquad" />
+<Head
+	title="Blockchain Development - Services Bitzquad"
+	description=" Blockchain Development - Blockchain enables you to create future-proof, distributed systems with maximum trust, transparency, and security. We specialize in building, maintaining, and securing decentralized apps (D-Apps) for financial, gaming, and other industries."
+	keywords="bitzquad, Blockchain Solutions, Blockchain Development, Blockchain Applications Development, DAPP Development, Blockchain, bitzquad services"
+/>
 <Navbar/>
 <main class=" text-slate-600 md:bg-[url('/about-bg.webp')] bg-fixed  bg-cover bg-no-repeat bg-center">
     <div class="py-20 bg-slate-50 bg-opacity-80 backdrop-blur-lg flex flex-col justify-center items-center ">
 		<h1
 			class="text-4xl md:text-3xl lg:text-4xl xl:text-6xl text-center md:text-left  text-gray-800 font-bold"
 		>
-            Block Chain Development
+            Blockchain Development
 		</h1>
 		<!-- <p class="mt-3 text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p> -->
 	</div>

@@ -2,8 +2,16 @@
 <script>
 import Footer from "$lib/Footer.svelte";
 import Navbar from "$lib/Navbar.svelte";
+import Head from "$lib/Components/Head.svelte";
 
 </script>
+
+<Head
+	title="About Us"
+	description="Who We are? We are a team of thinkers, engineers, designers, and marketers who represent different cultures around the globe, working together to build better solutions for future world. Let's Collaborate With Us. We are passionate to build new digital products for a better future by collaborating with new clients. If you have an idea to create a new digital product for your business needs or any other questions, inquire us. Our team/specialists are always available to help you."
+	keywords="bitzquad, about bitzquad, bitzquad information, about, about us"
+/>
+
 <Navbar/>
 <main class="text-slate-600 bg-slate-200 md:bg-[url('/about-bg.webp')] bg-fixed  bg-cover bg-no-repeat bg-center">
 	<div class="bz-container w-screen bg-slate-200 md:pt-20 bg-opacity-50 backdrop-blur-lg">
