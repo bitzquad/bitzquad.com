@@ -20,7 +20,9 @@
 				window.location.search &&
 				window.location.search.startsWith("?")
 			) {
-				let origlang = DetectAndSetLanguageFromPath(window.location.pathname);
+				let origlang = DetectAndSetLanguageFromPath(
+					window.location.pathname
+				);
 				let queryLang = DetectAndSetLanguageFromPath(
 					window.location.search.slice(1)
 				);
