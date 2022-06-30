@@ -4,10 +4,9 @@
 	import { page } from "$app/stores";
 
 	let pathname = $page.url.pathname;
-	console.log($page.url);
 	export let title: string;
 	export let description: string;
-	export let url: string = $page.url.href.replace('/en','');
+	export let url: string = $page.url.href.replace("/en", "");
 	export let keywords: string;
 	export let type: string = null;
 	export let imagefb: string = OriginURL + "/bz-logo-dark.png";
