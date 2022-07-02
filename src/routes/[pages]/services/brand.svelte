@@ -24,8 +24,7 @@ import Navbar from "$lib/Navbar.svelte";
 			<div class="w-full lg:w-1/2 flex items-center text-center flex-col">
                 <div class="py-4 text-lg">
                     <p class="pt-2 text-center lg:text-left">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita, quas sunt vitae ipsam non impedit quia consectetur delectus? Illo dolorem culpa mollitia excepturi enim vel eius voluptate temporibus dolore?
-                    </p>
+                        The aesthetic representation of a brand's positioning and personality is found in its visual identity. We have resources designated to employ the most effective brand designs possible, informed by research and governed by strategy. </p>
                 </div>
 			</div>
 		</div>
