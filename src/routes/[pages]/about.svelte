@@ -64,7 +64,7 @@ import Head from "$lib/Components/Head.svelte";
 				
 			</div>
 			<div class="pb-20 mx-10">
-				<h2 class="about-title text-3xl font-bold pt-5 text-center ">Let's Collaborate With Us.</h2>
+				<h2 class="about-title text-3xl font-bold pt-5 text-center ">Let's Collaborate</h2>
 				<div class="mt-10 flex flex-col justify-center items-center">
 					<p class="md:w-1/2 text-center">We are passionate to build new digital products for a better future by collaborating with new clients. If you have an idea to create a new digital product for your business needs or any other questions, inquire us. Our team/specialists are always available to help you.</p>
 				</div>
