@@ -1,6 +1,6 @@
 
 // "." is the root language. Pages should alias it to English.
-export let Langs = [".", "en", "si", "it", "ja", "zh", "ta"]
+export let Langs = [".", "en"]
 export let DefaultLang = "en"
 export let OriginURL = "https://bitzquad.com"
 
@@ -26,9 +26,4 @@ export let TextTSV_Header_Identifier = "Identifier"
 
 export let TextTSV_Header_Languages = {
     "English": "en",
-    "Sinhala": "si",
-    "Italian": "it",
-    "Japanese": "ja",
-    "Chinese": "zh",
-    "Tamil": "ta",
 }

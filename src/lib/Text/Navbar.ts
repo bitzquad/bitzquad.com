@@ -18,36 +18,6 @@ let TextData = {
 		"blog": "News",
 		"about": "About"
 	} as NavbarText,
-	si: {
-		"services": "සේවාවන්",
-		"contact": "සම්බන්ධ කරගන්න",
-		"blog": "පුවත්",
-		"about": "අපි ගැන"
-	} as NavbarText,
-	it: {
-		"services": "Servizi",
-		"contact": "Contatti",
-		"blog": "Novità",
-		"about": ""
-	} as NavbarText,
-	ja: {
-		"services": "",
-		"contact": "",
-		"blog": "",
-		"about": ""
-	} as NavbarText,
-	zh: {
-		"services": "",
-		"contact": "",
-		"blog": "",
-		"about": ""
-	} as NavbarText,
-	ta: {
-		"services": "",
-		"contact": "",
-		"blog": "",
-		"about": ""
-	} as NavbarText,
 }
 
 export default function (): NavbarText {
