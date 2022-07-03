@@ -4,7 +4,11 @@ import Footer from "$lib/Footer.svelte";
 import Navbar from "$lib/Navbar.svelte";
 
 </script>
-<Head title="Information Systems Bitzquad" />
+<Head
+	title="Information Systems Development - Services Bitzquad"
+	description="Information Systems - Upgrade with the best technology that helps your business grow, Down to earth solutions - We will visit your business, observe how it works, speak with your employees and customers to deliver the best hand-tailored software that truly serves you. Flexible systems - Our modular, serverless architecture will seamlessly scale up and down as your business grows. Adding or changing features will be just a phone call away. Military grade security - Your system will be unbreachable and fail-safe with innovative security measures in this ever-changing industry. Your data, business strategies, and ideas will be safe and private."
+	keywords="bitzquad, Information Systems, Information Systems Development, informtion system devolper, Down to earth solutions, bitzquad services"
+/>
 <Navbar/>
 <main class=" text-slate-600 md:bg-[url('/about-bg.webp')] bg-fixed  bg-cover bg-no-repeat bg-center">
     <div class="py-20 bg-slate-50 bg-opacity-80 backdrop-blur-lg flex flex-col justify-center items-center ">

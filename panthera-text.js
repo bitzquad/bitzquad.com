@@ -82,6 +82,10 @@ async function parseTextData() {
         let section = values[headerSection]
         const identifier = values[headerId]
 
+        if (!section || !identifier) {
+            continue
+        }
+
         // Remove whitespaces
         section = section.replace(/\s/g, "")
 

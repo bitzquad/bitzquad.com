@@ -5,7 +5,11 @@ import Navbar from "$lib/Navbar.svelte";
 
 </script>
 
-<Head title="Brand Design Bitzquad" />
+<Head
+	title="Brand Design - Services Bitzquad"
+	description="Brand Design - Build a solid brand that one day, everyone will know"
+	keywords="bitzquad, Brand Design, Brand Designing, Build a solid brand, bitzquad services"
+/>
 <Navbar/>
 <main class=" text-slate-600 md:bg-[url('/about-bg.webp')] bg-fixed  bg-cover bg-no-repeat bg-center">
     <div class="py-20 bg-slate-50 bg-opacity-80 backdrop-blur-lg flex flex-col justify-center items-center ">
@@ -24,8 +28,7 @@ import Navbar from "$lib/Navbar.svelte";
 			<div class="w-full lg:w-1/2 flex items-center text-center flex-col">
                 <div class="py-4 text-lg">
                     <p class="pt-2 text-center lg:text-left">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit expedita, quas sunt vitae ipsam non impedit quia consectetur delectus? Illo dolorem culpa mollitia excepturi enim vel eius voluptate temporibus dolore?
-                    </p>
+                        The aesthetic representation of a brand's positioning and personality is found in its visual identity. We have resources designated to employ the most effective brand designs possible, informed by research and governed by strategy. </p>
                 </div>
 			</div>
 		</div>

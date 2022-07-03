@@ -11,7 +11,11 @@
 	let Txt = GetTextData();
 </script>
 
-<Head title="Contact Bitzquad" />
+<Head
+	title="Contact Us"
+	description="Welcome to Bitzquad We are a team of thinkers, engineers, designers, and marketers who represent different cultures around the globe, working together to build better solutions for a better world. We work alongside our customers. When we start a project, you become a member of our bitzquad family. You have all the freedom to discuss and clarify every aspect of 'our' project."
+	keywords="bitzquad, contact bitzquad, reach bitzquad, chat with bitzquad,contact, contact us"
+/>
 
 <Navbar />
 <main class="bz-container text-slate-600">
