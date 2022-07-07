@@ -26,56 +26,6 @@ let TextData = {
 		"emailUsDes": "Send us a mail from your official email",
 		"emailUsBtn": "Email Us"
 	} as ContactText,
-	si: {
-		"contactUs": "අපිව සම්බන්ධ කරගන්න",
-		"contactUsDescription": "",
-		"liveChatTitle": "",
-		"liveChatDes": "අපි ඔබට උපකාර කිරීම සඳහා නිරතුරුව ම බැඳී සිටින්නෙමු",
-		"liveChatBtn": "",
-		"emailUsTitle": "අපට විද්‍යුත් පණිවිඩයක් යොමු කරන්න",
-		"emailUsDes": "",
-		"emailUsBtn": "අපට විද්‍යුත් පණිවිඩයක් යොමු කරන්න"
-	} as ContactText,
-	it: {
-		"contactUs": "Contattaci",
-		"contactUsDescription": "",
-		"liveChatTitle": "Live Chat",
-		"liveChatDes": "Siamo sempre a disposizione per aiutarti",
-		"liveChatBtn": "Live Chat",
-		"emailUsTitle": "Scrivici",
-		"emailUsDes": "",
-		"emailUsBtn": "Scrivici"
-	} as ContactText,
-	ja: {
-		"contactUs": "",
-		"contactUsDescription": "",
-		"liveChatTitle": "",
-		"liveChatDes": "",
-		"liveChatBtn": "",
-		"emailUsTitle": "",
-		"emailUsDes": "",
-		"emailUsBtn": ""
-	} as ContactText,
-	zh: {
-		"contactUs": "",
-		"contactUsDescription": "",
-		"liveChatTitle": "",
-		"liveChatDes": "",
-		"liveChatBtn": "",
-		"emailUsTitle": "",
-		"emailUsDes": "",
-		"emailUsBtn": ""
-	} as ContactText,
-	ta: {
-		"contactUs": "",
-		"contactUsDescription": "",
-		"liveChatTitle": "",
-		"liveChatDes": "",
-		"liveChatBtn": "",
-		"emailUsTitle": "",
-		"emailUsDes": "",
-		"emailUsBtn": ""
-	} as ContactText,
 }
 
 export default function (): ContactText {

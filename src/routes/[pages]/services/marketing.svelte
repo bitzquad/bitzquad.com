@@ -4,8 +4,11 @@ import Footer from "$lib/Footer.svelte";
 import Navbar from "$lib/Navbar.svelte";
 
 </script>
-
-<Head title="Digital Marketing Bitzquad" />
+<Head
+	title=" Digital Marketing  - Services Bitzquad"
+	description="Digital Marketing - "
+	keywords="bitzquad, Digital Marketing, Marketing, Social Media Marketing, bitzquad services"
+/>
 <Navbar/>
 <main class=" text-slate-600 md:bg-[url('/about-bg.webp')] bg-fixed  bg-cover bg-no-repeat bg-center">
     <div class="py-20 bg-slate-50 bg-opacity-80 backdrop-blur-lg flex flex-col justify-center items-center ">

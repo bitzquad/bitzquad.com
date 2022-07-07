@@ -9,10 +9,63 @@
 			as="style"
 			onload="this.onload=null;this.rel='stylesheet'"
 		/>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="referrer" content="strict-origin" />
+		<link rel="icon" href="/favicon.png" />
+		<link rel="shortcut icon" href="/favicon.png" />
+		<link rel="apple-touch-icon" href="/favicon.png" />
 		%svelte.head%
 	</head>
 
 	<body id="svelte">
 		%svelte.body%
+
+		<!-- Messenger Chat plugin Code -->
+		<div id="fb-root"></div>
+
+		<!-- Your Chat plugin code -->
+		<div id="fb-customer-chat" class="fb-customerchat"></div>
+
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=G-ZCEWHPE699"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "G-ZCEWHPE699");
+		</script>
+
+		<script>
+			var chatbox = document.getElementById("fb-customer-chat");
+			chatbox.setAttribute("page_id", "104649385409157");
+			chatbox.setAttribute("attribution", "biz_inbox");
+		</script>
+
+		<!-- Your SDK code -->
+		<script>
+			window.fbAsyncInit = function () {
+				FB.init({
+					xfbml: true,
+					version: "v14.0",
+				});
+			};
+
+			(function (d, s, id) {
+				var js,
+					fjs = d.getElementsByTagName(s)[0];
+				if (d.getElementById(id)) return;
+				js = d.createElement(s);
+				js.id = id;
+				js.src =
+					"https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
+				fjs.parentNode.insertBefore(js, fjs);
+			})(document, "script", "facebook-jssdk");
+		</script>
 	</body>
 </html>
