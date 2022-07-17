@@ -10,7 +10,7 @@
     "check:watch": "svelte-check --tsconfig ./tsconfig.json --watch",
     "static": "svelte-kit build && http-server ./build --port 3000 --cors --gzip --brotli",
     "text": "node panthera-text.js",
-    "test": "node .github/setup.js"
+    "test": "node .github/setup.js; node .github/setup.js"
   },
   "devDependencies": {
     "@sveltejs/adapter-auto": "next",
